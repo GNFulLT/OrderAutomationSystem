@@ -1,5 +1,5 @@
 # OrderAutomationSystem
-In this project these nugets is used :  
+In this project these nugets has been used :  
 
 Guna UI2 
 
