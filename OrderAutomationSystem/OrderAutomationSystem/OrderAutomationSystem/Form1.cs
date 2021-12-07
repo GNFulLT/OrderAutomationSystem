@@ -288,6 +288,27 @@ using System.Threading;
 
 
         //Login BUTONU KODLANCAK CONFİRM AYNI ZAMANDA isRegister bool değişkeni ile register ekranındamı değilmi algılanıyor ona göre yapılcak -------------------
+        /* Register ekranında Username textbox name i usernameRegister
+            Email textboxu emailRegister
+            İlk password textboxu usernameBox
+            İkinci password textboxu passwordBox
+            
+            Login ekranında Email yerniin name i usernameBox
+            Password yerinin name i passwordBox
+            
+            isRegister = false ise login ekranındadır bu yüzden if(!isRegister){       } ile login  ekranındaki yerlerin kodu yazılacak else{} içine de register ekranındaki kodlar
+            yazılacak
+            
+            örnek : 
+            
+            if(!isRegister){
+            //Some codes for logginnig process .....
+            }else{
+            
+            //Some codes for registering process .....
+            }
+        
+        */
 
         private void loginButton_Click(object sender, EventArgs e)
         {
