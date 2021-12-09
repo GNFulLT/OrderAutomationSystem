@@ -44,6 +44,7 @@ namespace OrderAutomationSystem
             this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             bilgilendirmeLabel.Visible = false;
             
+            
         }
 
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
