@@ -86,8 +86,11 @@ namespace OrderAutomationSystem
 
         private void pctMenuSideBar_Click(object sender, EventArgs e)
         {
-            if (!t1.IsCompleted)
-                return;
+            if (t1 != null)
+            {
+                if (!t1.IsCompleted)
+                    return;
+            }
             if (gunaMenuBar.Width == 200)
             {             
                 btnPersonnels.Text = string.Empty;
