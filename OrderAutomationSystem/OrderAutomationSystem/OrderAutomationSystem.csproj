@@ -107,6 +107,8 @@
     <Compile Include="adminMenu.Designer.cs">
       <DependentUpon>adminMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Connect.cs" />
+    <Compile Include="Crud.cs" />
     <Compile Include="ICustomers.cs" />
     <Compile Include="IItems.cs" />
     <Compile Include="IOrder.cs" />

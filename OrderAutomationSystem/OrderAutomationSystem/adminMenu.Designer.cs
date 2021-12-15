@@ -30,8 +30,8 @@ namespace OrderAutomationSystem
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation4 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminMenu));
             this.sidebarWrapper = new System.Windows.Forms.Panel();
             this.gunaMenuBar = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -54,13 +54,13 @@ namespace OrderAutomationSystem
             this.pctMaximize = new System.Windows.Forms.PictureBox();
             this.pctMenuSideBar = new System.Windows.Forms.PictureBox();
             this.AnimationSidebar = new Guna.UI2.WinForms.Guna2Transition();
+            this.curveSidebar = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.AnimatiomSidebarBack = new Guna.UI2.WinForms.Guna2Transition();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ucEmployees1 = new OrderAutomationSystem.ucEmployees();
             this.ucCustomers1 = new OrderAutomationSystem.ucCustomers();
             this.ucProducts1 = new OrderAutomationSystem.ucProducts();
             this.ucStatistics1 = new OrderAutomationSystem.ucStatistics();
-            this.curveSidebar = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.AnimatiomSidebarBack = new Guna.UI2.WinForms.Guna2Transition();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.sidebarWrapper.SuspendLayout();
             this.gunaMenuBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctUser)).BeginInit();
@@ -473,22 +473,48 @@ namespace OrderAutomationSystem
             // 
             this.AnimationSidebar.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Particles;
             this.AnimationSidebar.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 1;
-            animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 2F;
-            animation2.TransparencyCoeff = 0F;
-            this.AnimationSidebar.DefaultAnimation = animation2;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 1;
+            animation4.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 2F;
+            animation4.TransparencyCoeff = 0F;
+            this.AnimationSidebar.DefaultAnimation = animation4;
+            // 
+            // curveSidebar
+            // 
+            this.curveSidebar.BorderRadius = 7;
+            this.curveSidebar.TargetControl = this.gunaMenuBar;
+            // 
+            // AnimatiomSidebarBack
+            // 
+            this.AnimatiomSidebarBack.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
+            this.AnimatiomSidebarBack.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.AnimatiomSidebarBack.DefaultAnimation = animation3;
             // 
             // ucEmployees1
             // 
@@ -529,32 +555,6 @@ namespace OrderAutomationSystem
             this.ucStatistics1.Name = "ucStatistics1";
             this.ucStatistics1.Size = new System.Drawing.Size(1100, 820);
             this.ucStatistics1.TabIndex = 9;
-            // 
-            // curveSidebar
-            // 
-            this.curveSidebar.BorderRadius = 7;
-            this.curveSidebar.TargetControl = this.gunaMenuBar;
-            // 
-            // AnimatiomSidebarBack
-            // 
-            this.AnimatiomSidebarBack.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
-            this.AnimatiomSidebarBack.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.AnimatiomSidebarBack.DefaultAnimation = animation1;
             // 
             // adminMenu
             // 
