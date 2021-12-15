@@ -46,12 +46,13 @@ namespace OrderAutomationSystem
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(531, 437);
+            this.progressBar.Location = new System.Drawing.Point(708, 538);
+            this.progressBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar.Name = "progressBar";
             this.progressBar.ProgressColor = System.Drawing.Color.Violet;
             this.progressBar.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.progressBar.ShadowDecoration.Parent = this.progressBar;
-            this.progressBar.Size = new System.Drawing.Size(325, 10);
+            this.progressBar.Size = new System.Drawing.Size(433, 12);
             this.progressBar.TabIndex = 0;
             this.progressBar.Text = "progressBar";
             this.progressBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
@@ -59,9 +60,10 @@ namespace OrderAutomationSystem
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(531, 113);
+            this.pictureBox1.Location = new System.Drawing.Point(708, 139);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(325, 232);
+            this.pictureBox1.Size = new System.Drawing.Size(433, 286);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -70,9 +72,10 @@ namespace OrderAutomationSystem
             // 
             this.mainLabel.AutoSize = true;
             this.mainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mainLabel.Location = new System.Drawing.Point(145, 90);
+            this.mainLabel.Location = new System.Drawing.Point(193, 111);
+            this.mainLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mainLabel.Name = "mainLabel";
-            this.mainLabel.Size = new System.Drawing.Size(195, 46);
+            this.mainLabel.Size = new System.Drawing.Size(241, 58);
             this.mainLabel.TabIndex = 2;
             this.mainLabel.Text = "Welcome";
             // 
@@ -81,18 +84,20 @@ namespace OrderAutomationSystem
             this.desLabel.AutoSize = true;
             this.desLabel.Font = new System.Drawing.Font("Microsoft Yi Baiti", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.desLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.desLabel.Location = new System.Drawing.Point(33, 255);
+            this.desLabel.Location = new System.Drawing.Point(44, 314);
+            this.desLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.desLabel.Name = "desLabel";
-            this.desLabel.Size = new System.Drawing.Size(370, 66);
+            this.desLabel.Size = new System.Drawing.Size(449, 84);
             this.desLabel.TabIndex = 3;
             this.desLabel.Text = "We are working to improve\r\nyour experience\r\n";
             // 
             // welcomeGif
             // 
             this.welcomeGif.Image = ((System.Drawing.Image)(resources.GetObject("welcomeGif.Image")));
-            this.welcomeGif.Location = new System.Drawing.Point(22, 139);
+            this.welcomeGif.Location = new System.Drawing.Point(29, 171);
+            this.welcomeGif.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.welcomeGif.Name = "welcomeGif";
-            this.welcomeGif.Size = new System.Drawing.Size(446, 50);
+            this.welcomeGif.Size = new System.Drawing.Size(595, 62);
             this.welcomeGif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.welcomeGif.TabIndex = 4;
             this.welcomeGif.TabStop = false;
@@ -102,9 +107,10 @@ namespace OrderAutomationSystem
             this.nameLabel.AutoSize = true;
             this.nameLabel.Font = new System.Drawing.Font("MV Boli", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.nameLabel.Location = new System.Drawing.Point(426, 29);
+            this.nameLabel.Location = new System.Drawing.Point(568, 36);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(111, 34);
+            this.nameLabel.Size = new System.Drawing.Size(140, 45);
             this.nameLabel.TabIndex = 5;
             this.nameLabel.Text = "Shoppy";
             // 
@@ -117,10 +123,11 @@ namespace OrderAutomationSystem
             this.checkBox.CheckedState.FillColor = System.Drawing.SystemColors.Control;
             this.checkBox.CheckedState.Parent = this.checkBox;
             this.checkBox.CheckMarkColor = System.Drawing.SystemColors.MenuHighlight;
-            this.checkBox.Location = new System.Drawing.Point(61, 427);
+            this.checkBox.Location = new System.Drawing.Point(81, 526);
+            this.checkBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox.Name = "checkBox";
             this.checkBox.ShadowDecoration.Parent = this.checkBox;
-            this.checkBox.Size = new System.Drawing.Size(20, 20);
+            this.checkBox.Size = new System.Drawing.Size(27, 25);
             this.checkBox.TabIndex = 6;
             this.checkBox.Text = "guna2CustomCheckBox1";
             this.checkBox.UncheckedState.BorderColor = System.Drawing.Color.Violet;
@@ -134,9 +141,10 @@ namespace OrderAutomationSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Leelawadee UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(87, 424);
+            this.label2.Location = new System.Drawing.Point(116, 522);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(264, 39);
+            this.label2.Size = new System.Drawing.Size(342, 57);
             this.label2.TabIndex = 7;
             this.label2.Text = "Allow anonymous usage statistics to be collected\r\nto help improve the experience " +
     "of the application\r\n\r\n";
@@ -149,10 +157,10 @@ namespace OrderAutomationSystem
             // 
             // SplashScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(958, 518);
+            this.ClientSize = new System.Drawing.Size(1277, 638);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.checkBox);
             this.Controls.Add(this.nameLabel);
@@ -162,6 +170,7 @@ namespace OrderAutomationSystem
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.progressBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SplashScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shoppy";

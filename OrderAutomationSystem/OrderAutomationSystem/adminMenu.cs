@@ -31,35 +31,36 @@ namespace OrderAutomationSystem
             /*this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));*/
             loffBtn.Location = lightBtn.Location;
 
-            
         }
         public adminMenu(bool isLight) : this()
         {
-            
+
             this.isLight = isLight;
             if (isLight)
             {
                 extButton2.Visible = true;//kapalı modda kapalı olucak
                 menuTop.BackColor = Color.FromArgb(224, 224, 224);
                 sidebarWrapper.BackColor = Color.FromArgb(240, 240, 240);
-                this.BackColor = Color.FromArgb(240, 240, 240);
+                this.BackColor = Color.FromArgb(30, 30, 48);
 
                 gunaMenuBar.FillColor = Color.FromArgb(66, 204, 255);
                 gunaMenuBar.FillColor2 = Color.FromArgb(66, 204, 255);
 
                 btnDashboard.ForeColor = Color.WhiteSmoke;
-                btnPersonnels.ForeColor = Color.WhiteSmoke;
+                btnEmployees.ForeColor = Color.WhiteSmoke;
                 btnProducts.ForeColor = Color.WhiteSmoke;
                 btnCustomers.ForeColor = Color.WhiteSmoke;
                 lblMenuName.ForeColor = Color.FromArgb(127, 131, 134);
                 lblUserName.ForeColor = Color.FromArgb(127, 131, 134);
             }
-
         }
-
         private void adminMenu_Load(object sender, EventArgs e)
         {
-
+            ucStatistics1.Show();
+            ucStatistics1.BringToFront();
+            ucProducts1.Hide();
+            ucCustomers1.Hide();
+            ucEmployees1.Hide();
         }
         private void pctExit_Click(object sender, EventArgs e)
         {
@@ -86,14 +87,16 @@ namespace OrderAutomationSystem
 
         private void pctMenuSideBar_Click(object sender, EventArgs e)
         {
-            if (t1 != null)
+            if (!(t1 is null))
             {
-                if (!t1.IsCompleted)
+                if (!t1.IsCompleted || !AnimationSidebar.IsCompleted || !AnimatiomSidebarBack.IsCompleted)
                     return;
             }
+
             if (gunaMenuBar.Width == 200)
-            {             
-                btnPersonnels.Text = string.Empty;
+            {
+                gunaMenuBar.Visible = false;
+                btnEmployees.Text = string.Empty;
                 t1 = new Task(() =>
                 {
                     int i = 200;
@@ -101,7 +104,6 @@ namespace OrderAutomationSystem
                     int b = 240;
                     this.BeginInvoke(new Action(() =>
                     {
-
                         while (i != 65)
                         {
                             i = i - 9;
@@ -109,20 +111,23 @@ namespace OrderAutomationSystem
                             b = b - 13;
                             gunaMenuBar.Width = i;
                             sidebarWrapper.Width = t;
+                            ucStatistics1.Location = new Point((t + 14), 80);
+                            ucProducts1.Location = new Point((t + 14), 80);
+                            ucCustomers1.Location = new Point((t + 14), 80);
+                            ucEmployees1.Location = new Point((t + 14), 80);
+
                             pnlLine.Width = b;
                             System.Threading.Thread.Sleep(5);
                         }
-
                     }));
-                    
-
-
                 });
                 t1.Start();
+                AnimationSidebar.Show(gunaMenuBar);
             }
             else
-            {            
-                btnPersonnels.Text = "Personnels";
+            {
+                gunaMenuBar.Visible = false;
+                btnEmployees.Text = "Personnels";
                 t1 = new Task(() =>
                 {
                     int i = 65;
@@ -130,65 +135,135 @@ namespace OrderAutomationSystem
                     int b = 45;
                     this.BeginInvoke(new Action(() =>
                     {
-
-                    while (i != 200)
+                        while (i != 200)
                         {
                             i = i + 9;
-                            t = t + 14;
+                            t = t + 9;
                             b = b - 13;
                             sidebarWrapper.Width = t;
                             gunaMenuBar.Width = i;
-                            
+                            ucStatistics1.Location = new Point(t, 80);
+                            ucProducts1.Location = new Point(t, 80);
+                            ucCustomers1.Location = new Point(t, 80);
+                            ucEmployees1.Location = new Point(t, 80);
+
                             pnlLine.Width = b;
                             System.Threading.Thread.Sleep(5);
                         }
                     }));
                 });
                 t1.Start();
-                t1.ContinueWith((t) => {
+                t1.ContinueWith((t) =>
+                {
                     this.BeginInvoke(new Action(() =>
                     {
                         pnlLine.Width = 180;
+
                     }));
                 });
-               
+                AnimatiomSidebarBack.Show(gunaMenuBar);
             }
         }
 
-        private void menuTop_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void gunaMenuBar_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        
-
         private void lightBtn_Click(object sender, EventArgs e)
         {
-            if (!isLight)
+            if (!isLight)//aydinlik mod
             {
                 isLight = true;
                 loffBtn.Visible = true;
                 lightBtn.Visible = false;
-             
+
                 extButton2.Visible = true;//kapalı modda kapalı olucak
                 menuTop.BackColor = Color.FromArgb(224, 224, 224);
                 sidebarWrapper.BackColor = Color.FromArgb(240, 240, 240);
-                this.BackColor = Color.FromArgb(240, 240, 240);
+                this.BackColor = Color.White;
 
                 gunaMenuBar.FillColor = Color.FromArgb(66, 204, 255);
                 gunaMenuBar.FillColor2 = Color.FromArgb(66, 204, 255);
 
                 btnDashboard.ForeColor = Color.WhiteSmoke;
-                btnPersonnels.ForeColor = Color.WhiteSmoke;
+                btnEmployees.ForeColor = Color.WhiteSmoke;
                 btnProducts.ForeColor = Color.WhiteSmoke;
                 btnCustomers.ForeColor = Color.WhiteSmoke;
                 lblMenuName.ForeColor = Color.FromArgb(127, 131, 134);
                 lblUserName.ForeColor = Color.FromArgb(127, 131, 134);
+
+                ucStatistics1.BackColor = Color.White;
+                foreach (var item in ucStatistics1.Controls)
+                {
+                    if (item is Label)
+                    {
+                        Label lblStatistics = item as Label;
+                        lblStatistics.ForeColor = Color.FromArgb(66, 244, 255);
+                    }
+                }
+                ucProducts1.BackColor = Color.White;
+                foreach (var item in ucProducts1.Controls)
+                {
+                    if (item is Label)
+                    {
+                        Label lblProducts = item as Label;
+                        lblProducts.ForeColor = Color.FromArgb(66, 244, 255);
+                    }
+                    else if (item is Guna.UI2.WinForms.Guna2TextBox)
+                    {
+                        Guna.UI2.WinForms.Guna2TextBox gunaTxtProduct = item as Guna.UI2.WinForms.Guna2TextBox;
+                        gunaTxtProduct.FillColor = Color.FromArgb(137, 207, 240);
+                        gunaTxtProduct.PlaceholderForeColor = Color.FromArgb(127, 131, 134);
+                        gunaTxtProduct.ForeColor = Color.DodgerBlue;
+                    }
+                    else if (item is Guna.UI2.WinForms.Guna2GradientButton)
+                    {
+                        Guna.UI2.WinForms.Guna2GradientButton gunaBtnProduct = item as Guna.UI2.WinForms.Guna2GradientButton;
+                        gunaBtnProduct.FillColor = Color.FromArgb(94, 148, 255);
+                        gunaBtnProduct.FillColor2= Color.FromArgb(255, 77, 165);
+                    }
+                }
+                ucCustomers1.BackColor = Color.White;
+                foreach (var item in ucCustomers1.Controls)
+                {
+                    if (item is Label)
+                    {
+                        Label lblCustomers = item as Label;
+                        lblCustomers.ForeColor = Color.FromArgb(66, 244, 255);
+                    }
+
+                    else if (item is Guna.UI2.WinForms.Guna2TextBox)
+                    {
+                        Guna.UI2.WinForms.Guna2TextBox gunaTxtCustomers = item as Guna.UI2.WinForms.Guna2TextBox;
+                        gunaTxtCustomers.FillColor = Color.FromArgb(137, 207, 240);
+                        gunaTxtCustomers.PlaceholderForeColor = Color.FromArgb(127, 131, 134);
+                        gunaTxtCustomers.ForeColor = Color.DodgerBlue;
+                    }
+                    else if (item is Guna.UI2.WinForms.Guna2GradientButton)
+                    {
+                        Guna.UI2.WinForms.Guna2GradientButton gunaBtnCustomers = item as Guna.UI2.WinForms.Guna2GradientButton;
+                        gunaBtnCustomers.FillColor = Color.FromArgb(94, 148, 255);
+                        gunaBtnCustomers.FillColor2 = Color.FromArgb(255, 77, 165);
+                    }
+                }
+                ucEmployees1.BackColor = Color.White;
+                foreach (var item in ucEmployees1.Controls)
+                {
+                    if (item is Label)
+                    {
+                        Label lblEmployees = item as Label;
+                        lblEmployees.ForeColor = Color.FromArgb(66, 244, 255);
+                    }
+                    else if (item is Guna.UI2.WinForms.Guna2TextBox)
+                    {
+                        Guna.UI2.WinForms.Guna2TextBox gunaTxtEmployees= item as Guna.UI2.WinForms.Guna2TextBox;
+                        gunaTxtEmployees.FillColor = Color.FromArgb(137, 207, 240);
+                        gunaTxtEmployees.PlaceholderForeColor = Color.FromArgb(127, 131, 134);
+                        gunaTxtEmployees.ForeColor = Color.DodgerBlue;
+                    }
+                    else if (item is Guna.UI2.WinForms.Guna2GradientButton)
+                    {
+                        Guna.UI2.WinForms.Guna2GradientButton gunaBtnPEmployees = item as Guna.UI2.WinForms.Guna2GradientButton;
+                        gunaBtnPEmployees.FillColor = Color.FromArgb(94, 148, 255);
+                        gunaBtnPEmployees.FillColor2 = Color.FromArgb(255, 77, 165);
+                    }
+                }
             }
             else
             {
@@ -199,18 +274,134 @@ namespace OrderAutomationSystem
                 extButton2.Visible = false;//kapalı modda kapalı olucak
                 menuTop.BackColor = Color.FromArgb(20, 20, 35);
                 sidebarWrapper.BackColor = Color.FromArgb(30, 30, 48);
-                this.BackColor = Color.FromArgb(30,30, 48);
+                this.BackColor = Color.FromArgb(30, 30, 48);
 
                 gunaMenuBar.FillColor = Color.FromArgb(30, 30, 48);
                 gunaMenuBar.FillColor2 = Color.FromArgb(165, 21, 80);
 
                 btnDashboard.ForeColor = Color.White;
-                btnPersonnels.ForeColor = Color.White;
+                btnEmployees.ForeColor = Color.White;
                 btnProducts.ForeColor = Color.White;
                 btnCustomers.ForeColor = Color.White;
                 lblMenuName.ForeColor = Color.White;
                 lblUserName.ForeColor = Color.White;
+
+                ucStatistics1.BackColor = Color.FromArgb(30, 30, 48);
+                foreach (var item in ucStatistics1.Controls)
+                {
+                    if (item is Label)
+                    {
+                        Label lblStatistics = item as Label;
+                        lblStatistics.ForeColor = Color.White;
+                    }
+                }
+                ucProducts1.BackColor = Color.FromArgb(30, 30, 48);
+                foreach (var item in ucProducts1.Controls)
+                {
+                    if (item is Label)
+                    {
+                        Label lblProducts = item as Label;
+                        lblProducts.ForeColor = Color.White;
+                    }
+                    else if (item is Guna.UI2.WinForms.Guna2TextBox)
+                    {
+                        Guna.UI2.WinForms.Guna2TextBox gunaTxtProducts2 = item as Guna.UI2.WinForms.Guna2TextBox;
+                        gunaTxtProducts2.FillColor = Color.White;
+                        gunaTxtProducts2.PlaceholderForeColor = Color.FromArgb(193,200,207 );
+                        gunaTxtProducts2.ForeColor = Color.FromArgb(125,137,149);
+                    }
+                    else if (item is Guna.UI2.WinForms.Guna2GradientButton)
+                    {
+                        Guna.UI2.WinForms.Guna2GradientButton gunaBtnProducts2 = item as Guna.UI2.WinForms.Guna2GradientButton;
+                        gunaBtnProducts2.FillColor = Color.FromArgb(94, 148, 255);
+                        gunaBtnProducts2.FillColor2 = Color.FromArgb(94, 148, 255);
+                    }
+                }
+                ucCustomers1.BackColor = Color.FromArgb(30, 30, 48);
+                foreach (var item in ucCustomers1.Controls)
+                {
+                    if (item is Label)
+                    {
+                        Label lblCustomers = item as Label;
+                        lblCustomers.ForeColor = Color.White;
+                    }
+                    else if (item is Guna.UI2.WinForms.Guna2TextBox)
+                    {
+                        Guna.UI2.WinForms.Guna2TextBox gunaTxtCustomers2 = item as Guna.UI2.WinForms.Guna2TextBox;
+                        gunaTxtCustomers2.FillColor = Color.White;
+                        gunaTxtCustomers2.PlaceholderForeColor = Color.FromArgb(193, 200, 207);
+                        gunaTxtCustomers2.ForeColor = Color.FromArgb(125, 137, 149);
+                    }
+                    else if (item is Guna.UI2.WinForms.Guna2GradientButton)
+                    {
+                        Guna.UI2.WinForms.Guna2GradientButton gunaBtnCustomers2 = item as Guna.UI2.WinForms.Guna2GradientButton;
+                        gunaBtnCustomers2.FillColor = Color.FromArgb(94, 148, 255);
+                        gunaBtnCustomers2.FillColor2 = Color.FromArgb(94, 148, 255);
+                    }
+                }
+                ucEmployees1.BackColor = Color.FromArgb(30, 30, 48);
+                foreach (var item in ucEmployees1.Controls)
+                {
+                    if (item is Label)
+                    {
+                        Label lblEmployees = item as Label;
+                        lblEmployees.ForeColor = Color.White;
+                    }
+                    else if (item is Guna.UI2.WinForms.Guna2TextBox)
+                    {
+                        Guna.UI2.WinForms.Guna2TextBox gunaTxtEmployess2 = item as Guna.UI2.WinForms.Guna2TextBox;
+                        gunaTxtEmployess2.FillColor = Color.White;
+                        gunaTxtEmployess2.PlaceholderForeColor = Color.FromArgb(193, 200, 207);
+                        gunaTxtEmployess2.ForeColor = Color.FromArgb(125, 137, 149);
+                    }
+                    else if (item is Guna.UI2.WinForms.Guna2GradientButton)
+                    {
+                        Guna.UI2.WinForms.Guna2GradientButton guneBtnEmployees2 = item as Guna.UI2.WinForms.Guna2GradientButton;
+                        guneBtnEmployees2.FillColor = Color.FromArgb(94, 148, 255);
+                        guneBtnEmployees2.FillColor2 = Color.FromArgb(94, 148, 255);
+                    }
+                }
             }
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            lblMenuName.Text = "Statistics";
+            ucStatistics1.Show();
+            ucStatistics1.BringToFront();
+            ucProducts1.Hide();
+            ucCustomers1.Hide();
+            ucEmployees1.Hide();
+        }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            lblMenuName.Text = "Products";
+            ucProducts1.Show();
+            ucProducts1.BringToFront();
+            ucStatistics1.Hide();
+            ucCustomers1.Hide();
+            ucEmployees1.Hide();
+        }
+
+        private void btnCustomers_Click(object sender, EventArgs e)
+        {
+            lblMenuName.Text = "Customers";
+            ucCustomers1.Show();
+            ucCustomers1.BringToFront();
+            ucStatistics1.Hide();
+            ucProducts1.Hide();
+            ucEmployees1.Hide();
+        }
+
+        private void btnEmployees_Click(object sender, EventArgs e)
+        {
+            lblMenuName.Text = "Employees";
+            ucEmployees1.Show();
+            ucEmployees1.BringToFront();
+            ucStatistics1.Hide();
+            ucProducts1.Hide();
+            ucCustomers1.Hide();
         }
     }
 }
