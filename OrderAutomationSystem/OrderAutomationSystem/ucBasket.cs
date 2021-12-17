@@ -15,6 +15,12 @@ namespace OrderAutomationSystem
         public ucBasket()
         {
             InitializeComponent();
+            //   ucItem.items;      sepetteki itemleri çeker List şeklinde
+        }
+
+        private void ucBasket_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

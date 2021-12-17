@@ -37,20 +37,25 @@ namespace OrderAutomationSystem
             this.customer = customer;
             ucHome profil = new ucHome(customer);//
             ucProfil home = new ucProfil();     //
+                                                //
+            
             profil.Location = new Point(76, 50);//
             profil.Visible = true;              // ilk seçili butonlar forumn altındaki 2 ile bitenler beyaz olur seçilmiş anlamına gelir 1 le bitenler normal
             home.Location = new Point(76, 50);  //
-            home.Visible = true;                //
+            home.Visible = false;               //
             this.Controls.Add(profil);          //
             this.Controls.Add(home);            //
-            selectedControl = profil;           //
-            userControls[0] = profil;
-            userControls[1] = home;
+            selectedControl = profil;           //        SEPET USER CONTROLÜNÜN POİNTİ VİSİBLİTİSİ AYARLANCAK ONDAN SONRA THİS.CONTROLS E VE
+            userControls[0] = profil;           //       
+            userControls[1] = home;             //        userControls[2] ye eklenicek
             home.Show();
         }
         
-        private void marketBtn_Click(object sender, EventArgs e)//Sepet butonuna basılırsa sağdaki
+        private void marketBtn_Click(object sender, EventArgs e)//Sepet butonuna basılırsa sağdaki       SEPET AÇILDIĞINDA selectedControl.Visib
         {
+            selectedControl.Visible = false;
+            //selectedControl = userControls[0];
+            //selectedControl.Visible = true;        
             selectedBtn.Visible = false;
             selectedBtn = marketBtn2;
             marketBtn2.Visible = true;

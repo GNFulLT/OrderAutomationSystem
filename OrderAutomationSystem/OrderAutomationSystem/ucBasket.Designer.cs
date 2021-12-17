@@ -38,6 +38,7 @@ namespace OrderAutomationSystem
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
             this.Name = "ucBasket";
             this.Size = new System.Drawing.Size(988, 567);
+            this.Load += new System.EventHandler(this.ucBasket_Load);
             this.ResumeLayout(false);
 
         }
