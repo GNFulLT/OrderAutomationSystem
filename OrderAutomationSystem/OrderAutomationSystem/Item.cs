@@ -11,6 +11,8 @@ namespace OrderAutomationSystem
         public int ItemID { get; private set; }
         public string Name { get; set; }
         public int Quantity { get; set; }
+
+        internal int Amount { get; set; }
         public int Weight { get; set; }
         public string Description { get; set; }
         public int Price { get; set; }
@@ -27,6 +29,7 @@ namespace OrderAutomationSystem
             this.Description = Description;
             this.Price = Price;
             this.Tag = Tag;
+            this.Amount = 1;
 
 
         }

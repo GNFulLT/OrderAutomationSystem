@@ -28,6 +28,8 @@ namespace OrderAutomationSystem
         {
             ListBox list = (ListBox)customerMenu.userControls[2].Controls["panelBasket"].Controls["listBasket"];
             list.Items.Add(item);
+            Label lb =(Label) customerMenu.userControls[2].Controls["panelBasket"].Controls["groupBoxInfo"].Controls["lblCost2"];
+            lb.Text = (Convert.ToInt32(lb.Text) + (item.Amount * item.Price)).ToString();
             TextBox txt = (TextBox)customerMenu.userControls[2].Controls["panelBasket"].Controls["txtPrice"];
 
         }
@@ -39,11 +41,7 @@ namespace OrderAutomationSystem
 
         }
 
-        private void ucBasket_Load(object sender, EventArgs e)
-        {
-
-
-        }
+       
 
 
 
@@ -52,17 +50,25 @@ namespace OrderAutomationSystem
 
         }
 
-        private void groupBoxInfo_Enter(object sender, EventArgs e)
+        private void pay_Click(object sender, EventArgs e)
         {
-
+            List<Item> items = new List<Item>();
+            int calc = 0;
+            foreach(Item item in listBasket.Items)
+            {
+                items.Add(item);
+                calc = calc + item.Amount;
+            }
+            /*OrderDetail details = new OrderDetail(items);*/
         }
 
         private void listBasket_SelectedIndexChanged(object sender, EventArgs e)
         {
             //txtName.Text = listBasket.SelectedItem.ToString();
-            ListBox lbox = (ListBox)sender;
-            Item U1 = (Item)lbox.SelectedItem;
+            ListBox lbox = sender as ListBox;
+            Item U1 = lbox.SelectedItem as Item;
             txtName.Text = U1.Name;
+            txtQuantitity.SelectedIndex =  txtQuantitity.FindStringExact((U1.Amount).ToString());
             txtPrice.Text = (U1.Price * Convert.ToInt32(txtQuantitity.Text)).ToString();
             txtDescription.Text = U1.Description;
 
@@ -85,10 +91,21 @@ namespace OrderAutomationSystem
 
         }
 
-        private void ucBasket_MouseMove(object sender, MouseEventArgs e)
+
+        private void txtQuantitity_SelectedIndexChanged(object sender, EventArgs e)
         {
-          
+            
+            Item U1 = listBasket.SelectedItem as Item;
+            U1.Amount = Convert.ToInt32(txtQuantitity.Text);
+            if (!(U1 is null))
+                txtPrice.Text = (U1.Price * Convert.ToInt32(txtQuantitity.Text)).ToString();
+            int total = 0;
+            foreach(Item item in listBasket.Items)
+            {
+                total = total + item.Amount * item.Price;
+            }
+            lblCost2.Text = total.ToString();
+
         }
-        
     }
 }

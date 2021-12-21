@@ -49,6 +49,8 @@ namespace OrderAutomationSystem
             profil.Visible = true;              // ilk seçili butonlar forumn altındaki 2 ile bitenler beyaz olur seçilmiş anlamına gelir 1 le bitenler normal
             home.Location = new Point(76, 50);  //
             home.Visible = false;               //
+            basket.Location = new Point(76, 30);
+            basket.Visible = false;
             this.Controls.Add(profil);          //
             this.Controls.Add(home);
             this.Controls.Add(basket);                                 //
@@ -56,7 +58,7 @@ namespace OrderAutomationSystem
             userControls[0] = profil;           //       
             userControls[1] = home;
             userControls[2] = basket;     //        userControls[2] ye eklenicek
-            home.Show();
+
         }
         
         private void marketBtn_Click(object sender, EventArgs e)//Sepet butonuna basılırsa sağdaki       SEPET AÇILDIĞINDA selectedControl.Visib
