@@ -16,7 +16,7 @@ namespace OrderAutomationSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new adminMenu());
+            Application.Run(new StartUpForm());
         }
     }
 }
