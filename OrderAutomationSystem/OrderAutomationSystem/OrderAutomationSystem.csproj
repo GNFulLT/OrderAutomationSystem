@@ -133,6 +133,30 @@
     <Compile Include="Order.cs" />
     <Compile Include="OrderDetail.cs" />
     <Compile Include="Payment.cs" />
+    <Compile Include="PaymentCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentCash.Designer.cs">
+      <DependentUpon>PaymentCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentCheck.Designer.cs">
+      <DependentUpon>PaymentCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentCredit.Designer.cs">
+      <DependentUpon>PaymentCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashScreen.cs">
@@ -203,6 +227,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentCash.resx">
+      <DependentUpon>PaymentCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentCheck.resx">
+      <DependentUpon>PaymentCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentCredit.resx">
+      <DependentUpon>PaymentCredit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
