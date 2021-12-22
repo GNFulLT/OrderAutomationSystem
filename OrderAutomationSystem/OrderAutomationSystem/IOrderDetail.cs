@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace OrderAutomationSystem
 {
-    interface IOrderDetail
+    public interface IOrderDetail
     {
-        List<IItems> Items { get; set; }
-        int PaymentMethod { get; set; }
+        List<Item> Items { get; set; }
         int TotalAmount { get; set; }
 
         int calcTotalAmount();
