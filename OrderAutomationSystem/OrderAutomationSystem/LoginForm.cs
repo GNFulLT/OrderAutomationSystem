@@ -53,7 +53,14 @@ namespace OrderAutomationSystem
 
 
         }
+        /*~loginPanel(){
+            t1 = null;
+            cmd = null;
+            ds = null;
+            images = null;
+            GC.Collect();
 
+        }*/
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -326,11 +333,74 @@ namespace OrderAutomationSystem
         {
             if (!isRegister)
             {
-               /* DatabaseDataSetTableAdapters.CustomersTableAdapter a = new DatabaseDataSetTableAdapters.CustomersTableAdapter();
-                using(var sqlCheck = new SqlCommand("SELECT COUNT(*) FROM Customers WHERE ([Email] = '"+usernameBox.Text)){
+                /* DatabaseDataSetTableAdapters.CustomersTableAdapter a = new DatabaseDataSetTableAdapters.CustomersTableAdapter();
+                 using(var sqlCheck = new SqlCommand("SELECT COUNT(*) FROM Customers WHERE ([Email] = '"+usernameBox.Text)){
 
-                }*/
-                 
+                 }*/
+                if(usernameBox.Text == string.Empty)
+                {
+                    return;
+                }
+                if(passwordBox.Text == string.Empty)
+                {
+                    return;
+                }
+                int ID;
+                string name;
+                string surname;
+                string email;
+                string address;
+                int balance;
+                string isAdmin;
+                string pass;
+                int c;
+
+                using (SQLiteConnection sql = new SQLiteConnection("Data source=.\\dataBase.db"))
+                {
+                    ds.Clear();
+                    sql.Open();
+                    cmd = sql.CreateCommand();
+                    cmd.CommandText = @"SELECT * FROM Customers Where Email = '"+usernameBox.Text+"'";
+                    SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(cmd);
+                    dataAdapter.Fill(ds);
+                    c = ds.Tables[0].Rows.Count;
+                   if(c == 0)
+                    {
+                        sql.Close();
+                        return;
+                    }
+
+                        object[] dt = ds.Tables[0].Rows[0].ItemArray;
+                        ID = Convert.ToInt32(dt[0]);
+                        name = dt[1].ToString();
+                        surname = dt[2].ToString();
+                        email = dt[3].ToString();
+                        address = dt[4].ToString();
+                        pass = dt[5].ToString();
+                        balance = Convert.ToInt32(dt[6]);
+                        isAdmin = dt[8].ToString();
+                    
+                    sql.Close();
+
+
+                }
+                if(passwordBox.Text != pass)
+                {
+                    return;
+                }
+                if (isAdmin == "FALSE")
+                {
+                    Customers customer = new Customers(ID, email, name, surname, address, balance);
+                    this.Dispose();
+                    customerMenu customermenu = new customerMenu(customer);
+                    customermenu.Show();
+                }
+                else
+                {
+
+                }
+
+
 
 
             }
@@ -696,7 +766,7 @@ namespace OrderAutomationSystem
         //Formu kapatma butonu
         private void closeButton_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
         }
 
         private void minimizeButton_Click(object sender, EventArgs e)

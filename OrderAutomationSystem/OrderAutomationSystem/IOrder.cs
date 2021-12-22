@@ -20,12 +20,12 @@ namespace OrderAutomationSystem
     OnCargo,//Kargoda
     WaitForCargo//Kargo için bekleniyor(İtem 0 değilse bu olucak başlangıç için)
     }
-    interface IOrder
+    public interface IOrder
     {
-        int OrderID { get; set; }
+        int OrderID { get; }
         DateTime Date { get; set; }
         Status State { get; set; }
-        IOrderDetail Details { get; set; }
+        OrderDetail Details { get; set; }
         
     }
 }
