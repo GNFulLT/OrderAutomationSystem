@@ -151,6 +151,7 @@
     <Compile Include="PaymentCredit.Designer.cs">
       <DependentUpon>PaymentCredit.cs</DependentUpon>
     </Compile>
+    <Compile Include="PaymentEvents.cs" />
     <Compile Include="PaymentForm.cs">
       <SubType>Form</SubType>
     </Compile>

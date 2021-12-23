@@ -52,7 +52,7 @@ namespace OrderAutomationSystem
             this.txtCustomerSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCustomerSearch.HoverState.Parent = this.txtCustomerSearch;
             this.txtCustomerSearch.Location = new System.Drawing.Point(27, 24);
-            this.txtCustomerSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCustomerSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtCustomerSearch.Name = "txtCustomerSearch";
             this.txtCustomerSearch.PasswordChar = '\0';
             this.txtCustomerSearch.PlaceholderText = "";
@@ -88,12 +88,13 @@ namespace OrderAutomationSystem
             this.btnSearch.Size = new System.Drawing.Size(94, 37);
             this.btnSearch.TabIndex = 256;
             this.btnSearch.Text = "Search";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // dgvCustomers
             // 
             this.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCustomers.Location = new System.Drawing.Point(27, 115);
-            this.dgvCustomers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvCustomers.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCustomers.Name = "dgvCustomers";
             this.dgvCustomers.RowHeadersWidth = 51;
             this.dgvCustomers.RowTemplate.Height = 24;
@@ -108,7 +109,7 @@ namespace OrderAutomationSystem
             this.Controls.Add(this.dgvCustomers);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtCustomerSearch);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ucCustomers";
             this.Size = new System.Drawing.Size(825, 666);
             this.Load += new System.EventHandler(this.ucCustomers_Load);

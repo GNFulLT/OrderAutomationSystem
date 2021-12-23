@@ -27,8 +27,12 @@ namespace OrderAutomationSystem
             
 
         }
+        public void disable()
+        {
+            checkedBox.Visible = false;
+        }
 
-      
+
 
         private void mainPanel_Click(object sender, EventArgs e)
         {

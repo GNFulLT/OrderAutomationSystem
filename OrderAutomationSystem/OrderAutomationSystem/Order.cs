@@ -10,9 +10,10 @@ namespace OrderAutomationSystem
 {
     class Order : IOrder
     {
-        public int OrderID { get; private set; }
+        public int OrderID { get; set; }
         public DateTime Date { get; set; }
         private string state;
+        public Payment Payment { get; set; } 
         public Status State { get {
                 if(state == "Dağıtımda")
                 {
@@ -49,7 +50,10 @@ namespace OrderAutomationSystem
                 }
             } }
         public OrderDetail Details { get; set; }
+        public Order()
+        {
 
+        }
         public Order(OrderDetail details)
         {
             Details = details;
@@ -58,20 +62,30 @@ namespace OrderAutomationSystem
             Date = dt.Result;
         }
 
+        public void setOrder(OrderDetail details)
+        {
+            Details = details;
+            State = Status.WaitForCargo;
+            Task<DateTime> dt = getTime();
+            Date = dt.Result;
+
+        }
         private async static Task<DateTime> getTime()
         {
             try
             {
                 var request = (HttpWebRequest)WebRequest.Create("http://www.google.com");
 
-                var response = await request.GetResponseAsync().ConfigureAwait(false);
+                using (var response = await request.GetResponseAsync().ConfigureAwait(false))
+                {
 
-                return DateTime.ParseExact(response.Headers["date"],
-                                "ddd, dd MMM yyyy HH:mm:ss 'GMT'",
-                                CultureInfo.InvariantCulture.DateTimeFormat,
-                                DateTimeStyles.AssumeUniversal);
+                    return DateTime.ParseExact(response.Headers["date"],
+                                    "ddd, dd MMM yyyy HH:mm:ss 'GMT'",
+                                    CultureInfo.InvariantCulture.DateTimeFormat,
+                                    DateTimeStyles.AssumeUniversal);
+                }
             }
-            catch
+            catch(Exception ex)
             {
                 return new DateTime(DateTime.MinValue.Ticks);
             }

@@ -15,6 +15,7 @@ namespace OrderAutomationSystem
     {
 
         bool isStopped = true;
+        Customers customer;
         public ucBasket()
         {
             InitializeComponent();
@@ -24,6 +25,10 @@ namespace OrderAutomationSystem
             txtDescription.Enabled = false;
             lblLoading.Visible = false;
 
+        }
+        public ucBasket(Customers customers) : this()
+        {
+            this.customer = customers;
         }
 
         internal static void itemAdd(Item item)
@@ -63,40 +68,80 @@ namespace OrderAutomationSystem
                 items.Add(item);
                 calc = calc + item.Amount;
             }
-            OrderDetail details;
-            Order order;
+            OrderDetail details = new OrderDetail();
+            Order order = new Order();
             lblLoading.Visible = true;
             await Task.Run(() =>
             {
-                isStopped = false;
-                details = new OrderDetail(items, calc);
-                order = new Order(details);
-                return order;
-
-            }).ContinueWith((res) =>
-            {
-                bool verify = res.Result.verifyInternet();
-                if (verify)
-                {
-                    
-                }
-                else
-                {
-                    MessageBox.Show("There is no internet connection.(To see the remainder of the project, Application will keep continue.");
-                    res.Result.Date = DateTime.Now;
-                }
+                lblLoading.Visible = true;
+                details.setDetail(items, calc);
+                order.setOrder(details);
 
             });
+            bool verify = order.verifyInternet();
+            if (verify)
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("There is no internet connection.(To see the remainder of the project, Application will keep continue.");
+                order.Date = DateTime.Now;
+            }
             lblLoading.Visible = false;
-            
+            PaymentForm pf = new PaymentForm(order);
+            pf.completed += closed;
+            pf.Show();
             
         }
 
+       
+        private void closed(object sender, PaymentEvents e)
+        {
+            isStopped = true;
+            if (sender == null)
+            {
+
+            }
+            else
+            {
+                Payment p = sender as Payment;
+                string cmd = $"SELECT seq from sqlite_sequence where name = \"Orders\"";
+
+                int id = Crud.Quantity(cmd);
+                if (id == -1)
+                    id = 0;
+                string sid = customer.CustomerID.ToString() + id.ToString();
+                foreach(Item item in e.Order.Details.Items)
+                {
+                cmd = $"INSERT INTO Orders (OrderIDs, ItemID, CustomerID, Quantity, Name, Surname, Address, Date, Status, TotalPrice) VALUES ('{sid}','{item.ItemID}','{customer.CustomerID}','{item.Amount}','{p.Name}','{p.Surname}','{e.Order.Details.Address}','{e.Order.Date}','{e.Order.State}','{e.Order.Details.TotalAmount}')";
+                    Crud.ARU(cmd);
+                }
+
+                ucProfil home = customerMenu.userControls[1] as ucProfil;
+                foreach(var item in home.Controls["itemPanel"].Controls)
+                {
+                    if(item is ucItem)
+                    {
+                        ucItem ucitem = item as ucItem;
+                        ucitem.disable();
+                    }
+                }
+                listBasket.Items.Clear();
+                txtName.Clear();
+                txtPrice.Clear();
+                txtDescription.Clear();
+                txtQuantitity.SelectedIndex = 0;
+                lblCost2.Text = "0";
+            }
+        }
         private void listBasket_SelectedIndexChanged(object sender, EventArgs e)
         {
             //txtName.Text = listBasket.SelectedItem.ToString();
             ListBox lbox = sender as ListBox;
             Item U1 = lbox.SelectedItem as Item;
+            if (U1 == null)
+                return;
             txtName.Text = U1.Name;
             txtQuantitity.SelectedIndex =  txtQuantitity.FindStringExact((U1.Amount).ToString());
             txtPrice.Text = (U1.Price * Convert.ToInt32(txtQuantitity.Text)).ToString();

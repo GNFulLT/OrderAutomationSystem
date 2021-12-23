@@ -5,7 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 namespace OrderAutomationSystem
-{
+{  
+    internal struct ExpDate
+        {
+            internal string year;
+            internal string month;
+        }
     internal class Credit:Payment
     {
         
@@ -17,18 +22,14 @@ namespace OrderAutomationSystem
             MasterCard, Visa, AmericanExpress, Discover, JCB, UnknownCard
         };
 
-        internal struct ExpDate
-        {
-            string year;
-            string month;
-        }
+      
 
         internal ExpDate expdate;
 
-        internal Credit(int amount,string number,string type,ExpDate expDate) : base(amount)
+        internal Credit(int amount,string number,ExpDate expDate) : base(amount)
         {
             Number = number;
-            type = getCardType(Number).ToString("g");
+            Type = getCardType(Number).ToString("g");
             expdate = expDate;
         }
 

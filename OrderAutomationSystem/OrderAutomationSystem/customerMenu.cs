@@ -18,11 +18,10 @@ namespace OrderAutomationSystem
         Timer t1 = new Timer();                   //
         Timer t2 = new Timer();                   // Yandan çıkan kutucuk için altta regionda yazılı
         static Guna.UI2.WinForms.Guna2Panel popup;//
-        bool stopped = false;
         Guna.UI2.WinForms.Guna2PictureBox selectedBtn;//Alttaki butonlardaki seçili butonu tutar
         Customers customer;                         //Profil için customer
         UserControl selectedControl;                    //
-       internal static UserControl[] userControls = new UserControl[3];// Alttaki butonlardan sonra çılan usercontrolleri tutar soldan sağa doğru 0 1 2
+       public static UserControl[] userControls = new UserControl[3];// Alttaki butonlardan sonra çılan usercontrolleri tutar soldan sağa doğru 0 1 2
 
       
         public customerMenu()
@@ -42,7 +41,7 @@ namespace OrderAutomationSystem
             this.customer = customer;
             ucHome profil = new ucHome(customer);//
             ucProfil home = new ucProfil();
-            ucBasket basket = new ucBasket();                                 //
+            ucBasket basket = new ucBasket(customer);                                 //
                                                 //
             
             profil.Location = new Point(76, 50);//
@@ -61,6 +60,7 @@ namespace OrderAutomationSystem
 
         }
         
+
         private void marketBtn_Click(object sender, EventArgs e)//Sepet butonuna basılırsa sağdaki       SEPET AÇILDIĞINDA selectedControl.Visib
         {
             selectedControl.Visible = false;
@@ -69,6 +69,7 @@ namespace OrderAutomationSystem
             selectedBtn.Visible = false;
             selectedBtn = marketBtn2;
             marketBtn2.Visible = true;
+            
         }
 
         private void userBtn_Click(object sender, EventArgs e)//profil butonuna basılırsa soldaki
@@ -192,6 +193,11 @@ namespace OrderAutomationSystem
         private void btnExit_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
         }
 
         private void panelMove_MouseMove(object sender, MouseEventArgs e)

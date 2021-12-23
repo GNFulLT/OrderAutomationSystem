@@ -62,11 +62,10 @@ namespace OrderAutomationSystem
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(94)))), ((int)(((byte)(233)))));
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(94)))), ((int)(((byte)(233)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.DodgerBlue;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(290, 962);
-            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(193, 625);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1172, 332);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(781, 216);
             this.guna2CustomGradientPanel1.TabIndex = 3;
             // 
             // homeBtn2
@@ -74,11 +73,10 @@ namespace OrderAutomationSystem
             this.homeBtn2.BackColor = System.Drawing.Color.Transparent;
             this.homeBtn2.Image = ((System.Drawing.Image)(resources.GetObject("homeBtn2.Image")));
             this.homeBtn2.ImageRotate = 0F;
-            this.homeBtn2.Location = new System.Drawing.Point(495, 18);
-            this.homeBtn2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.homeBtn2.Location = new System.Drawing.Point(330, 12);
             this.homeBtn2.Name = "homeBtn2";
             this.homeBtn2.ShadowDecoration.Parent = this.homeBtn2;
-            this.homeBtn2.Size = new System.Drawing.Size(138, 115);
+            this.homeBtn2.Size = new System.Drawing.Size(92, 75);
             this.homeBtn2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.homeBtn2.TabIndex = 2;
             this.homeBtn2.TabStop = false;
@@ -88,11 +86,10 @@ namespace OrderAutomationSystem
             this.homeBtn.BackColor = System.Drawing.Color.Transparent;
             this.homeBtn.Image = ((System.Drawing.Image)(resources.GetObject("homeBtn.Image")));
             this.homeBtn.ImageRotate = 0F;
-            this.homeBtn.Location = new System.Drawing.Point(495, 18);
-            this.homeBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.homeBtn.Location = new System.Drawing.Point(330, 12);
             this.homeBtn.Name = "homeBtn";
             this.homeBtn.ShadowDecoration.Parent = this.homeBtn;
-            this.homeBtn.Size = new System.Drawing.Size(138, 115);
+            this.homeBtn.Size = new System.Drawing.Size(92, 75);
             this.homeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.homeBtn.TabIndex = 2;
             this.homeBtn.TabStop = false;
@@ -103,11 +100,10 @@ namespace OrderAutomationSystem
             this.userBtn2.BackColor = System.Drawing.Color.Transparent;
             this.userBtn2.Image = ((System.Drawing.Image)(resources.GetObject("userBtn2.Image")));
             this.userBtn2.ImageRotate = 0F;
-            this.userBtn2.Location = new System.Drawing.Point(170, 18);
-            this.userBtn2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.userBtn2.Location = new System.Drawing.Point(113, 12);
             this.userBtn2.Name = "userBtn2";
             this.userBtn2.ShadowDecoration.Parent = this.userBtn2;
-            this.userBtn2.Size = new System.Drawing.Size(138, 115);
+            this.userBtn2.Size = new System.Drawing.Size(92, 75);
             this.userBtn2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.userBtn2.TabIndex = 2;
             this.userBtn2.TabStop = false;
@@ -117,11 +113,10 @@ namespace OrderAutomationSystem
             this.userBtn.BackColor = System.Drawing.Color.Transparent;
             this.userBtn.Image = ((System.Drawing.Image)(resources.GetObject("userBtn.Image")));
             this.userBtn.ImageRotate = 0F;
-            this.userBtn.Location = new System.Drawing.Point(170, 18);
-            this.userBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.userBtn.Location = new System.Drawing.Point(113, 12);
             this.userBtn.Name = "userBtn";
             this.userBtn.ShadowDecoration.Parent = this.userBtn;
-            this.userBtn.Size = new System.Drawing.Size(138, 115);
+            this.userBtn.Size = new System.Drawing.Size(92, 75);
             this.userBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.userBtn.TabIndex = 2;
             this.userBtn.TabStop = false;
@@ -132,11 +127,10 @@ namespace OrderAutomationSystem
             this.marketBtn2.BackColor = System.Drawing.Color.Transparent;
             this.marketBtn2.Image = ((System.Drawing.Image)(resources.GetObject("marketBtn2.Image")));
             this.marketBtn2.ImageRotate = 0F;
-            this.marketBtn2.Location = new System.Drawing.Point(806, 5);
-            this.marketBtn2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.marketBtn2.Location = new System.Drawing.Point(537, 3);
             this.marketBtn2.Name = "marketBtn2";
             this.marketBtn2.ShadowDecoration.Parent = this.marketBtn2;
-            this.marketBtn2.Size = new System.Drawing.Size(178, 142);
+            this.marketBtn2.Size = new System.Drawing.Size(119, 92);
             this.marketBtn2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.marketBtn2.TabIndex = 2;
             this.marketBtn2.TabStop = false;
@@ -147,11 +141,10 @@ namespace OrderAutomationSystem
             this.marketBtn.BackColor = System.Drawing.Color.Transparent;
             this.marketBtn.Image = ((System.Drawing.Image)(resources.GetObject("marketBtn.Image")));
             this.marketBtn.ImageRotate = 0F;
-            this.marketBtn.Location = new System.Drawing.Point(806, 5);
-            this.marketBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.marketBtn.Location = new System.Drawing.Point(537, 3);
             this.marketBtn.Name = "marketBtn";
             this.marketBtn.ShadowDecoration.Parent = this.marketBtn;
-            this.marketBtn.Size = new System.Drawing.Size(178, 142);
+            this.marketBtn.Size = new System.Drawing.Size(119, 92);
             this.marketBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.marketBtn.TabIndex = 2;
             this.marketBtn.TabStop = false;
@@ -159,12 +152,13 @@ namespace OrderAutomationSystem
             // 
             // panelMove
             // 
+            this.panelMove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(45)))));
             this.panelMove.Controls.Add(this.btnExit);
             this.panelMove.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMove.Location = new System.Drawing.Point(0, 0);
-            this.panelMove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelMove.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panelMove.Name = "panelMove";
-            this.panelMove.Size = new System.Drawing.Size(1808, 96);
+            this.panelMove.Size = new System.Drawing.Size(1205, 62);
             this.panelMove.TabIndex = 4;
             this.panelMove.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelMove_MouseDown);
             this.panelMove.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelMove_MouseMove);
@@ -187,26 +181,25 @@ namespace OrderAutomationSystem
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.HoverState.Parent = this.btnExit;
-            this.btnExit.Location = new System.Drawing.Point(1768, 0);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExit.Location = new System.Drawing.Point(1168, 0);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Parent = this.btnExit;
-            this.btnExit.Size = new System.Drawing.Size(40, 96);
+            this.btnExit.Size = new System.Drawing.Size(37, 62);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "X";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // customerMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
-            this.ClientSize = new System.Drawing.Size(1808, 1102);
+            this.ClientSize = new System.Drawing.Size(1205, 715);
             this.Controls.Add(this.panelMove);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "customerMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "customerMenu";

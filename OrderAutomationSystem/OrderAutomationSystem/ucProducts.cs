@@ -170,7 +170,7 @@ namespace OrderAutomationSystem
 
         private void txtTag_Click(object sender, EventArgs e)
         {
-            txtTag.Text = string.Empty;
+            txtTag.Text = string.Empty; 
         }
     }
 }
