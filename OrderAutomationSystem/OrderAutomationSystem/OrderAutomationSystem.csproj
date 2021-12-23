@@ -107,15 +107,56 @@
     <Compile Include="adminMenu.Designer.cs">
       <DependentUpon>adminMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cash.cs" />
+    <Compile Include="Check.cs" />
+    <Compile Include="Connect.cs" />
+    <Compile Include="Credit.cs" />
+    <Compile Include="Crud.cs" />
+    <Compile Include="customerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerMenu.Designer.cs">
+      <DependentUpon>customerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs" />
     <Compile Include="ICustomers.cs" />
     <Compile Include="IItems.cs" />
     <Compile Include="IOrder.cs" />
     <Compile Include="IOrderDetail.cs" />
+    <Compile Include="Item.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderDetail.cs" />
+    <Compile Include="Payment.cs" />
+    <Compile Include="PaymentCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentCash.Designer.cs">
+      <DependentUpon>PaymentCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentCheck.Designer.cs">
+      <DependentUpon>PaymentCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentCredit.Designer.cs">
+      <DependentUpon>PaymentCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentEvents.cs" />
+    <Compile Include="PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -124,6 +165,18 @@
     </Compile>
     <Compile Include="SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartUpForm.Designer.cs">
+      <DependentUpon>StartUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBasket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBasket.Designer.cs">
+      <DependentUpon>ucBasket.cs</DependentUpon>
     </Compile>
     <Compile Include="ucCustomers.cs">
       <SubType>UserControl</SubType>
@@ -137,11 +190,29 @@
     <Compile Include="ucEmployees.Designer.cs">
       <DependentUpon>ucEmployees.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHome.Designer.cs">
+      <DependentUpon>ucHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucItem.Designer.cs">
+      <DependentUpon>ucItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucProducts.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ucProducts.Designer.cs">
       <DependentUpon>ucProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucProfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProfil.Designer.cs">
+      <DependentUpon>ucProfil.cs</DependentUpon>
     </Compile>
     <Compile Include="ucStatistics.cs">
       <SubType>UserControl</SubType>
@@ -152,8 +223,23 @@
     <EmbeddedResource Include="adminMenu.resx">
       <DependentUpon>adminMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="customerMenu.resx">
+      <DependentUpon>customerMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentCash.resx">
+      <DependentUpon>PaymentCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentCheck.resx">
+      <DependentUpon>PaymentCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentCredit.resx">
+      <DependentUpon>PaymentCredit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -168,14 +254,29 @@
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StartUpForm.resx">
+      <DependentUpon>StartUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBasket.resx">
+      <DependentUpon>ucBasket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucCustomers.resx">
       <DependentUpon>ucCustomers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucEmployees.resx">
       <DependentUpon>ucEmployees.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucHome.resx">
+      <DependentUpon>ucHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucItem.resx">
+      <DependentUpon>ucItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucProducts.resx">
       <DependentUpon>ucProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProfil.resx">
+      <DependentUpon>ucProfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucStatistics.resx">
       <DependentUpon>ucStatistics.cs</DependentUpon>

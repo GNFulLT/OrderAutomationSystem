@@ -54,9 +54,7 @@ namespace OrderAutomationSystem
             this.pctMaximize = new System.Windows.Forms.PictureBox();
             this.pctMenuSideBar = new System.Windows.Forms.PictureBox();
             this.AnimationSidebar = new Guna.UI2.WinForms.Guna2Transition();
-            this.ucEmployees1 = new OrderAutomationSystem.ucEmployees();
             this.ucCustomers1 = new OrderAutomationSystem.ucCustomers();
-            this.ucProducts1 = new OrderAutomationSystem.ucProducts();
             this.ucStatistics1 = new OrderAutomationSystem.ucStatistics();
             this.curveSidebar = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.AnimatiomSidebarBack = new Guna.UI2.WinForms.Guna2Transition();
@@ -490,35 +488,16 @@ namespace OrderAutomationSystem
             animation2.TransparencyCoeff = 0F;
             this.AnimationSidebar.DefaultAnimation = animation2;
             // 
-            // ucEmployees1
-            // 
-            this.ucEmployees1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(48)))));
-            this.AnimationSidebar.SetDecoration(this.ucEmployees1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.AnimatiomSidebarBack.SetDecoration(this.ucEmployees1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.ucEmployees1.Location = new System.Drawing.Point(300, 80);
-            this.ucEmployees1.Name = "ucEmployees1";
-            this.ucEmployees1.Size = new System.Drawing.Size(1100, 820);
-            this.ucEmployees1.TabIndex = 12;
-            // 
             // ucCustomers1
             // 
             this.ucCustomers1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(48)))));
             this.AnimationSidebar.SetDecoration(this.ucCustomers1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.AnimatiomSidebarBack.SetDecoration(this.ucCustomers1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.ucCustomers1.Location = new System.Drawing.Point(300, 80);
+            this.ucCustomers1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucCustomers1.Name = "ucCustomers1";
             this.ucCustomers1.Size = new System.Drawing.Size(1100, 820);
             this.ucCustomers1.TabIndex = 11;
-            // 
-            // ucProducts1
-            // 
-            this.ucProducts1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(48)))));
-            this.AnimationSidebar.SetDecoration(this.ucProducts1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.AnimatiomSidebarBack.SetDecoration(this.ucProducts1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.ucProducts1.Location = new System.Drawing.Point(300, 80);
-            this.ucProducts1.Name = "ucProducts1";
-            this.ucProducts1.Size = new System.Drawing.Size(1100, 820);
-            this.ucProducts1.TabIndex = 10;
             // 
             // ucStatistics1
             // 
@@ -526,6 +505,7 @@ namespace OrderAutomationSystem
             this.AnimationSidebar.SetDecoration(this.ucStatistics1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.AnimatiomSidebarBack.SetDecoration(this.ucStatistics1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.ucStatistics1.Location = new System.Drawing.Point(300, 80);
+            this.ucStatistics1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucStatistics1.Name = "ucStatistics1";
             this.ucStatistics1.Size = new System.Drawing.Size(1100, 820);
             this.ucStatistics1.TabIndex = 9;
@@ -562,9 +542,7 @@ namespace OrderAutomationSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(1400, 900);
-            this.Controls.Add(this.ucEmployees1);
             this.Controls.Add(this.ucCustomers1);
-            this.Controls.Add(this.ucProducts1);
             this.Controls.Add(this.ucStatistics1);
             this.Controls.Add(this.sidebarWrapper);
             this.Controls.Add(this.menuTop);

@@ -7,19 +7,64 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
+
 
 namespace OrderAutomationSystem
 {
     public partial class ucEmployees : UserControl
     {
+        int? id = null;
+        public bool save = false;
+        SQLiteCommand cmd;
+        DataSet ds = new DataSet();
+
+        BindingSource bd = new BindingSource();
         public ucEmployees()
         {
             InitializeComponent();
+            using (SQLiteConnection sql = new SQLiteConnection("Data source=.\\dataBase.db"))
+            {
+                sql.Open();
+                cmd = sql.CreateCommand();
+                cmd.CommandText = @"SELECT * FROM Employee";
+
+                SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(cmd);
+                dataAdapter.Fill(ds);
+                sql.Close();
+            }
+            bd.DataSource = ds.Tables[0];
+            dgvEmployees.DataSource = bd;
         }
+
+
 
         private void txtEmployeeSearch_Click(object sender, EventArgs e)
         {
             txtEmployeeSearch.Text = string.Empty;
+        }
+        public ucEmployees(int? Id = null) : this()
+        {
+
+            List();
+            if (Id != null)
+                this.id = Id;
+        }
+
+        void List()
+        {
+            string sql = "Select * from Employee";
+            dgvEmployees.DataSource = Crud.List(sql);
+        }
+
+        private void dgvEmployees_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvEmployees_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

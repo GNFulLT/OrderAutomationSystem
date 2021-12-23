@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace OrderAutomationSystem
 {
-    interface IItems
+    public interface IItems
     {
-        int ItemID { get; set; }
+        int ItemID { get; }
         string Name { get; set; }
         int Quantity { get; set; }
         int Weight { get; set; }

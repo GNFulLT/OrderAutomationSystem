@@ -51,14 +51,15 @@ namespace OrderAutomationSystem
             this.txtCustomerSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCustomerSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCustomerSearch.HoverState.Parent = this.txtCustomerSearch;
-            this.txtCustomerSearch.Location = new System.Drawing.Point(36, 29);
+            this.txtCustomerSearch.Location = new System.Drawing.Point(27, 24);
+            this.txtCustomerSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtCustomerSearch.Name = "txtCustomerSearch";
             this.txtCustomerSearch.PasswordChar = '\0';
             this.txtCustomerSearch.PlaceholderText = "";
             this.txtCustomerSearch.SelectedText = "";
             this.txtCustomerSearch.SelectionStart = 17;
             this.txtCustomerSearch.ShadowDecoration.Parent = this.txtCustomerSearch;
-            this.txtCustomerSearch.Size = new System.Drawing.Size(277, 36);
+            this.txtCustomerSearch.Size = new System.Drawing.Size(208, 29);
             this.txtCustomerSearch.TabIndex = 4;
             this.txtCustomerSearch.Click += new System.EventHandler(this.txtCustomerSearch_Click);
             // 
@@ -67,7 +68,7 @@ namespace OrderAutomationSystem
             this.btnSearch.Animated = true;
             this.btnSearch.AutoRoundedCorners = true;
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.BorderRadius = 21;
+            this.btnSearch.BorderRadius = 17;
             this.btnSearch.CheckedState.Parent = this.btnSearch;
             this.btnSearch.CustomImages.Parent = this.btnSearch;
             this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -81,34 +82,37 @@ namespace OrderAutomationSystem
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnSearch.HoverState.Parent = this.btnSearch;
-            this.btnSearch.Location = new System.Drawing.Point(332, 21);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearch.Location = new System.Drawing.Point(249, 17);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
-            this.btnSearch.Size = new System.Drawing.Size(125, 45);
+            this.btnSearch.Size = new System.Drawing.Size(94, 37);
             this.btnSearch.TabIndex = 256;
             this.btnSearch.Text = "Search";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // dgvCustomers
             // 
             this.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCustomers.Location = new System.Drawing.Point(36, 141);
+            this.dgvCustomers.Location = new System.Drawing.Point(27, 115);
+            this.dgvCustomers.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCustomers.Name = "dgvCustomers";
             this.dgvCustomers.RowHeadersWidth = 51;
             this.dgvCustomers.RowTemplate.Height = 24;
-            this.dgvCustomers.Size = new System.Drawing.Size(895, 554);
+            this.dgvCustomers.Size = new System.Drawing.Size(671, 450);
             this.dgvCustomers.TabIndex = 257;
             // 
             // ucCustomers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(48)))));
             this.Controls.Add(this.dgvCustomers);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtCustomerSearch);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ucCustomers";
-            this.Size = new System.Drawing.Size(1100, 820);
+            this.Size = new System.Drawing.Size(825, 666);
+            this.Load += new System.EventHandler(this.ucCustomers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
             this.ResumeLayout(false);
 

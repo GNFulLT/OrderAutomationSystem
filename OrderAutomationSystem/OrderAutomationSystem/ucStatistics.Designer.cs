@@ -48,13 +48,14 @@ namespace OrderAutomationSystem
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(34, 288);
+            this.chart1.Location = new System.Drawing.Point(26, 234);
+            this.chart1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(605, 463);
+            this.chart1.Size = new System.Drawing.Size(454, 376);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
             // 
@@ -65,9 +66,10 @@ namespace OrderAutomationSystem
             this.lblMoney.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblMoney.ForeColor = System.Drawing.Color.White;
-            this.lblMoney.Location = new System.Drawing.Point(78, 127);
+            this.lblMoney.Location = new System.Drawing.Point(58, 103);
+            this.lblMoney.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMoney.Name = "lblMoney";
-            this.lblMoney.Size = new System.Drawing.Size(71, 32);
+            this.lblMoney.Size = new System.Drawing.Size(54, 26);
             this.lblMoney.TabIndex = 4;
             this.lblMoney.Text = "0,00";
             // 
@@ -78,9 +80,10 @@ namespace OrderAutomationSystem
             this.lblTL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTL.ForeColor = System.Drawing.Color.White;
-            this.lblTL.Location = new System.Drawing.Point(41, 127);
+            this.lblTL.Location = new System.Drawing.Point(31, 103);
+            this.lblTL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTL.Name = "lblTL";
-            this.lblTL.Size = new System.Drawing.Size(31, 32);
+            this.lblTL.Size = new System.Drawing.Size(24, 26);
             this.lblTL.TabIndex = 5;
             this.lblTL.Text = "₺";
             // 
@@ -91,25 +94,27 @@ namespace OrderAutomationSystem
             this.lblEarning.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblEarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblEarning.ForeColor = System.Drawing.Color.White;
-            this.lblEarning.Location = new System.Drawing.Point(28, 54);
+            this.lblEarning.Location = new System.Drawing.Point(21, 44);
+            this.lblEarning.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEarning.Name = "lblEarning";
-            this.lblEarning.Size = new System.Drawing.Size(121, 32);
+            this.lblEarning.Size = new System.Drawing.Size(103, 29);
             this.lblEarning.TabIndex = 6;
             this.lblEarning.Text = "Earning";
             // 
             // pctMoney
             // 
             this.pctMoney.Image = ((System.Drawing.Image)(resources.GetObject("pctMoney.Image")));
-            this.pctMoney.Location = new System.Drawing.Point(207, 54);
+            this.pctMoney.Location = new System.Drawing.Point(155, 44);
+            this.pctMoney.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pctMoney.Name = "pctMoney";
-            this.pctMoney.Size = new System.Drawing.Size(120, 130);
+            this.pctMoney.Size = new System.Drawing.Size(90, 106);
             this.pctMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctMoney.TabIndex = 3;
             this.pctMoney.TabStop = false;
             // 
             // ucStatistics
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(48)))));
             this.Controls.Add(this.lblMoney);
@@ -117,8 +122,9 @@ namespace OrderAutomationSystem
             this.Controls.Add(this.lblEarning);
             this.Controls.Add(this.pctMoney);
             this.Controls.Add(this.chart1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ucStatistics";
-            this.Size = new System.Drawing.Size(1100, 820);
+            this.Size = new System.Drawing.Size(825, 666);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctMoney)).EndInit();
             this.ResumeLayout(false);
