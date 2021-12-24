@@ -34,11 +34,16 @@ namespace OrderAutomationSystem
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-            Cash cs = new Cash(Convert.ToInt32(txtAmount.Text),txtName.Text,txtSurname.Text);
+            Cash cs = new Cash(Convert.ToInt32(txtAmount.Text), txtName.Text, txtSurname.Text);
             order.Details.Address = txtAdress.Text;
             PaymentEvents pe = new PaymentEvents();
             pe.Completed = true;
             pe.Order = order;
+
+            orderPayment op = new orderPayment();
+
+            op.Show();
+
             this.completed(cs, pe);
 
         }

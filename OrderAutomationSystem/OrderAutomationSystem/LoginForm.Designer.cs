@@ -43,6 +43,7 @@ namespace OrderAutomationSystem
             this.bilgilendirmeLabel = new System.Windows.Forms.Label();
             this.lightBtn = new Guna.UI2.WinForms.Guna2PictureBox();
             this.loffButton = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.chcRememberMe = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lightBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loffButton)).BeginInit();
@@ -53,11 +54,12 @@ namespace OrderAutomationSystem
             this.pictureBox.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
             this.pictureBox.ImageRotate = 0F;
-            this.pictureBox.Location = new System.Drawing.Point(142, 63);
+            this.pictureBox.Location = new System.Drawing.Point(189, 78);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.pictureBox.ShadowDecoration.Parent = this.pictureBox;
-            this.pictureBox.Size = new System.Drawing.Size(241, 211);
+            this.pictureBox.Size = new System.Drawing.Size(321, 260);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
@@ -81,14 +83,15 @@ namespace OrderAutomationSystem
             this.usernameBox.ForeColor = System.Drawing.Color.DodgerBlue;
             this.usernameBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameBox.HoverState.Parent = this.usernameBox;
-            this.usernameBox.Location = new System.Drawing.Point(142, 411);
+            this.usernameBox.Location = new System.Drawing.Point(189, 506);
+            this.usernameBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.usernameBox.Name = "usernameBox";
             this.usernameBox.PasswordChar = '\0';
             this.usernameBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(131)))), ((int)(((byte)(134)))));
             this.usernameBox.PlaceholderText = "Email";
             this.usernameBox.SelectedText = "";
             this.usernameBox.ShadowDecoration.Parent = this.usernameBox;
-            this.usernameBox.Size = new System.Drawing.Size(241, 45);
+            this.usernameBox.Size = new System.Drawing.Size(321, 55);
             this.usernameBox.TabIndex = 251;
             this.usernameBox.Enter += new System.EventHandler(this.usernameBox_Enter);
             this.usernameBox.Leave += new System.EventHandler(this.usernameBox_Leave);
@@ -111,14 +114,15 @@ namespace OrderAutomationSystem
             this.passwordBox.ForeColor = System.Drawing.Color.DodgerBlue;
             this.passwordBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordBox.HoverState.Parent = this.passwordBox;
-            this.passwordBox.Location = new System.Drawing.Point(142, 481);
+            this.passwordBox.Location = new System.Drawing.Point(189, 592);
+            this.passwordBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.PasswordChar = '*';
             this.passwordBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(131)))), ((int)(((byte)(134)))));
             this.passwordBox.PlaceholderText = "Password";
             this.passwordBox.SelectedText = "";
             this.passwordBox.ShadowDecoration.Parent = this.passwordBox;
-            this.passwordBox.Size = new System.Drawing.Size(241, 45);
+            this.passwordBox.Size = new System.Drawing.Size(321, 55);
             this.passwordBox.TabIndex = 252;
             this.passwordBox.Enter += new System.EventHandler(this.passwordBox_Enter);
             this.passwordBox.Leave += new System.EventHandler(this.passwordBox_Leave);
@@ -128,7 +132,7 @@ namespace OrderAutomationSystem
             this.loginButton.Animated = true;
             this.loginButton.AutoRoundedCorners = true;
             this.loginButton.BackColor = System.Drawing.Color.Transparent;
-            this.loginButton.BorderRadius = 21;
+            this.loginButton.BorderRadius = 26;
             this.loginButton.CheckedState.Parent = this.loginButton;
             this.loginButton.CustomImages.Parent = this.loginButton;
             this.loginButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -141,10 +145,11 @@ namespace OrderAutomationSystem
             this.loginButton.ForeColor = System.Drawing.Color.White;
             this.loginButton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.loginButton.HoverState.Parent = this.loginButton;
-            this.loginButton.Location = new System.Drawing.Point(273, 551);
+            this.loginButton.Location = new System.Drawing.Point(364, 678);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginButton.Name = "loginButton";
             this.loginButton.ShadowDecoration.Parent = this.loginButton;
-            this.loginButton.Size = new System.Drawing.Size(110, 45);
+            this.loginButton.Size = new System.Drawing.Size(147, 55);
             this.loginButton.TabIndex = 255;
             this.loginButton.Text = "Login";
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
@@ -154,7 +159,7 @@ namespace OrderAutomationSystem
             this.registerButton.Animated = true;
             this.registerButton.AutoRoundedCorners = true;
             this.registerButton.BackColor = System.Drawing.Color.Transparent;
-            this.registerButton.BorderRadius = 21;
+            this.registerButton.BorderRadius = 26;
             this.registerButton.CheckedState.Parent = this.registerButton;
             this.registerButton.CustomImages.Parent = this.registerButton;
             this.registerButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -167,10 +172,11 @@ namespace OrderAutomationSystem
             this.registerButton.ForeColor = System.Drawing.Color.White;
             this.registerButton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.registerButton.HoverState.Parent = this.registerButton;
-            this.registerButton.Location = new System.Drawing.Point(142, 551);
+            this.registerButton.Location = new System.Drawing.Point(189, 678);
+            this.registerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.registerButton.Name = "registerButton";
             this.registerButton.ShadowDecoration.Parent = this.registerButton;
-            this.registerButton.Size = new System.Drawing.Size(110, 45);
+            this.registerButton.Size = new System.Drawing.Size(147, 55);
             this.registerButton.TabIndex = 254;
             this.registerButton.Text = "Register";
             this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
@@ -184,9 +190,10 @@ namespace OrderAutomationSystem
             this.passButton.IconColor = System.Drawing.Color.Black;
             this.passButton.IconFont = FontAwesome.Sharp.IconFont.Regular;
             this.passButton.IconSize = 25;
-            this.passButton.Location = new System.Drawing.Point(338, 491);
+            this.passButton.Location = new System.Drawing.Point(451, 604);
+            this.passButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passButton.Name = "passButton";
-            this.passButton.Size = new System.Drawing.Size(34, 27);
+            this.passButton.Size = new System.Drawing.Size(45, 33);
             this.passButton.TabIndex = 253;
             this.passButton.UseVisualStyleBackColor = false;
             this.passButton.Click += new System.EventHandler(this.passButton_Click);
@@ -203,9 +210,10 @@ namespace OrderAutomationSystem
             this.closeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.closeButton.FlatAppearance.BorderSize = 0;
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeButton.Location = new System.Drawing.Point(489, 1);
+            this.closeButton.Location = new System.Drawing.Point(652, 1);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(49, 37);
+            this.closeButton.Size = new System.Drawing.Size(65, 46);
             this.closeButton.TabIndex = 256;
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
@@ -216,9 +224,10 @@ namespace OrderAutomationSystem
             this.minimizeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.minimizeButton.FlatAppearance.BorderSize = 0;
             this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minimizeButton.Location = new System.Drawing.Point(434, 1);
+            this.minimizeButton.Location = new System.Drawing.Point(579, 1);
+            this.minimizeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.minimizeButton.Name = "minimizeButton";
-            this.minimizeButton.Size = new System.Drawing.Size(49, 37);
+            this.minimizeButton.Size = new System.Drawing.Size(65, 46);
             this.minimizeButton.TabIndex = 256;
             this.minimizeButton.UseVisualStyleBackColor = true;
             this.minimizeButton.Click += new System.EventHandler(this.minimizeButton_Click);
@@ -227,9 +236,10 @@ namespace OrderAutomationSystem
             // 
             this.bilgilendirmeLabel.AutoSize = true;
             this.bilgilendirmeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.bilgilendirmeLabel.Location = new System.Drawing.Point(254, 632);
+            this.bilgilendirmeLabel.Location = new System.Drawing.Point(344, 804);
+            this.bilgilendirmeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bilgilendirmeLabel.Name = "bilgilendirmeLabel";
-            this.bilgilendirmeLabel.Size = new System.Drawing.Size(18, 20);
+            this.bilgilendirmeLabel.Size = new System.Drawing.Size(23, 25);
             this.bilgilendirmeLabel.TabIndex = 257;
             this.bilgilendirmeLabel.Text = "a";
             // 
@@ -238,10 +248,11 @@ namespace OrderAutomationSystem
             this.lightBtn.FillColor = System.Drawing.Color.Transparent;
             this.lightBtn.Image = ((System.Drawing.Image)(resources.GetObject("lightBtn.Image")));
             this.lightBtn.ImageRotate = 0F;
-            this.lightBtn.Location = new System.Drawing.Point(12, 653);
+            this.lightBtn.Location = new System.Drawing.Point(16, 804);
+            this.lightBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lightBtn.Name = "lightBtn";
             this.lightBtn.ShadowDecoration.Parent = this.lightBtn;
-            this.lightBtn.Size = new System.Drawing.Size(45, 46);
+            this.lightBtn.Size = new System.Drawing.Size(60, 57);
             this.lightBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.lightBtn.TabIndex = 258;
             this.lightBtn.TabStop = false;
@@ -252,22 +263,36 @@ namespace OrderAutomationSystem
             this.loffButton.FillColor = System.Drawing.Color.Transparent;
             this.loffButton.Image = ((System.Drawing.Image)(resources.GetObject("loffButton.Image")));
             this.loffButton.ImageRotate = 0F;
-            this.loffButton.Location = new System.Drawing.Point(12, 652);
+            this.loffButton.Location = new System.Drawing.Point(16, 802);
+            this.loffButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loffButton.Name = "loffButton";
             this.loffButton.ShadowDecoration.Parent = this.loffButton;
-            this.loffButton.Size = new System.Drawing.Size(45, 46);
+            this.loffButton.Size = new System.Drawing.Size(60, 57);
             this.loffButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.loffButton.TabIndex = 258;
             this.loffButton.TabStop = false;
             this.loffButton.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
+            // chcRememberMe
+            // 
+            this.chcRememberMe.AutoSize = true;
+            this.chcRememberMe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.chcRememberMe.Location = new System.Drawing.Point(349, 760);
+            this.chcRememberMe.Name = "chcRememberMe";
+            this.chcRememberMe.Size = new System.Drawing.Size(162, 29);
+            this.chcRememberMe.TabIndex = 259;
+            this.chcRememberMe.Text = "Remember Me";
+            this.chcRememberMe.UseVisualStyleBackColor = true;
+            this.chcRememberMe.CheckedChanged += new System.EventHandler(this.chcRememberMe_CheckedChanged);
+            // 
             // loginPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(537, 711);
+            this.ClientSize = new System.Drawing.Size(716, 875);
+            this.Controls.Add(this.chcRememberMe);
             this.Controls.Add(this.loffButton);
             this.Controls.Add(this.lightBtn);
             this.Controls.Add(this.bilgilendirmeLabel);
@@ -281,6 +306,7 @@ namespace OrderAutomationSystem
             this.Controls.Add(this.pictureBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "loginPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shoppy";
@@ -310,6 +336,7 @@ namespace OrderAutomationSystem
         private System.Windows.Forms.Label bilgilendirmeLabel;
         private Guna.UI2.WinForms.Guna2PictureBox lightBtn;
         private Guna.UI2.WinForms.Guna2PictureBox loffButton;
+        private System.Windows.Forms.CheckBox chcRememberMe;
     }
 }
 

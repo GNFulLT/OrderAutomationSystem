@@ -18,7 +18,7 @@ namespace OrderAutomationSystem
         {
             InitializeComponent();
         }
-      
+
 
 
         private void lblExit_Click(object sender, EventArgs e)
@@ -29,11 +29,14 @@ namespace OrderAutomationSystem
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-            Check chck = new Check(Convert.ToInt32(txtAmount.Text),Convert.ToInt32(txtBankID.Text),txtName.Text,txtSurname.Text);
-            order.Details.Address =  txtAdress.Text;
+            Check chck = new Check(Convert.ToInt32(txtAmount.Text), Convert.ToInt32(txtBankID.Text), txtName.Text, txtSurname.Text);
+            order.Details.Address = txtAdress.Text;
             PaymentEvents pe = new PaymentEvents();
             pe.Completed = true;
             pe.Order = order;
+
+            orderPayment op = new orderPayment();
+            op.Show();
             this.completed(chck, pe);
 
         }

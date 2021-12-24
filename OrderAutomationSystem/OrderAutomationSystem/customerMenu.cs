@@ -39,12 +39,7 @@ namespace OrderAutomationSystem
             t2.Tick += new EventHandler(Tick2);
         }
 
-        public customerMenu(Customers customer, bool isLight) : this(customer)
-        {
-
-            this.isLight = isLight;
-            lightBtn_Click(null,null);
-        }
+      
 
         public customerMenu(Customers customer) : this()
         {
@@ -68,6 +63,14 @@ namespace OrderAutomationSystem
             userControls[1] = home;
             userControls[2] = basket;     //        userControls[2] ye eklenicek
 
+        }
+        public customerMenu(Customers customer, bool isLight) : this(customer)
+        {
+
+            this.isLight = isLight;
+            if (!isLight) { loffBtn_Click(null, null); loffBtn.Visible = false;lightBtn.Visible = true; }
+            else {  lightBtn_Click(null, null); loffBtn.Visible = true; lightBtn.Visible = false; }
+           
         }
 
 
@@ -212,7 +215,8 @@ namespace OrderAutomationSystem
 
         private void lightBtn_Click(object sender, EventArgs e)
         {
-            if (!isLight)//aydinlik mod
+            isLight = true;
+            if (isLight)//aydinlik mod
             {
                 isLight = true;
                 loffBtn.Visible = true;
@@ -220,7 +224,7 @@ namespace OrderAutomationSystem
 
                 panelMove.BackColor = Color.FromArgb(224,224,224);
                 this.BackColor = Color.White;
-                
+
                 foreach (var control in userControls)
                 {
                     UserControl ucform = control as UserControl;
@@ -262,13 +266,14 @@ namespace OrderAutomationSystem
 
         private void loffBtn_Click(object sender, EventArgs e)
         {
-            if(isLight)
+            isLight = false;
+            if(!isLight)
             {
                 isLight = false;
                 loffBtn.Visible = false;
                 lightBtn.Visible = true;
 
-                panelMove.BackColor = Color.FromArgb(30, 41, 55);
+                panelMove.BackColor = Color.FromArgb(25, 37, 48);
                 this.BackColor = Color.FromArgb(30, 41, 55);
 
                 foreach (var control in userControls)

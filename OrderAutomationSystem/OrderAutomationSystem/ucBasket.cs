@@ -44,6 +44,7 @@ namespace OrderAutomationSystem
         internal static void itemRemove(Item item)
         {
             ListBox list = (ListBox)customerMenu.userControls[2].Controls["panelBasket"].Controls["listBasket"];
+
             list.Items.Remove(item);
 
         }

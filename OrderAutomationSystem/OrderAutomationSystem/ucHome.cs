@@ -13,13 +13,14 @@ namespace OrderAutomationSystem
 {
     public partial class ucHome : UserControl
     {
-
+        Customers customer;
         public ucHome()
         {
             InitializeComponent();
         }
-        public ucHome(ICustomers customer) : this()
+        public ucHome(Customers customer) : this()
         {
+            this.customer = customer;
             txtName.Text = customer.Name;
             txtSurname.Text = customer.Surname;
             txtAddress.Text = customer.Address;
@@ -35,6 +36,13 @@ namespace OrderAutomationSystem
         private void ucHome_MouseMove(object sender, MouseEventArgs e)
         {
           
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string cmd = $"UPDATE Customers SET Name = \"{txtName.Text}\", Surname = \"{txtSurname.Text}\", Address = \"{txtAddress.Text}\" WHERE CustomerID = {this.customer.CustomerID}";
+            Crud.ARU(cmd);
 
         }
     }

@@ -30,21 +30,27 @@ namespace OrderAutomationSystem
             PaymentForm pf = Application.OpenForms["PaymentForm"] as PaymentForm;
             pf.lblExit_Click(null, null);
         }
-       
+
 
         private void btnPay_Click(object sender, EventArgs e)
         {
             ExpDate exp = new ExpDate();
             exp.month = cmbMonth.SelectedItem.ToString();
             exp.year = cmbYear.SelectedItem.ToString();
-            Credit crdt = new Credit(Convert.ToInt32(txtAmount.Text),txtNumber.Text,exp);
+            Credit crdt = new Credit(Convert.ToInt32(txtAmount.Text), txtNumber.Text, exp);
             PaymentEvents pe = new PaymentEvents();
             pe.Completed = true;
             order.Details.Address = txtAdress.Text;
             crdt.Name = txtName.Text;
             crdt.Surname = txtSurname.Text;
             pe.Order = order;
-            this.completed(crdt,pe);
+
+            orderPayment op = new orderPayment();
+
+            op.Show();
+
+
+            this.completed(crdt, pe);
 
         }
     }

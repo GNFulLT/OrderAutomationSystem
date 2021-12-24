@@ -43,15 +43,13 @@ namespace OrderAutomationSystem
         public loginPanel()
         {
             InitializeComponent();
+            Init_Data();
             ds = new DataSet();
             cmd = new SQLiteCommand();
             Control.CheckForIllegalCrossThreadCalls = false;
             this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             bilgilendirmeLabel.Visible = false;
             loffButton.Visible = false;
-
-
-
         }
         /*~loginPanel(){
             t1 = null;
@@ -292,9 +290,7 @@ namespace OrderAutomationSystem
                     passwordBox.PasswordChar = '*';
                     passButton.IconChar = FontAwesome.Sharp.IconChar.Eye;
                 }
-
             }
-
         }
 
         //Timer versiyon animasyon
@@ -332,6 +328,9 @@ namespace OrderAutomationSystem
 
         private void loginButton_Click(object sender, EventArgs e)
         {
+
+            Save_Data();
+
             if (!isRegister)
             {
                 /* DatabaseDataSetTableAdapters.CustomersTableAdapter a = new DatabaseDataSetTableAdapters.CustomersTableAdapter();
@@ -391,9 +390,10 @@ namespace OrderAutomationSystem
                 if (isAdmin == "FALSE")
                 {
                     Customers customer = new Customers(ID, email, name, surname, address, balance);
-                    this.Dispose();
                     customerMenu customermenu = new customerMenu(customer, isLight);
                     customermenu.Show();
+                    this.Dispose();
+
                 }
                 else
                 {
@@ -561,6 +561,42 @@ namespace OrderAutomationSystem
             }
 
         }
+
+        private void Init_Data()
+        {
+            if (Properties.Settings.Default.Username != string.Empty)
+            {
+                if (Properties.Settings.Default.Remember == true)
+                {
+                    usernameBox.Text = Properties.Settings.Default.Username;
+                    passwordBox.Text = Properties.Settings.Default.Password;
+                    chcRememberMe.Checked = true;
+                }
+                else
+                {
+                    usernameBox.Text = Properties.Settings.Default.Username;
+
+                }
+            }
+        }
+        private void Save_Data()
+        {
+            if (chcRememberMe.Checked)
+            {
+                Properties.Settings.Default.Username = usernameBox.Text;
+                Properties.Settings.Default.Password = passwordBox.Text;
+                Properties.Settings.Default.Remember = true;
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                Properties.Settings.Default.Username = "";
+                Properties.Settings.Default.Password = "";
+                Properties.Settings.Default.Remember = false;
+                Properties.Settings.Default.Save();
+            }
+        }
+
         //----------------------------------------------------------------------------------------------------
 
         //Register ekranına giriş ve çıkış isRegister bool değişkeni ile algılanıyor
@@ -847,6 +883,11 @@ namespace OrderAutomationSystem
 
                 }
             }
+        }
+
+        private void chcRememberMe_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

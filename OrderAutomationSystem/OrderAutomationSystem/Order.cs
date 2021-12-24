@@ -90,13 +90,7 @@ namespace OrderAutomationSystem
                 return new DateTime(DateTime.MinValue.Ticks);
             }
 
-            /*using (var response =
-          WebRequest.Create("http://www.google.com").GetResponse())
-                //string todaysDates =  response.Headers["date"];
-                return DateTime.ParseExact(response.Headers["date"],
-                    "ddd, dd MMM yyyy HH:mm:ss 'GMT'",
-                    CultureInfo.InvariantCulture.DateTimeFormat,
-                    DateTimeStyles.AssumeUniversal);*/
+            
 
 
 

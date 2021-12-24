@@ -31,7 +31,7 @@ namespace OrderAutomationSystem
         {
             this.panelBasket = new Guna.UI2.WinForms.Guna2Panel();
             this.lblLoading = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBuy = new Guna.UI2.WinForms.Guna2Button();
             this.groupBoxInfo = new System.Windows.Forms.GroupBox();
             this.lblCost2 = new System.Windows.Forms.Label();
             this.lblCost = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@ namespace OrderAutomationSystem
             // 
             this.panelBasket.BackColor = System.Drawing.Color.SteelBlue;
             this.panelBasket.Controls.Add(this.lblLoading);
-            this.panelBasket.Controls.Add(this.guna2Button1);
+            this.panelBasket.Controls.Add(this.btnBuy);
             this.panelBasket.Controls.Add(this.groupBoxInfo);
             this.panelBasket.Controls.Add(this.listBasket);
             this.panelBasket.Location = new System.Drawing.Point(127, 132);
@@ -77,26 +77,29 @@ namespace OrderAutomationSystem
             this.lblLoading.TabIndex = 11;
             this.lblLoading.Text = "Loading....";
             // 
-            // guna2Button1
+            // btnBuy
             // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(915, 463);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 46);
-            this.guna2Button1.TabIndex = 10;
-            this.guna2Button1.Text = "guna2Button1";
-            this.guna2Button1.Click += new System.EventHandler(this.pay_Click);
+            this.btnBuy.Animated = true;
+            this.btnBuy.BorderThickness = 2;
+            this.btnBuy.CheckedState.Parent = this.btnBuy;
+            this.btnBuy.CustomImages.Parent = this.btnBuy;
+            this.btnBuy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBuy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBuy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBuy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBuy.DisabledState.Parent = this.btnBuy;
+            this.btnBuy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.btnBuy.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnBuy.ForeColor = System.Drawing.Color.White;
+            this.btnBuy.HoverState.Parent = this.btnBuy;
+            this.btnBuy.Location = new System.Drawing.Point(915, 463);
+            this.btnBuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBuy.Name = "btnBuy";
+            this.btnBuy.ShadowDecoration.Parent = this.btnBuy;
+            this.btnBuy.Size = new System.Drawing.Size(180, 46);
+            this.btnBuy.TabIndex = 10;
+            this.btnBuy.Text = "Buy";
+            this.btnBuy.Click += new System.EventHandler(this.pay_Click);
             // 
             // groupBoxInfo
             // 
@@ -230,14 +233,14 @@ namespace OrderAutomationSystem
             this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrice.HoverState.Parent = this.txtPrice;
-            this.txtPrice.Location = new System.Drawing.Point(160, 153);
+            this.txtPrice.Location = new System.Drawing.Point(160, 151);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.PasswordChar = '\0';
             this.txtPrice.PlaceholderText = "";
             this.txtPrice.SelectedText = "";
             this.txtPrice.ShadowDecoration.Parent = this.txtPrice;
-            this.txtPrice.Size = new System.Drawing.Size(172, 21);
+            this.txtPrice.Size = new System.Drawing.Size(172, 27);
             this.txtPrice.TabIndex = 6;
             this.txtPrice.EnabledChanged += new System.EventHandler(this.enabledColor);
             this.txtPrice.Paint += new System.Windows.Forms.PaintEventHandler(this.enabledColor_Paint);
@@ -258,14 +261,14 @@ namespace OrderAutomationSystem
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtName.HoverState.Parent = this.txtName;
-            this.txtName.Location = new System.Drawing.Point(156, 50);
+            this.txtName.Location = new System.Drawing.Point(156, 51);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
             this.txtName.PlaceholderText = "";
             this.txtName.SelectedText = "";
             this.txtName.ShadowDecoration.Parent = this.txtName;
-            this.txtName.Size = new System.Drawing.Size(172, 21);
+            this.txtName.Size = new System.Drawing.Size(172, 26);
             this.txtName.TabIndex = 5;
             this.txtName.EnabledChanged += new System.EventHandler(this.enabledColor);
             this.txtName.Paint += new System.Windows.Forms.PaintEventHandler(this.enabledColor_Paint);
@@ -341,7 +344,7 @@ namespace OrderAutomationSystem
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
             this.Controls.Add(this.lblBasket);
             this.Controls.Add(this.panelBasket);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ucBasket";
             this.Size = new System.Drawing.Size(1380, 752);
             this.panelBasket.ResumeLayout(false);
@@ -370,7 +373,7 @@ namespace OrderAutomationSystem
         private Guna.UI2.WinForms.Guna2TextBox txtDescription;
         private Guna.UI2.WinForms.Guna2TextBox txtPrice;
         private Guna.UI2.WinForms.Guna2TextBox txtName;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnBuy;
         private System.Windows.Forms.Label lblLoading;
     }
 }
