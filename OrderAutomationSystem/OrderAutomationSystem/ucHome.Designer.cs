@@ -42,6 +42,8 @@ namespace OrderAutomationSystem
             this.txtBalance = new System.Windows.Forms.Label();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtVerify = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnVerify = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,10 +52,9 @@ namespace OrderAutomationSystem
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblName.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblName.Location = new System.Drawing.Point(146, 138);
-            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Location = new System.Drawing.Point(98, 89);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(95, 29);
+            this.lblName.Size = new System.Drawing.Size(75, 25);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name :";
             // 
@@ -72,14 +73,13 @@ namespace OrderAutomationSystem
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtName.HoverState.Parent = this.txtName;
-            this.txtName.Location = new System.Drawing.Point(354, 138);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtName.Location = new System.Drawing.Point(236, 89);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
             this.txtName.PlaceholderText = "";
             this.txtName.SelectedText = "";
             this.txtName.ShadowDecoration.Parent = this.txtName;
-            this.txtName.Size = new System.Drawing.Size(312, 38);
+            this.txtName.Size = new System.Drawing.Size(208, 24);
             this.txtName.TabIndex = 1;
             // 
             // lblSurname
@@ -87,10 +87,9 @@ namespace OrderAutomationSystem
             this.lblSurname.AutoSize = true;
             this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblSurname.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblSurname.Location = new System.Drawing.Point(146, 261);
-            this.lblSurname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSurname.Location = new System.Drawing.Point(98, 170);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(130, 29);
+            this.lblSurname.Size = new System.Drawing.Size(103, 25);
             this.lblSurname.TabIndex = 0;
             this.lblSurname.Text = "Surname :";
             // 
@@ -109,14 +108,13 @@ namespace OrderAutomationSystem
             this.txtSurname.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSurname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSurname.HoverState.Parent = this.txtSurname;
-            this.txtSurname.Location = new System.Drawing.Point(354, 261);
-            this.txtSurname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSurname.Location = new System.Drawing.Point(236, 170);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.PasswordChar = '\0';
             this.txtSurname.PlaceholderText = "";
             this.txtSurname.SelectedText = "";
             this.txtSurname.ShadowDecoration.Parent = this.txtSurname;
-            this.txtSurname.Size = new System.Drawing.Size(312, 38);
+            this.txtSurname.Size = new System.Drawing.Size(208, 24);
             this.txtSurname.TabIndex = 2;
             // 
             // lblEmail
@@ -124,10 +122,9 @@ namespace OrderAutomationSystem
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblEmail.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblEmail.Location = new System.Drawing.Point(146, 384);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmail.Location = new System.Drawing.Point(98, 249);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(92, 29);
+            this.lblEmail.Size = new System.Drawing.Size(71, 25);
             this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Email :";
             // 
@@ -147,14 +144,13 @@ namespace OrderAutomationSystem
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.HoverState.Parent = this.txtEmail;
-            this.txtEmail.Location = new System.Drawing.Point(354, 384);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtEmail.Location = new System.Drawing.Point(236, 249);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
             this.txtEmail.PlaceholderText = "";
             this.txtEmail.SelectedText = "";
             this.txtEmail.ShadowDecoration.Parent = this.txtEmail;
-            this.txtEmail.Size = new System.Drawing.Size(312, 38);
+            this.txtEmail.Size = new System.Drawing.Size(208, 24);
             this.txtEmail.TabIndex = 2;
             // 
             // lblAddress
@@ -162,10 +158,9 @@ namespace OrderAutomationSystem
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblAddress.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblAddress.Location = new System.Drawing.Point(804, 138);
-            this.lblAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAddress.Location = new System.Drawing.Point(536, 89);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(120, 29);
+            this.lblAddress.Size = new System.Drawing.Size(96, 25);
             this.lblAddress.TabIndex = 0;
             this.lblAddress.Text = "Address :";
             // 
@@ -185,15 +180,14 @@ namespace OrderAutomationSystem
             this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAddress.HoverState.Parent = this.txtAddress;
-            this.txtAddress.Location = new System.Drawing.Point(1012, 138);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAddress.Location = new System.Drawing.Point(675, 89);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.PlaceholderText = "";
             this.txtAddress.SelectedText = "";
             this.txtAddress.ShadowDecoration.Parent = this.txtAddress;
-            this.txtAddress.Size = new System.Drawing.Size(396, 286);
+            this.txtAddress.Size = new System.Drawing.Size(264, 186);
             this.txtAddress.TabIndex = 1;
             // 
             // label5
@@ -201,10 +195,9 @@ namespace OrderAutomationSystem
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F);
             this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label5.Location = new System.Drawing.Point(256, 596);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(171, 388);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 44);
+            this.label5.Size = new System.Drawing.Size(127, 35);
             this.label5.TabIndex = 0;
             this.label5.Text = "Balance";
             // 
@@ -213,10 +206,9 @@ namespace OrderAutomationSystem
             this.txtBalance.AutoSize = true;
             this.txtBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.txtBalance.ForeColor = System.Drawing.Color.White;
-            this.txtBalance.Location = new System.Drawing.Point(476, 710);
-            this.txtBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txtBalance.Location = new System.Drawing.Point(317, 462);
             this.txtBalance.Name = "txtBalance";
-            this.txtBalance.Size = new System.Drawing.Size(53, 58);
+            this.txtBalance.Size = new System.Drawing.Size(42, 46);
             this.txtBalance.TabIndex = 5;
             this.txtBalance.Text = "0";
             // 
@@ -234,34 +226,82 @@ namespace OrderAutomationSystem
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.HoverState.Parent = this.btnSave;
-            this.btnSave.Location = new System.Drawing.Point(1012, 688);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSave.Location = new System.Drawing.Point(675, 364);
             this.btnSave.Name = "btnSave";
             this.btnSave.PressedDepth = 5;
             this.btnSave.ShadowDecoration.Parent = this.btnSave;
-            this.btnSave.Size = new System.Drawing.Size(396, 71);
+            this.btnSave.Size = new System.Drawing.Size(264, 46);
             this.btnSave.TabIndex = 6;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(221, 654);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(147, 425);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(230, 190);
+            this.pictureBox1.Size = new System.Drawing.Size(153, 124);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // txtVerify
+            // 
+            this.txtVerify.BorderRadius = 10;
+            this.txtVerify.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtVerify.DefaultText = "";
+            this.txtVerify.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtVerify.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtVerify.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtVerify.DisabledState.Parent = this.txtVerify;
+            this.txtVerify.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtVerify.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtVerify.FocusedState.Parent = this.txtVerify;
+            this.txtVerify.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtVerify.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtVerify.HoverState.Parent = this.txtVerify;
+            this.txtVerify.Location = new System.Drawing.Point(704, 462);
+            this.txtVerify.Name = "txtVerify";
+            this.txtVerify.PasswordChar = '\0';
+            this.txtVerify.PlaceholderText = "";
+            this.txtVerify.SelectedText = "";
+            this.txtVerify.ShadowDecoration.Parent = this.txtVerify;
+            this.txtVerify.Size = new System.Drawing.Size(208, 24);
+            this.txtVerify.TabIndex = 2;
+            // 
+            // btnVerify
+            // 
+            this.btnVerify.BorderRadius = 20;
+            this.btnVerify.CheckedState.Parent = this.btnVerify;
+            this.btnVerify.CustomImages.Parent = this.btnVerify;
+            this.btnVerify.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVerify.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVerify.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVerify.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVerify.DisabledState.Parent = this.btnVerify;
+            this.btnVerify.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(94)))), ((int)(((byte)(233)))));
+            this.btnVerify.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnVerify.ForeColor = System.Drawing.Color.White;
+            this.btnVerify.HoverState.Parent = this.btnVerify;
+            this.btnVerify.Location = new System.Drawing.Point(675, 503);
+            this.btnVerify.Name = "btnVerify";
+            this.btnVerify.PressedDepth = 5;
+            this.btnVerify.ShadowDecoration.Parent = this.btnVerify;
+            this.btnVerify.Size = new System.Drawing.Size(264, 46);
+            this.btnVerify.TabIndex = 6;
+            this.btnVerify.Text = "Verify";
+            this.btnVerify.Click += new System.EventHandler(this.btnVerify_Click);
+            // 
             // ucHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.Controls.Add(this.btnVerify);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtBalance);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txtVerify);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtSurname);
             this.Controls.Add(this.label5);
@@ -271,9 +311,8 @@ namespace OrderAutomationSystem
             this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblName);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ucHome";
-            this.Size = new System.Drawing.Size(1574, 872);
+            this.Size = new System.Drawing.Size(1049, 567);
             this.Load += new System.EventHandler(this.ucHome_Load);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ucHome_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -296,5 +335,7 @@ namespace OrderAutomationSystem
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label txtBalance;
         private Guna.UI2.WinForms.Guna2Button btnSave;
+        private Guna.UI2.WinForms.Guna2TextBox txtVerify;
+        private Guna.UI2.WinForms.Guna2Button btnVerify;
     }
 }

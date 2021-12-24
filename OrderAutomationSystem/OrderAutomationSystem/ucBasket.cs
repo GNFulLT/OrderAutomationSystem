@@ -35,7 +35,7 @@ namespace OrderAutomationSystem
         {
             ListBox list = (ListBox)customerMenu.userControls[2].Controls["panelBasket"].Controls["listBasket"];
             list.Items.Add(item);
-            Label lb =(Label) customerMenu.userControls[2].Controls["panelBasket"].Controls["groupBoxInfo"].Controls["lblCost2"];
+            Label lb = (Label)customerMenu.userControls[2].Controls["panelBasket"].Controls["groupBoxInfo"].Controls["lblCost2"];
             lb.Text = (Convert.ToInt32(lb.Text) + (item.Amount * item.Price)).ToString();
             TextBox txt = (TextBox)customerMenu.userControls[2].Controls["panelBasket"].Controls["txtPrice"];
 
@@ -44,13 +44,10 @@ namespace OrderAutomationSystem
         internal static void itemRemove(Item item)
         {
             ListBox list = (ListBox)customerMenu.userControls[2].Controls["panelBasket"].Controls["listBasket"];
+
             list.Items.Remove(item);
 
         }
-
-       
-
-
 
         private void panelBasket_Paint(object sender, PaintEventArgs e)
         {
@@ -63,7 +60,7 @@ namespace OrderAutomationSystem
                 return;
             List<Item> items = new List<Item>();
             int calc = 0;
-            foreach(Item item in listBasket.Items)
+            foreach (Item item in listBasket.Items)
             {
                 items.Add(item);
                 calc = calc + item.Amount;
@@ -92,10 +89,10 @@ namespace OrderAutomationSystem
             PaymentForm pf = new PaymentForm(order);
             pf.completed += closed;
             pf.Show();
-            
+
         }
 
-       
+
         private void closed(object sender, PaymentEvents e)
         {
             isStopped = true;
@@ -112,16 +109,16 @@ namespace OrderAutomationSystem
                 if (id == -1)
                     id = 0;
                 string sid = customer.CustomerID.ToString() + id.ToString();
-                foreach(Item item in e.Order.Details.Items)
+                foreach (Item item in e.Order.Details.Items)
                 {
-                cmd = $"INSERT INTO Orders (OrderIDs, ItemID, CustomerID, Quantity, Name, Surname, Address, Date, Status, TotalPrice) VALUES ('{sid}','{item.ItemID}','{customer.CustomerID}','{item.Amount}','{p.Name}','{p.Surname}','{e.Order.Details.Address}','{e.Order.Date}','{e.Order.State}','{e.Order.Details.TotalAmount}')";
+                    cmd = $"INSERT INTO Orders (OrderIDs, ItemID, CustomerID, Quantity, Name, Surname, Address, Date, Status, TotalPrice) VALUES ('{sid}','{item.ItemID}','{customer.CustomerID}','{item.Amount}','{p.Name}','{p.Surname}','{e.Order.Details.Address}','{e.Order.Date}','{e.Order.State}','{e.Order.Details.TotalAmount}')";
                     Crud.ARU(cmd);
                 }
 
                 ucProfil home = customerMenu.userControls[1] as ucProfil;
-                foreach(var item in home.Controls["itemPanel"].Controls)
+                foreach (var item in home.Controls["itemPanel"].Controls)
                 {
-                    if(item is ucItem)
+                    if (item is ucItem)
                     {
                         ucItem ucitem = item as ucItem;
                         ucitem.disable();
@@ -133,6 +130,10 @@ namespace OrderAutomationSystem
                 txtDescription.Clear();
                 txtQuantitity.SelectedIndex = 0;
                 lblCost2.Text = "0";
+                if (customer.IsVerified != "FALSE")
+                {
+                    Email.sendOrder(customer.Email, e.Order);
+                }
             }
         }
         private void listBasket_SelectedIndexChanged(object sender, EventArgs e)
@@ -143,13 +144,9 @@ namespace OrderAutomationSystem
             if (U1 == null)
                 return;
             txtName.Text = U1.Name;
-            txtQuantitity.SelectedIndex =  txtQuantitity.FindStringExact((U1.Amount).ToString());
+            txtQuantitity.SelectedIndex = txtQuantitity.FindStringExact((U1.Amount).ToString());
             txtPrice.Text = (U1.Price * Convert.ToInt32(txtQuantitity.Text)).ToString();
             txtDescription.Text = U1.Description;
-
-
-
-
         }
         private void enabledColor(object sender, EventArgs e)
         {
@@ -169,7 +166,7 @@ namespace OrderAutomationSystem
 
         private void txtQuantitity_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
             Item U1 = listBasket.SelectedItem as Item;
             if (U1 == null)
                 return;
@@ -177,7 +174,7 @@ namespace OrderAutomationSystem
             if (!(U1 is null))
                 txtPrice.Text = (U1.Price * Convert.ToInt32(txtQuantitity.Text)).ToString();
             int total = 0;
-            foreach(Item item in listBasket.Items)
+            foreach (Item item in listBasket.Items)
             {
                 total = total + item.Amount * item.Price;
             }

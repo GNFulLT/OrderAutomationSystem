@@ -45,11 +45,11 @@ namespace OrderAutomationSystem
             this.pictureBox.BorderRadius = 10;
             this.pictureBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
             this.pictureBox.ImageRotate = 0F;
-            this.pictureBox.Location = new System.Drawing.Point(40, 44);
-            this.pictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox.Location = new System.Drawing.Point(36, 35);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.ShadowDecoration.Parent = this.pictureBox;
-            this.pictureBox.Size = new System.Drawing.Size(230, 205);
+            this.pictureBox.Size = new System.Drawing.Size(204, 164);
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
             this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
@@ -62,10 +62,10 @@ namespace OrderAutomationSystem
             this.lblName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblName.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblName.Location = new System.Drawing.Point(9, 5);
+            this.lblName.Location = new System.Drawing.Point(8, 4);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(19, 29);
+            this.lblName.Size = new System.Drawing.Size(16, 25);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "l";
             // 
@@ -75,10 +75,10 @@ namespace OrderAutomationSystem
             this.lblPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblPrice.ForeColor = System.Drawing.Color.Green;
-            this.lblPrice.Location = new System.Drawing.Point(134, 254);
+            this.lblPrice.Location = new System.Drawing.Point(119, 203);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(26, 29);
+            this.lblPrice.Size = new System.Drawing.Size(23, 25);
             this.lblPrice.TabIndex = 1;
             this.lblPrice.Text = "0";
             // 
@@ -90,11 +90,11 @@ namespace OrderAutomationSystem
             this.mainPanel.Controls.Add(this.pictureBox);
             this.mainPanel.Controls.Add(this.lblName);
             this.mainPanel.Controls.Add(this.lblPrice);
-            this.mainPanel.Location = new System.Drawing.Point(34, 23);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.mainPanel.Location = new System.Drawing.Point(30, 18);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.ShadowDecoration.Parent = this.mainPanel;
-            this.mainPanel.Size = new System.Drawing.Size(302, 300);
+            this.mainPanel.Size = new System.Drawing.Size(268, 240);
             this.mainPanel.TabIndex = 2;
             this.mainPanel.Click += new System.EventHandler(this.mainPanel_Click);
             // 
@@ -104,24 +104,24 @@ namespace OrderAutomationSystem
             this.checkedBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
             this.checkedBox.Image = ((System.Drawing.Image)(resources.GetObject("checkedBox.Image")));
             this.checkedBox.ImageRotate = 0F;
-            this.checkedBox.Location = new System.Drawing.Point(216, 245);
-            this.checkedBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkedBox.Location = new System.Drawing.Point(192, 196);
+            this.checkedBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkedBox.Name = "checkedBox";
             this.checkedBox.ShadowDecoration.Parent = this.checkedBox;
-            this.checkedBox.Size = new System.Drawing.Size(81, 54);
+            this.checkedBox.Size = new System.Drawing.Size(72, 43);
             this.checkedBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.checkedBox.TabIndex = 0;
             this.checkedBox.TabStop = false;
             // 
             // ucItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(32)))), ((int)(((byte)(45)))));
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.mainPanel);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ucItem";
-            this.Size = new System.Drawing.Size(388, 362);
+            this.Size = new System.Drawing.Size(329, 281);
             this.Load += new System.EventHandler(this.ucItem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.mainPanel.ResumeLayout(false);

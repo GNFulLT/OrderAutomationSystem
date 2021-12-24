@@ -16,6 +16,8 @@ namespace OrderAutomationSystem
         public int Balance { get; set; }
         public string Pass { get; private set; }
         public string Email { get; private set; }
+        public string IsVerified { get; set; }
+        public string VerifyCode { get; set; }
 
         public Customers(int CustomerID,string Email,string Name,string Surname,string Address,int Balance)
         {
@@ -25,6 +27,11 @@ namespace OrderAutomationSystem
             this.Address = Address;
             this.Balance = Balance;
             this.Email = Email;
+        }
+        public void setVerify(string IsVerified,string VerifyCode)
+        {
+            this.IsVerified = IsVerified;
+            this.VerifyCode = VerifyCode;
         }
         public void takeOrder()
         {

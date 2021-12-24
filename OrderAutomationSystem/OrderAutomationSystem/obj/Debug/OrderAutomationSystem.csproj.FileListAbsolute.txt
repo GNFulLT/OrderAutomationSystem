@@ -504,3 +504,190 @@ C:\Users\ugurbey\Desktop\y\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\
 C:\Users\ugurbey\Desktop\y\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.CopyComplete
 C:\Users\ugurbey\Desktop\y\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.exe
 C:\Users\ugurbey\Desktop\y\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\OrderAutomationSystem.exe.config
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\OrderAutomationSystem.exe
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\OrderAutomationSystem.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\Guna.UI2.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.adminMenu.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.customerMenu.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.loginPanel.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentCash.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentCheck.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentCredit.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentForm.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.Properties.Resources.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.SplashScreen.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.StartUpForm.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucBasket.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucCustomers.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucEmployees.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucHome.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucItem.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucProducts.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucProfil.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucStatistics.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.CopyComplete
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.exe
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\OrderAutomationSystem.exe.config
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\OrderAutomationSystem.exe
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\OrderAutomationSystem.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\Guna.UI2.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.adminMenu.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.customerMenu.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.loginPanel.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.orderPayment.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentCash.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentCheck.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentCredit.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentForm.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.Properties.Resources.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.SplashScreen.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.StartUpForm.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucBasket.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucCustomers.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucEmployees.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucHome.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucItem.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucProducts.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucProfil.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucStatistics.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.CopyComplete
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.exe
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\OrderAutomationSystem.exe.config
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\OrderAutomationSystem.exe
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\OrderAutomationSystem.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\Guna.UI2.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.xml
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.adminMenu.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.customerMenu.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.loginPanel.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.orderPayment.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentCash.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentCheck.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentCredit.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentForm.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.Properties.Resources.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.SplashScreen.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.StartUpForm.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucBasket.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucCustomers.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucEmployees.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucHome.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucItem.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucProducts.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucProfil.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucStatistics.resources
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.CopyComplete
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.exe
+C:\Users\HP\Desktop\OrderAutomationSystem-EnG-ncel - Kopya - Kopya\OrderAutomationSystem-EnG-ncel\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.pdb
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.AssemblyReference.cache
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.adminMenu.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.customerMenu.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.loginPanel.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.orderPayment.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentCash.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentCheck.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentCredit.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.PaymentForm.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.Properties.Resources.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.SplashScreen.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.StartUpForm.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucBasket.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucCustomers.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucEmployees.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucHome.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucItem.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucProducts.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucProfil.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.ucStatistics.resources
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.GenerateResource.cache
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.CoreCompileInputs.cache
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.exe
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.pdb
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\OrderAutomationSystem.exe.config
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\OrderAutomationSystem.exe
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\OrderAutomationSystem.pdb
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.dll
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\Guna.UI2.dll
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.dll
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.dll
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.xml
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.pdb
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.xml
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\bin\Debug\System.Data.SQLite.xml
+C:\Users\ugurbey\Desktop\OrderAutomationSystem-Update\OrderAutomationSystem\OrderAutomationSystem\obj\Debug\OrderAutomationSystem.csproj.CopyComplete

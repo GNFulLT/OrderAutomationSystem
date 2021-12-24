@@ -119,6 +119,7 @@
       <DependentUpon>customerMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Customers.cs" />
+    <Compile Include="Email.cs" />
     <Compile Include="ICustomers.cs" />
     <Compile Include="IItems.cs" />
     <Compile Include="IOrder.cs" />
@@ -132,6 +133,12 @@
     </Compile>
     <Compile Include="Order.cs" />
     <Compile Include="OrderDetail.cs" />
+    <Compile Include="orderPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orderPayment.Designer.cs">
+      <DependentUpon>orderPayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Payment.cs" />
     <Compile Include="PaymentCash.cs">
       <SubType>Form</SubType>
@@ -228,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderPayment.resx">
+      <DependentUpon>orderPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaymentCash.resx">
       <DependentUpon>PaymentCash.cs</DependentUpon>
