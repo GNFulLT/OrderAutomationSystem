@@ -77,14 +77,14 @@ namespace OrderAutomationSystem
             {
                 sql.Open();
                 cmd = sql.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Items (Name, Quantity, Weight,Price,Description) VALUES ('" + txtName.Text + "','" + txtQuantity.Text + "','" + txtWeight.Text + "','" + txtPrice.Text + "','" + txtDescription.Text + "')";
+                cmd.CommandText = @"INSERT INTO Items (Name, Quantity, Weight, Description, Price, Tag) VALUES ('" + txtName.Text + "','" + txtQuantity.Text + "','" + txtWeight.Text + "','" + txtDescription.Text + "','"+txtPrice.Text+"','" + txtTag.Text + "')";
 
                 cmd.ExecuteNonQuery();
                 cmd = sql.CreateCommand();
                 cmd.CommandText = @"SELECT * FROM Items";
 
                 SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(cmd);
-                 ds.Clear();//Dataseti 0 lar
+                ds.Clear();//Dataseti 0 lar
                 dataAdapter.Fill(ds);
                 sql.Close();
             }

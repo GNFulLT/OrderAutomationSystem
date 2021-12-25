@@ -34,6 +34,7 @@ namespace OrderAutomationSystem
             }
             catch(Exception e)
             {
+                Exception a = e;
                 return false;
             }
         }

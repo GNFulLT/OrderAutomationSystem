@@ -73,11 +73,11 @@ namespace OrderAutomationSystem
             this.pnlCash.CustomBorderColor = System.Drawing.Color.Black;
             this.pnlCash.CustomBorderThickness = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.pnlCash.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCash.Location = new System.Drawing.Point(281, 0);
-            this.pnlCash.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnlCash.Location = new System.Drawing.Point(187, 0);
+            this.pnlCash.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pnlCash.Name = "pnlCash";
             this.pnlCash.ShadowDecoration.Parent = this.pnlCash;
-            this.pnlCash.Size = new System.Drawing.Size(282, 720);
+            this.pnlCash.Size = new System.Drawing.Size(189, 468);
             this.pnlCash.TabIndex = 7;
             this.pnlCash.Click += new System.EventHandler(this.pnlCash_Click);
             // 
@@ -85,9 +85,10 @@ namespace OrderAutomationSystem
             // 
             this.lblCash.AutoSize = true;
             this.lblCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.lblCash.Location = new System.Drawing.Point(100, 381);
+            this.lblCash.Location = new System.Drawing.Point(67, 248);
+            this.lblCash.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCash.Name = "lblCash";
-            this.lblCash.Size = new System.Drawing.Size(84, 36);
+            this.lblCash.Size = new System.Drawing.Size(68, 29);
             this.lblCash.TabIndex = 1;
             this.lblCash.Text = "Cash";
             this.lblCash.Click += new System.EventHandler(this.pnlCash_Click);
@@ -99,11 +100,11 @@ namespace OrderAutomationSystem
             this.pctCash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pctCash.FillColor = System.Drawing.Color.Transparent;
             this.pctCash.ImageRotate = 0F;
-            this.pctCash.Location = new System.Drawing.Point(81, 220);
-            this.pctCash.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pctCash.Location = new System.Drawing.Point(61, 143);
+            this.pctCash.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pctCash.Name = "pctCash";
             this.pctCash.ShadowDecoration.Parent = this.pctCash;
-            this.pctCash.Size = new System.Drawing.Size(118, 131);
+            this.pctCash.Size = new System.Drawing.Size(77, 85);
             this.pctCash.TabIndex = 3;
             this.pctCash.TabStop = false;
             this.pctCash.Click += new System.EventHandler(this.pnlCash_Click);
@@ -112,9 +113,10 @@ namespace OrderAutomationSystem
             // 
             this.lblExit.AutoSize = true;
             this.lblExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblExit.Location = new System.Drawing.Point(248, 4);
+            this.lblExit.Location = new System.Drawing.Point(165, 3);
+            this.lblExit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblExit.Name = "lblExit";
-            this.lblExit.Size = new System.Drawing.Size(26, 25);
+            this.lblExit.Size = new System.Drawing.Size(20, 20);
             this.lblExit.TabIndex = 5;
             this.lblExit.Text = "X";
             this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
@@ -125,11 +127,11 @@ namespace OrderAutomationSystem
             this.pnlCheck.Controls.Add(this.lblExit);
             this.pnlCheck.Controls.Add(this.pctCheck);
             this.pnlCheck.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlCheck.Location = new System.Drawing.Point(563, 0);
-            this.pnlCheck.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnlCheck.Location = new System.Drawing.Point(376, 0);
+            this.pnlCheck.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pnlCheck.Name = "pnlCheck";
             this.pnlCheck.ShadowDecoration.Parent = this.pnlCheck;
-            this.pnlCheck.Size = new System.Drawing.Size(281, 720);
+            this.pnlCheck.Size = new System.Drawing.Size(187, 468);
             this.pnlCheck.TabIndex = 6;
             this.pnlCheck.Click += new System.EventHandler(this.pnlCheck_Click);
             // 
@@ -137,9 +139,10 @@ namespace OrderAutomationSystem
             // 
             this.lblCheck.AutoSize = true;
             this.lblCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.lblCheck.Location = new System.Drawing.Point(92, 381);
+            this.lblCheck.Location = new System.Drawing.Point(61, 248);
+            this.lblCheck.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCheck.Name = "lblCheck";
-            this.lblCheck.Size = new System.Drawing.Size(99, 36);
+            this.lblCheck.Size = new System.Drawing.Size(81, 29);
             this.lblCheck.TabIndex = 1;
             this.lblCheck.Text = "Check";
             this.lblCheck.Click += new System.EventHandler(this.pnlCheck_Click);
@@ -151,11 +154,11 @@ namespace OrderAutomationSystem
             this.pctCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pctCheck.FillColor = System.Drawing.Color.Transparent;
             this.pctCheck.ImageRotate = 0F;
-            this.pctCheck.Location = new System.Drawing.Point(84, 220);
-            this.pctCheck.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pctCheck.Location = new System.Drawing.Point(59, 146);
+            this.pctCheck.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pctCheck.Name = "pctCheck";
             this.pctCheck.ShadowDecoration.Parent = this.pctCheck;
-            this.pctCheck.Size = new System.Drawing.Size(116, 126);
+            this.pctCheck.Size = new System.Drawing.Size(77, 82);
             this.pctCheck.TabIndex = 4;
             this.pctCheck.TabStop = false;
             this.pctCheck.Click += new System.EventHandler(this.pnlCheck_Click);
@@ -166,10 +169,10 @@ namespace OrderAutomationSystem
             this.pnlCredit.Controls.Add(this.pctCredit);
             this.pnlCredit.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlCredit.Location = new System.Drawing.Point(0, 0);
-            this.pnlCredit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnlCredit.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pnlCredit.Name = "pnlCredit";
             this.pnlCredit.ShadowDecoration.Parent = this.pnlCredit;
-            this.pnlCredit.Size = new System.Drawing.Size(281, 720);
+            this.pnlCredit.Size = new System.Drawing.Size(187, 468);
             this.pnlCredit.TabIndex = 5;
             this.pnlCredit.Click += new System.EventHandler(this.pnlCredit_Click);
             // 
@@ -177,9 +180,10 @@ namespace OrderAutomationSystem
             // 
             this.lblCredit.AutoSize = true;
             this.lblCredit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.lblCredit.Location = new System.Drawing.Point(74, 381);
+            this.lblCredit.Location = new System.Drawing.Point(49, 248);
+            this.lblCredit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCredit.Name = "lblCredit";
-            this.lblCredit.Size = new System.Drawing.Size(94, 36);
+            this.lblCredit.Size = new System.Drawing.Size(78, 29);
             this.lblCredit.TabIndex = 1;
             this.lblCredit.Text = "Credit";
             this.lblCredit.Click += new System.EventHandler(this.pnlCredit_Click);
@@ -191,11 +195,11 @@ namespace OrderAutomationSystem
             this.pctCredit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pctCredit.FillColor = System.Drawing.Color.Transparent;
             this.pctCredit.ImageRotate = 0F;
-            this.pctCredit.Location = new System.Drawing.Point(67, 220);
-            this.pctCredit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pctCredit.Location = new System.Drawing.Point(54, 146);
+            this.pctCredit.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pctCredit.Name = "pctCredit";
             this.pctCredit.ShadowDecoration.Parent = this.pctCredit;
-            this.pctCredit.Size = new System.Drawing.Size(116, 126);
+            this.pctCredit.Size = new System.Drawing.Size(73, 82);
             this.pctCredit.TabIndex = 0;
             this.pctCredit.TabStop = false;
             this.pctCredit.Click += new System.EventHandler(this.pnlCredit_Click);
@@ -222,15 +226,15 @@ namespace OrderAutomationSystem
             // 
             // PaymentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(844, 720);
+            this.ClientSize = new System.Drawing.Size(563, 468);
             this.Controls.Add(this.pnlCash);
             this.Controls.Add(this.pnlCheck);
             this.Controls.Add(this.pnlCredit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "PaymentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PaymentForm";

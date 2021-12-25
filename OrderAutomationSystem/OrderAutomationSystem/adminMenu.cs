@@ -14,6 +14,8 @@ namespace OrderAutomationSystem
 {
     public partial class adminMenu : Form
     {
+        Customers customer;
+        
         bool isLight = false;
         Task t1;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -53,27 +55,15 @@ namespace OrderAutomationSystem
            
 
         }
-        public adminMenu(bool isLight) : this()
+        public adminMenu(Customers customer,bool isLight) : this()
         {
+            this.customer = customer;
+            lblUserName.Text = customer.Name;
+            
 
+            
             this.isLight = isLight;
-            if (isLight)
-            {
-                extButton2.Visible = true;//kapalı modda kapalı olucak
-                menuTop.BackColor = Color.FromArgb(224, 224, 224);
-                sidebarWrapper.BackColor = Color.FromArgb(240, 240, 240);
-                this.BackColor = Color.FromArgb(30, 30, 48);
-
-                gunaMenuBar.FillColor = Color.FromArgb(66, 204, 255);
-                gunaMenuBar.FillColor2 = Color.FromArgb(66, 204, 255);
-
-                btnDashboard.ForeColor = Color.WhiteSmoke;
-                btnEmployees.ForeColor = Color.WhiteSmoke;
-                btnProducts.ForeColor = Color.WhiteSmoke;
-                btnCustomers.ForeColor = Color.WhiteSmoke;
-                lblMenuName.ForeColor = Color.FromArgb(127, 131, 134);
-                lblUserName.ForeColor = Color.FromArgb(127, 131, 134);
-            }
+            lightBtn_Click(null,null);                                     
         }
         private void adminMenu_Load(object sender, EventArgs e)
         {
@@ -82,6 +72,8 @@ namespace OrderAutomationSystem
             ucProducts1.Hide();
             ucCustomers1.Hide();
             ucEmployees1.Hide();
+
+
         }
         private void pctExit_Click(object sender, EventArgs e)
         {

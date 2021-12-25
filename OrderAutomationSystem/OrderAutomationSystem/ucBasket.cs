@@ -37,14 +37,14 @@ namespace OrderAutomationSystem
             list.Items.Add(item);
             Label lb = (Label)customerMenu.userControls[2].Controls["panelBasket"].Controls["groupBoxInfo"].Controls["lblCost2"];
             lb.Text = (Convert.ToInt32(lb.Text) + (item.Amount * item.Price)).ToString();
-            TextBox txt = (TextBox)customerMenu.userControls[2].Controls["panelBasket"].Controls["txtPrice"];
 
         }
 
         internal static void itemRemove(Item item)
         {
             ListBox list = (ListBox)customerMenu.userControls[2].Controls["panelBasket"].Controls["listBasket"];
-
+            Label lb = (Label)customerMenu.userControls[2].Controls["panelBasket"].Controls["groupBoxInfo"].Controls["lblCost2"];
+            lb.Text = (Convert.ToInt32(lb.Text) - (item.Amount * item.Price)).ToString();
             list.Items.Remove(item);
 
         }

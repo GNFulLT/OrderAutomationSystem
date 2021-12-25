@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OrderAutomationSystem
-{
+{  
     public partial class ucStatistics : UserControl
     {
+       
         public ucStatistics()
         {
             InitializeComponent();
+            
         }
+       
     }
-}
+}          

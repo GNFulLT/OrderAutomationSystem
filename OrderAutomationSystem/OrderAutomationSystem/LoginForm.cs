@@ -402,7 +402,9 @@ namespace OrderAutomationSystem
                 }
                 else
                 {
-
+                    Customers admin = new Customers(ID, email, name, surname, address, balance);
+                    adminMenu admin_menu = new adminMenu(admin, isLight);
+                    admin_menu.Show();
                 }
 
             }

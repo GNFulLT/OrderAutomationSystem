@@ -29,6 +29,7 @@ namespace OrderAutomationSystem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaymentCredit));
             this.lblName = new System.Windows.Forms.Label();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblSurname = new System.Windows.Forms.Label();
@@ -44,6 +45,16 @@ namespace OrderAutomationSystem
             this.txtAdress = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblAdress = new System.Windows.Forms.Label();
             this.btnPay = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureMaster = new System.Windows.Forms.PictureBox();
+            this.pictureJCB = new System.Windows.Forms.PictureBox();
+            this.pictureDiscover = new System.Windows.Forms.PictureBox();
+            this.pictureAmericanEx = new System.Windows.Forms.PictureBox();
+            this.pictureVisa = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureMaster)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureJCB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDiscover)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAmericanEx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureVisa)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -72,7 +83,7 @@ namespace OrderAutomationSystem
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtName.HoverState.Parent = this.txtName;
             this.txtName.Location = new System.Drawing.Point(118, 65);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
             this.txtName.PlaceholderText = "";
@@ -107,14 +118,14 @@ namespace OrderAutomationSystem
             this.txtSurname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSurname.HoverState.Parent = this.txtSurname;
             this.txtSurname.Location = new System.Drawing.Point(118, 114);
-            this.txtSurname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSurname.Margin = new System.Windows.Forms.Padding(2);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.PasswordChar = '\0';
             this.txtSurname.PlaceholderText = "";
             this.txtSurname.SelectedText = "";
             this.txtSurname.ShadowDecoration.Parent = this.txtSurname;
             this.txtSurname.Size = new System.Drawing.Size(155, 20);
-            this.txtSurname.TabIndex = 1;
+            this.txtSurname.TabIndex = 2;
             // 
             // lblAmount
             // 
@@ -142,14 +153,14 @@ namespace OrderAutomationSystem
             this.txtAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAmount.HoverState.Parent = this.txtAmount;
             this.txtAmount.Location = new System.Drawing.Point(118, 162);
-            this.txtAmount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAmount.Margin = new System.Windows.Forms.Padding(2);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.PasswordChar = '\0';
             this.txtAmount.PlaceholderText = "";
             this.txtAmount.SelectedText = "";
             this.txtAmount.ShadowDecoration.Parent = this.txtAmount;
             this.txtAmount.Size = new System.Drawing.Size(155, 20);
-            this.txtAmount.TabIndex = 1;
+            this.txtAmount.TabIndex = 3;
             // 
             // lnlNumber
             // 
@@ -177,14 +188,15 @@ namespace OrderAutomationSystem
             this.txtNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNumber.HoverState.Parent = this.txtNumber;
             this.txtNumber.Location = new System.Drawing.Point(118, 211);
-            this.txtNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumber.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.PasswordChar = '\0';
             this.txtNumber.PlaceholderText = "";
             this.txtNumber.SelectedText = "";
             this.txtNumber.ShadowDecoration.Parent = this.txtNumber;
             this.txtNumber.Size = new System.Drawing.Size(155, 20);
-            this.txtNumber.TabIndex = 1;
+            this.txtNumber.TabIndex = 4;
+            this.txtNumber.TextChanged += new System.EventHandler(this.txtNumber_TextChanged);
             // 
             // label1
             // 
@@ -224,12 +236,12 @@ namespace OrderAutomationSystem
             "12"});
             this.cmbMonth.ItemsAppearance.Parent = this.cmbMonth;
             this.cmbMonth.Location = new System.Drawing.Point(118, 258);
-            this.cmbMonth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbMonth.Margin = new System.Windows.Forms.Padding(2);
             this.cmbMonth.Name = "cmbMonth";
             this.cmbMonth.ShadowDecoration.Parent = this.cmbMonth;
             this.cmbMonth.Size = new System.Drawing.Size(71, 36);
             this.cmbMonth.StartIndex = 0;
-            this.cmbMonth.TabIndex = 2;
+            this.cmbMonth.TabIndex = 5;
             // 
             // cmbYear
             // 
@@ -260,12 +272,12 @@ namespace OrderAutomationSystem
             "35"});
             this.cmbYear.ItemsAppearance.Parent = this.cmbYear;
             this.cmbYear.Location = new System.Drawing.Point(193, 258);
-            this.cmbYear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbYear.Margin = new System.Windows.Forms.Padding(2);
             this.cmbYear.Name = "cmbYear";
             this.cmbYear.ShadowDecoration.Parent = this.cmbYear;
             this.cmbYear.Size = new System.Drawing.Size(80, 36);
             this.cmbYear.StartIndex = 0;
-            this.cmbYear.TabIndex = 2;
+            this.cmbYear.TabIndex = 6;
             // 
             // lblExit
             // 
@@ -294,7 +306,7 @@ namespace OrderAutomationSystem
             this.txtAdress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAdress.HoverState.Parent = this.txtAdress;
             this.txtAdress.Location = new System.Drawing.Point(378, 64);
-            this.txtAdress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAdress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAdress.Multiline = true;
             this.txtAdress.Name = "txtAdress";
             this.txtAdress.PasswordChar = '\0';
@@ -302,7 +314,7 @@ namespace OrderAutomationSystem
             this.txtAdress.SelectedText = "";
             this.txtAdress.ShadowDecoration.Parent = this.txtAdress;
             this.txtAdress.Size = new System.Drawing.Size(155, 138);
-            this.txtAdress.TabIndex = 13;
+            this.txtAdress.TabIndex = 7;
             // 
             // lblAdress
             // 
@@ -329,13 +341,63 @@ namespace OrderAutomationSystem
             this.btnPay.ForeColor = System.Drawing.Color.White;
             this.btnPay.HoverState.Parent = this.btnPay;
             this.btnPay.Location = new System.Drawing.Point(378, 222);
-            this.btnPay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPay.Margin = new System.Windows.Forms.Padding(2);
             this.btnPay.Name = "btnPay";
             this.btnPay.ShadowDecoration.Parent = this.btnPay;
             this.btnPay.Size = new System.Drawing.Size(155, 37);
-            this.btnPay.TabIndex = 29;
+            this.btnPay.TabIndex = 8;
             this.btnPay.Text = "Pay";
             this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
+            // 
+            // pictureMaster
+            // 
+            this.pictureMaster.Image = ((System.Drawing.Image)(resources.GetObject("pictureMaster.Image")));
+            this.pictureMaster.Location = new System.Drawing.Point(147, 372);
+            this.pictureMaster.Name = "pictureMaster";
+            this.pictureMaster.Size = new System.Drawing.Size(100, 50);
+            this.pictureMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureMaster.TabIndex = 30;
+            this.pictureMaster.TabStop = false;
+            // 
+            // pictureJCB
+            // 
+            this.pictureJCB.Image = ((System.Drawing.Image)(resources.GetObject("pictureJCB.Image")));
+            this.pictureJCB.Location = new System.Drawing.Point(147, 372);
+            this.pictureJCB.Name = "pictureJCB";
+            this.pictureJCB.Size = new System.Drawing.Size(100, 50);
+            this.pictureJCB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureJCB.TabIndex = 30;
+            this.pictureJCB.TabStop = false;
+            // 
+            // pictureDiscover
+            // 
+            this.pictureDiscover.Image = ((System.Drawing.Image)(resources.GetObject("pictureDiscover.Image")));
+            this.pictureDiscover.Location = new System.Drawing.Point(147, 372);
+            this.pictureDiscover.Name = "pictureDiscover";
+            this.pictureDiscover.Size = new System.Drawing.Size(100, 50);
+            this.pictureDiscover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureDiscover.TabIndex = 30;
+            this.pictureDiscover.TabStop = false;
+            // 
+            // pictureAmericanEx
+            // 
+            this.pictureAmericanEx.Image = ((System.Drawing.Image)(resources.GetObject("pictureAmericanEx.Image")));
+            this.pictureAmericanEx.Location = new System.Drawing.Point(147, 372);
+            this.pictureAmericanEx.Name = "pictureAmericanEx";
+            this.pictureAmericanEx.Size = new System.Drawing.Size(100, 50);
+            this.pictureAmericanEx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureAmericanEx.TabIndex = 30;
+            this.pictureAmericanEx.TabStop = false;
+            // 
+            // pictureVisa
+            // 
+            this.pictureVisa.Image = ((System.Drawing.Image)(resources.GetObject("pictureVisa.Image")));
+            this.pictureVisa.Location = new System.Drawing.Point(147, 372);
+            this.pictureVisa.Name = "pictureVisa";
+            this.pictureVisa.Size = new System.Drawing.Size(100, 50);
+            this.pictureVisa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureVisa.TabIndex = 30;
+            this.pictureVisa.TabStop = false;
             // 
             // PaymentCredit
             // 
@@ -343,6 +405,11 @@ namespace OrderAutomationSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(562, 468);
+            this.Controls.Add(this.pictureVisa);
+            this.Controls.Add(this.pictureAmericanEx);
+            this.Controls.Add(this.pictureDiscover);
+            this.Controls.Add(this.pictureJCB);
+            this.Controls.Add(this.pictureMaster);
             this.Controls.Add(this.btnPay);
             this.Controls.Add(this.txtAdress);
             this.Controls.Add(this.lblAdress);
@@ -359,10 +426,16 @@ namespace OrderAutomationSystem
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PaymentCredit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PaymentCredit";
+            this.Load += new System.EventHandler(this.PaymentCredit_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureMaster)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureJCB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDiscover)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAmericanEx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureVisa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,5 +458,10 @@ namespace OrderAutomationSystem
         private Guna.UI2.WinForms.Guna2TextBox txtAdress;
         private System.Windows.Forms.Label lblAdress;
         private Guna.UI2.WinForms.Guna2Button btnPay;
+        private System.Windows.Forms.PictureBox pictureMaster;
+        private System.Windows.Forms.PictureBox pictureJCB;
+        private System.Windows.Forms.PictureBox pictureDiscover;
+        private System.Windows.Forms.PictureBox pictureAmericanEx;
+        private System.Windows.Forms.PictureBox pictureVisa;
     }
 }

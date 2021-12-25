@@ -16,7 +16,6 @@ namespace OrderAutomationSystem
         //Home kısmı
         DataSet ds;
         public static List<int> items = new List<int>();
-        bool isShowed = false;
         public ucProfil()
         {
             InitializeComponent();

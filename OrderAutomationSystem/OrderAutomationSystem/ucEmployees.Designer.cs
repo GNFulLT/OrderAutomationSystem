@@ -94,12 +94,12 @@ namespace OrderAutomationSystem
             // 
             this.dgvEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmployees.Location = new System.Drawing.Point(40, 176);
+            this.dgvEmployees.Location = new System.Drawing.Point(40, 282);
             this.dgvEmployees.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvEmployees.Name = "dgvEmployees";
             this.dgvEmployees.RowHeadersWidth = 51;
             this.dgvEmployees.RowTemplate.Height = 24;
-            this.dgvEmployees.Size = new System.Drawing.Size(1007, 692);
+            this.dgvEmployees.Size = new System.Drawing.Size(1114, 635);
             this.dgvEmployees.TabIndex = 258;
             this.dgvEmployees.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployees_CellContentClick_1);
             // 
@@ -114,6 +114,7 @@ namespace OrderAutomationSystem
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ucEmployees";
             this.Size = new System.Drawing.Size(1238, 1025);
+            this.Load += new System.EventHandler(this.ucEmployees_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).EndInit();
             this.ResumeLayout(false);
 

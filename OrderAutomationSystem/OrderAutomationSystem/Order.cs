@@ -14,6 +14,7 @@ namespace OrderAutomationSystem
         public DateTime Date { get; set; }
         private string state;
         public Payment Payment { get; set; } 
+        public int TotalPrice { get; set; }
         public Status State { get {
                 if(state == "Dağıtımda")
                 {
@@ -54,12 +55,13 @@ namespace OrderAutomationSystem
         {
 
         }
-        public Order(OrderDetail details)
+        public Order(OrderDetail details, int TotalPrice)
         {
             Details = details;
             State = Status.WaitForCargo;
             Task<DateTime> dt = getTime();
             Date = dt.Result;
+            this.TotalPrice = TotalPrice;
         }
 
         public void setOrder(OrderDetail details)
@@ -87,6 +89,7 @@ namespace OrderAutomationSystem
             }
             catch(Exception ex)
             {
+                Exception a = ex;
                 return new DateTime(DateTime.MinValue.Ticks);
             }
 

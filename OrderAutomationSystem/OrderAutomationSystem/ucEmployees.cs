@@ -22,17 +22,29 @@ namespace OrderAutomationSystem
         BindingSource bd = new BindingSource();
         public ucEmployees()
         {
+            
             InitializeComponent();
+           
+            
             using (SQLiteConnection sql = new SQLiteConnection("Data source=.\\dataBase.db"))
             {
+              
+               
                 sql.Open();
                 cmd = sql.CreateCommand();
-                cmd.CommandText = @"SELECT * FROM Employee";
+                cmd.CommandText = @"SELECT Name,Surname,Email,Address FROM Customers WHERE IsAdmin != 'FALSE'";
+                SQLiteCommand cmd2 = sql.CreateCommand();
+                cmd2.CommandText = @"SELECT Name,Surname,Email,Address FROM Employee";
+
+                
 
                 SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(cmd);
                 dataAdapter.Fill(ds);
+                dataAdapter = new SQLiteDataAdapter(cmd2);
+                dataAdapter.Fill(ds);
                 sql.Close();
             }
+            
             bd.DataSource = ds.Tables[0];
             dgvEmployees.DataSource = bd;
         }
@@ -53,7 +65,7 @@ namespace OrderAutomationSystem
 
         void List()
         {
-            string sql = "Select * from Employee";
+            string sql = "Select * from Customers";
             dgvEmployees.DataSource = Crud.List(sql);
         }
 
@@ -63,6 +75,11 @@ namespace OrderAutomationSystem
         }
 
         private void dgvEmployees_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void ucEmployees_Load(object sender, EventArgs e)
         {
 
         }

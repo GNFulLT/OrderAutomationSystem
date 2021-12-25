@@ -13,10 +13,23 @@ namespace OrderAutomationSystem
     public partial class PaymentCredit : Form
     {
         Order order;
+        PictureBox selectedPicture;
+        Dictionary<Credit.CardType, PictureBox> pictures = new Dictionary<Credit.CardType, PictureBox>();
         internal event callBack completed;
         public PaymentCredit()
         {
             InitializeComponent();
+            selectedPicture = pictureAmericanEx;
+            pictures.Add(Credit.CardType.Visa, pictureVisa);
+            pictures.Add(Credit.CardType.MasterCard, pictureMaster);
+            pictures.Add(Credit.CardType.JCB, pictureJCB);
+            pictures.Add(Credit.CardType.Discover, pictureDiscover);
+            pictures.Add(Credit.CardType.AmericanExpress, pictureAmericanEx);
+            foreach(var item in pictures)
+            {
+                item.Value.Visible = false;
+            }
+            
         }
         internal void getOrder(Order order)
         {
@@ -52,6 +65,22 @@ namespace OrderAutomationSystem
 
             this.completed(crdt, pe);
 
+        }
+
+        private void PaymentCredit_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNumber_TextChanged(object sender, EventArgs e)
+        {
+            selectedPicture.Visible = false;
+            Credit.CardType type = Credit.getCardType(txtNumber.Text);
+            if ( type != Credit.CardType.UnknownCard)
+            {
+                selectedPicture = pictures[type];
+                selectedPicture.Visible = true;
+            }
         }
     }
 }
