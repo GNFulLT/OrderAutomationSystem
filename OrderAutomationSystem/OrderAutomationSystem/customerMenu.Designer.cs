@@ -39,6 +39,8 @@ namespace OrderAutomationSystem
             this.marketBtn = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelMove = new System.Windows.Forms.Panel();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
+            this.lightBtn = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.loffBtn = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homeBtn2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeBtn)).BeginInit();
@@ -51,6 +53,7 @@ namespace OrderAutomationSystem
             // 
             // guna2CustomGradientPanel1
             // 
+            this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.BorderRadius = 100;
             this.guna2CustomGradientPanel1.Controls.Add(this.homeBtn2);
             this.guna2CustomGradientPanel1.Controls.Add(this.homeBtn);
@@ -62,11 +65,11 @@ namespace OrderAutomationSystem
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(94)))), ((int)(((byte)(233)))));
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(94)))), ((int)(((byte)(233)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.DodgerBlue;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(258, 770);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(257, 769);
             this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1042, 266);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1041, 266);
             this.guna2CustomGradientPanel1.TabIndex = 3;
             // 
             // homeBtn2
@@ -74,7 +77,7 @@ namespace OrderAutomationSystem
             this.homeBtn2.BackColor = System.Drawing.Color.Transparent;
             this.homeBtn2.Image = ((System.Drawing.Image)(resources.GetObject("homeBtn2.Image")));
             this.homeBtn2.ImageRotate = 0F;
-            this.homeBtn2.Location = new System.Drawing.Point(440, 14);
+            this.homeBtn2.Location = new System.Drawing.Point(440, 15);
             this.homeBtn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.homeBtn2.Name = "homeBtn2";
             this.homeBtn2.ShadowDecoration.Parent = this.homeBtn2;
@@ -88,7 +91,7 @@ namespace OrderAutomationSystem
             this.homeBtn.BackColor = System.Drawing.Color.Transparent;
             this.homeBtn.Image = ((System.Drawing.Image)(resources.GetObject("homeBtn.Image")));
             this.homeBtn.ImageRotate = 0F;
-            this.homeBtn.Location = new System.Drawing.Point(440, 14);
+            this.homeBtn.Location = new System.Drawing.Point(440, 15);
             this.homeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.homeBtn.Name = "homeBtn";
             this.homeBtn.ShadowDecoration.Parent = this.homeBtn;
@@ -103,7 +106,7 @@ namespace OrderAutomationSystem
             this.userBtn2.BackColor = System.Drawing.Color.Transparent;
             this.userBtn2.Image = ((System.Drawing.Image)(resources.GetObject("userBtn2.Image")));
             this.userBtn2.ImageRotate = 0F;
-            this.userBtn2.Location = new System.Drawing.Point(151, 14);
+            this.userBtn2.Location = new System.Drawing.Point(151, 15);
             this.userBtn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.userBtn2.Name = "userBtn2";
             this.userBtn2.ShadowDecoration.Parent = this.userBtn2;
@@ -117,7 +120,7 @@ namespace OrderAutomationSystem
             this.userBtn.BackColor = System.Drawing.Color.Transparent;
             this.userBtn.Image = ((System.Drawing.Image)(resources.GetObject("userBtn.Image")));
             this.userBtn.ImageRotate = 0F;
-            this.userBtn.Location = new System.Drawing.Point(151, 14);
+            this.userBtn.Location = new System.Drawing.Point(151, 15);
             this.userBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.userBtn.Name = "userBtn";
             this.userBtn.ShadowDecoration.Parent = this.userBtn;
@@ -136,7 +139,7 @@ namespace OrderAutomationSystem
             this.marketBtn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.marketBtn2.Name = "marketBtn2";
             this.marketBtn2.ShadowDecoration.Parent = this.marketBtn2;
-            this.marketBtn2.Size = new System.Drawing.Size(158, 114);
+            this.marketBtn2.Size = new System.Drawing.Size(159, 113);
             this.marketBtn2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.marketBtn2.TabIndex = 2;
             this.marketBtn2.TabStop = false;
@@ -151,7 +154,7 @@ namespace OrderAutomationSystem
             this.marketBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.marketBtn.Name = "marketBtn";
             this.marketBtn.ShadowDecoration.Parent = this.marketBtn;
-            this.marketBtn.Size = new System.Drawing.Size(158, 114);
+            this.marketBtn.Size = new System.Drawing.Size(159, 113);
             this.marketBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.marketBtn.TabIndex = 2;
             this.marketBtn.TabStop = false;
@@ -159,12 +162,15 @@ namespace OrderAutomationSystem
             // 
             // panelMove
             // 
+            this.panelMove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelMove.Controls.Add(this.loffBtn);
+            this.panelMove.Controls.Add(this.lightBtn);
             this.panelMove.Controls.Add(this.btnExit);
             this.panelMove.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMove.Location = new System.Drawing.Point(0, 0);
-            this.panelMove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelMove.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.panelMove.Name = "panelMove";
-            this.panelMove.Size = new System.Drawing.Size(1607, 77);
+            this.panelMove.Size = new System.Drawing.Size(1607, 76);
             this.panelMove.TabIndex = 4;
             this.panelMove.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelMove_MouseDown);
             this.panelMove.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelMove_MouseMove);
@@ -173,6 +179,7 @@ namespace OrderAutomationSystem
             // btnExit
             // 
             this.btnExit.Animated = true;
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.BorderRadius = 15;
             this.btnExit.CheckedState.Parent = this.btnExit;
             this.btnExit.CustomImages.Parent = this.btnExit;
@@ -183,24 +190,82 @@ namespace OrderAutomationSystem
             this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExit.DisabledState.Parent = this.btnExit;
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnExit.FillColor = System.Drawing.Color.DodgerBlue;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.HoverState.Parent = this.btnExit;
             this.btnExit.Location = new System.Drawing.Point(1567, 0);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Parent = this.btnExit;
-            this.btnExit.Size = new System.Drawing.Size(40, 77);
+            this.btnExit.Size = new System.Drawing.Size(40, 76);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "X";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // lightBtn
+            // 
+            this.lightBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lightBtn.BackColor = System.Drawing.Color.Transparent;
+            this.lightBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lightBtn.BackgroundImage")));
+            this.lightBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.lightBtn.BorderColor = System.Drawing.Color.Transparent;
+            this.lightBtn.CheckedState.Parent = this.lightBtn;
+            this.lightBtn.CustomImages.Parent = this.lightBtn;
+            this.lightBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.lightBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.lightBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.lightBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.lightBtn.DisabledState.Parent = this.lightBtn;
+            this.lightBtn.FillColor = System.Drawing.Color.Transparent;
+            this.lightBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lightBtn.ForeColor = System.Drawing.Color.White;
+            this.lightBtn.HoverState.Parent = this.lightBtn;
+            this.lightBtn.Location = new System.Drawing.Point(1507, 13);
+            this.lightBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.lightBtn.Name = "lightBtn";
+            this.lightBtn.PressedColor = System.Drawing.Color.Transparent;
+            this.lightBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.lightBtn.ShadowDecoration.Parent = this.lightBtn;
+            this.lightBtn.Size = new System.Drawing.Size(44, 46);
+            this.lightBtn.TabIndex = 7;
+            this.lightBtn.Click += new System.EventHandler(this.lightBtn_Click);
+            // 
+            // loffBtn
+            // 
+            this.loffBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.loffBtn.BackColor = System.Drawing.Color.Transparent;
+            this.loffBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("loffBtn.BackgroundImage")));
+            this.loffBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.loffBtn.BorderColor = System.Drawing.Color.Transparent;
+            this.loffBtn.CheckedState.Parent = this.loffBtn;
+            this.loffBtn.CustomImages.Parent = this.loffBtn;
+            this.loffBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.loffBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.loffBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.loffBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.loffBtn.DisabledState.Parent = this.loffBtn;
+            this.loffBtn.FillColor = System.Drawing.Color.Transparent;
+            this.loffBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.loffBtn.ForeColor = System.Drawing.Color.White;
+            this.loffBtn.HoverState.Parent = this.loffBtn;
+            this.loffBtn.Location = new System.Drawing.Point(1507, 13);
+            this.loffBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.loffBtn.Name = "loffBtn";
+            this.loffBtn.PressedColor = System.Drawing.Color.Transparent;
+            this.loffBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.loffBtn.ShadowDecoration.Parent = this.loffBtn;
+            this.loffBtn.Size = new System.Drawing.Size(44, 46);
+            this.loffBtn.TabIndex = 8;
+            this.loffBtn.Visible = false;
+            this.loffBtn.Click += new System.EventHandler(this.loffBtn_Click);
             // 
             // customerMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
-            this.ClientSize = new System.Drawing.Size(1607, 882);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1607, 880);
             this.Controls.Add(this.panelMove);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -233,5 +298,7 @@ namespace OrderAutomationSystem
         private Guna.UI2.WinForms.Guna2PictureBox homeBtn2;
         private System.Windows.Forms.Panel panelMove;
         private Guna.UI2.WinForms.Guna2Button btnExit;
+        private Guna.UI2.WinForms.Guna2CircleButton lightBtn;
+        private Guna.UI2.WinForms.Guna2CircleButton loffBtn;
     }
 }

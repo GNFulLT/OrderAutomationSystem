@@ -14,6 +14,8 @@ namespace OrderAutomationSystem
 {
     public partial class adminMenu : Form
     {
+        Customers customer;
+        
         bool isLight = false;
         Task t1;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -25,43 +27,53 @@ namespace OrderAutomationSystem
         int a,
         int qw
             );
-
+        ucStatistics ucStatistics1;
+        ucProducts ucProducts1;
+        ucEmployees ucEmployees1;
+        ucCustomers ucCustomers1;
+        UserControl[] menus = new UserControl[4];
         public adminMenu()
         {
             InitializeComponent();
             /*this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));*/
             loffBtn.Location = lightBtn.Location;
+            ucStatistics1 = new ucStatistics();
+            ucProducts1 = new ucProducts();
+            ucEmployees1 = new ucEmployees();
+            ucCustomers1 = new ucCustomers();
+            
+            menus[0] = ucStatistics1;
+            menus[1] = ucProducts1;
+            menus[2] = ucCustomers1;
+            menus[3] = ucEmployees1;
+            foreach(UserControl c in menus)
+            {
+                c.Location = new Point(227, 65);
+                this.Controls.Add(c);
+            }
+            
+           
 
         }
-        public adminMenu(bool isLight) : this()
+        public adminMenu(Customers customer,bool isLight) : this()
         {
+            this.customer = customer;
+            lblUserName.Text = customer.Name;
+            
 
+            
             this.isLight = isLight;
-            if (isLight)
-            {
-                extButton2.Visible = true;//kapalı modda kapalı olucak
-                menuTop.BackColor = Color.FromArgb(224, 224, 224);
-                sidebarWrapper.BackColor = Color.FromArgb(240, 240, 240);
-                this.BackColor = Color.FromArgb(30, 30, 48);
-
-                gunaMenuBar.FillColor = Color.FromArgb(66, 204, 255);
-                gunaMenuBar.FillColor2 = Color.FromArgb(66, 204, 255);
-
-                btnDashboard.ForeColor = Color.WhiteSmoke;
-                btnEmployees.ForeColor = Color.WhiteSmoke;
-                btnProducts.ForeColor = Color.WhiteSmoke;
-                btnCustomers.ForeColor = Color.WhiteSmoke;
-                lblMenuName.ForeColor = Color.FromArgb(127, 131, 134);
-                lblUserName.ForeColor = Color.FromArgb(127, 131, 134);
-            }
+            lightBtn_Click(null,null);                                     
         }
         private void adminMenu_Load(object sender, EventArgs e)
         {
-            ucStatistics1.Show();
-            ucStatistics1.BringToFront();
+            ucStatistics1.Visible = true;
+            ucStatistics1.BringToFront();   
             ucProducts1.Hide();
             ucCustomers1.Hide();
             ucEmployees1.Hide();
+
+
         }
         private void pctExit_Click(object sender, EventArgs e)
         {

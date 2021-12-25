@@ -56,7 +56,7 @@ namespace OrderAutomationSystem
             this.lblName.ForeColor = System.Drawing.Color.White;
             this.lblName.Location = new System.Drawing.Point(30, 49);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(84, 29);
+            this.lblName.Size = new System.Drawing.Size(70, 25);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name:";
             // 
@@ -86,6 +86,7 @@ namespace OrderAutomationSystem
             this.txtName.Size = new System.Drawing.Size(312, 45);
             this.txtName.TabIndex = 0;
             this.txtName.Click += new System.EventHandler(this.txtName_Click);
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // lblQuantity
             // 
@@ -94,7 +95,7 @@ namespace OrderAutomationSystem
             this.lblQuantity.ForeColor = System.Drawing.Color.White;
             this.lblQuantity.Location = new System.Drawing.Point(30, 115);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(106, 29);
+            this.lblQuantity.Size = new System.Drawing.Size(91, 25);
             this.lblQuantity.TabIndex = 0;
             this.lblQuantity.Text = "Quantity:";
             // 
@@ -124,6 +125,7 @@ namespace OrderAutomationSystem
             this.txtQuantity.Size = new System.Drawing.Size(312, 45);
             this.txtQuantity.TabIndex = 1;
             this.txtQuantity.Click += new System.EventHandler(this.txtQuantity_Click);
+            this.txtQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantity_KeyPress);
             // 
             // lblWeight
             // 
@@ -132,7 +134,7 @@ namespace OrderAutomationSystem
             this.lblWeight.ForeColor = System.Drawing.Color.White;
             this.lblWeight.Location = new System.Drawing.Point(30, 182);
             this.lblWeight.Name = "lblWeight";
-            this.lblWeight.Size = new System.Drawing.Size(94, 29);
+            this.lblWeight.Size = new System.Drawing.Size(80, 25);
             this.lblWeight.TabIndex = 0;
             this.lblWeight.Text = "Weight:";
             // 
@@ -162,6 +164,7 @@ namespace OrderAutomationSystem
             this.txtWeight.Size = new System.Drawing.Size(312, 45);
             this.txtWeight.TabIndex = 2;
             this.txtWeight.Click += new System.EventHandler(this.txtWeight_Click);
+            this.txtWeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantity_KeyPress);
             // 
             // lblPrice
             // 
@@ -170,7 +173,7 @@ namespace OrderAutomationSystem
             this.lblPrice.ForeColor = System.Drawing.Color.White;
             this.lblPrice.Location = new System.Drawing.Point(30, 245);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(75, 29);
+            this.lblPrice.Size = new System.Drawing.Size(62, 25);
             this.lblPrice.TabIndex = 0;
             this.lblPrice.Text = "Price:";
             // 
@@ -200,6 +203,7 @@ namespace OrderAutomationSystem
             this.txtPrice.Size = new System.Drawing.Size(312, 45);
             this.txtPrice.TabIndex = 3;
             this.txtPrice.Click += new System.EventHandler(this.txtPrice_Click);
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantity_KeyPress);
             // 
             // btnAdd
             // 
@@ -255,6 +259,7 @@ namespace OrderAutomationSystem
             this.btnRemove.Size = new System.Drawing.Size(141, 57);
             this.btnRemove.TabIndex = 6;
             this.btnRemove.Text = "Remove";
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // dgvProducts
             // 
@@ -278,7 +283,7 @@ namespace OrderAutomationSystem
             this.lblDescription.ForeColor = System.Drawing.Color.White;
             this.lblDescription.Location = new System.Drawing.Point(526, 49);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(141, 29);
+            this.lblDescription.Size = new System.Drawing.Size(115, 25);
             this.lblDescription.TabIndex = 0;
             this.lblDescription.Text = "Description:";
             // 
@@ -313,7 +318,7 @@ namespace OrderAutomationSystem
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(30, 303);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 29);
+            this.label1.Size = new System.Drawing.Size(53, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tag:";
             // 
@@ -342,7 +347,7 @@ namespace OrderAutomationSystem
             this.txtTag.ShadowDecoration.Parent = this.txtTag;
             this.txtTag.Size = new System.Drawing.Size(312, 45);
             this.txtTag.TabIndex = 3;
-            this.txtTag.Click += new System.EventHandler(this.txtPrice_Click);
+            this.txtTag.Click += new System.EventHandler(this.txtTag_Click);
             // 
             // ucProducts
             // 

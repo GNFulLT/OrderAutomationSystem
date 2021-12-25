@@ -77,14 +77,14 @@ namespace OrderAutomationSystem
             {
                 sql.Open();
                 cmd = sql.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Items (Name, Quantity, Weight,Price,Description) VALUES ('" + txtName.Text + "','" + txtQuantity.Text + "','" + txtWeight.Text + "','" + txtPrice.Text + "','" + txtDescription.Text + "')";
+                cmd.CommandText = @"INSERT INTO Items (Name, Quantity, Weight, Description, Price, Tag) VALUES ('" + txtName.Text + "','" + txtQuantity.Text + "','" + txtWeight.Text + "','" + txtDescription.Text + "','"+txtPrice.Text+"','" + txtTag.Text + "')";
 
                 cmd.ExecuteNonQuery();
                 cmd = sql.CreateCommand();
                 cmd.CommandText = @"SELECT * FROM Items";
 
                 SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(cmd);
-                 ds.Clear();//Dataseti 0 lar
+                ds.Clear();//Dataseti 0 lar
                 dataAdapter.Fill(ds);
                 sql.Close();
             }
@@ -142,6 +142,35 @@ namespace OrderAutomationSystem
         private void ucProducts_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Confirm erase?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                int id = Convert.ToInt32(dgvProducts.CurrentRow.Cells["ItemID"].Value.ToString());
+                string sql = "Delete from Items Where ItemID='" + id + "'";
+                if (Crud.ARU(sql))
+                {
+                    List();
+                }
+            }
+        }
+
+        private void txtName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)
+                && !char.IsSeparator(e.KeyChar);
+        }
+
+        private void txtQuantity_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void txtTag_Click(object sender, EventArgs e)
+        {
+            txtTag.Text = string.Empty; 
         }
     }
 }

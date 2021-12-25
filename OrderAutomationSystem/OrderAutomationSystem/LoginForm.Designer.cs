@@ -43,6 +43,7 @@ namespace OrderAutomationSystem
             this.bilgilendirmeLabel = new System.Windows.Forms.Label();
             this.lightBtn = new Guna.UI2.WinForms.Guna2PictureBox();
             this.loffButton = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.chcRememberMe = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lightBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loffButton)).BeginInit();
@@ -227,7 +228,7 @@ namespace OrderAutomationSystem
             // 
             this.bilgilendirmeLabel.AutoSize = true;
             this.bilgilendirmeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.bilgilendirmeLabel.Location = new System.Drawing.Point(254, 632);
+            this.bilgilendirmeLabel.Location = new System.Drawing.Point(258, 653);
             this.bilgilendirmeLabel.Name = "bilgilendirmeLabel";
             this.bilgilendirmeLabel.Size = new System.Drawing.Size(18, 20);
             this.bilgilendirmeLabel.TabIndex = 257;
@@ -261,6 +262,19 @@ namespace OrderAutomationSystem
             this.loffButton.TabStop = false;
             this.loffButton.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
+            // chcRememberMe
+            // 
+            this.chcRememberMe.AutoSize = true;
+            this.chcRememberMe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.chcRememberMe.Location = new System.Drawing.Point(262, 618);
+            this.chcRememberMe.Margin = new System.Windows.Forms.Padding(2);
+            this.chcRememberMe.Name = "chcRememberMe";
+            this.chcRememberMe.Size = new System.Drawing.Size(133, 24);
+            this.chcRememberMe.TabIndex = 259;
+            this.chcRememberMe.Text = "Remember Me";
+            this.chcRememberMe.UseVisualStyleBackColor = true;
+            this.chcRememberMe.CheckedChanged += new System.EventHandler(this.chcRememberMe_CheckedChanged);
+            // 
             // loginPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,6 +282,7 @@ namespace OrderAutomationSystem
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(537, 711);
+            this.Controls.Add(this.chcRememberMe);
             this.Controls.Add(this.loffButton);
             this.Controls.Add(this.lightBtn);
             this.Controls.Add(this.bilgilendirmeLabel);
@@ -310,6 +325,7 @@ namespace OrderAutomationSystem
         private System.Windows.Forms.Label bilgilendirmeLabel;
         private Guna.UI2.WinForms.Guna2PictureBox lightBtn;
         private Guna.UI2.WinForms.Guna2PictureBox loffButton;
+        private System.Windows.Forms.CheckBox chcRememberMe;
     }
 }
 

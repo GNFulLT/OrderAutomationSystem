@@ -22,18 +22,34 @@ namespace OrderAutomationSystem
         public static bool ARU(string sql)
         {
             int verify = 0;
+            
             SQLiteCommand cmd = new SQLiteCommand(sql, Connect.con);
-            Connect.con.Open();
-            verify = cmd.ExecuteNonQuery();
-            Connect.con.Close();
-            if (verify == 0)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+                Connect.con.Open();
+
+                verify = cmd.ExecuteNonQuery();
+                Connect.con.Close();
+                if (verify == 0)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            
+        }
+        public static int Quantity(string sql)
+        {
+            int quantity = -1;
+            
+                SQLiteCommand cmd = new SQLiteCommand(sql, Connect.con);
+                Connect.con.Open();
+                int verify = cmd.ExecuteNonQuery();
+                Connect.con.Close();
+
+            
+            return quantity;
+            
         }
     }
 }

@@ -9,21 +9,62 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OrderAutomationSystem
-{
+{   internal delegate void callBack(object sender, PaymentEvents e);
+
     public partial class PaymentForm : Form
     {
-        public PaymentForm()
-        {
-            InitializeComponent();
-        }
-
+        internal event callBack completed;
+        Order order;
         PaymentCredit credit = new PaymentCredit();
         PaymentCheck check = new PaymentCheck();
         PaymentCash cash = new PaymentCash();
-
-        private void lblExit_Click(object sender, EventArgs e)
+        public PaymentForm()
         {
+            InitializeComponent();
+            credit.completed += lblExit_Click;
+            check.completed += lblExit_Click;
+            cash.completed += lblExit_Click;
+        }
+        internal PaymentForm(Order order) : this()
+        {
+            this.order = order;
+            credit.getOrder(order);
+            check.getOrder(order);
+            cash.getOrder(order);
+
+        }
+
+
+        internal void lblExit_Click(object sender, EventArgs e)
+        {
+            
+           
+
+            
+            /*else
+            {
+                PaymentEvents pa = new PaymentEvents();
+                pa.Completed = true;
+                OrderDetail detail = new OrderDetail(null, 0);
+                pa.Order = new Order(detail);
+                if (completed != null)
+                    completed(null, pa);
+            }*/
+            credit.Dispose();
+            check.Dispose();
+            cash.Dispose();
             this.Dispose();
+            if(sender is Payment)
+            {
+                PaymentEvents pe = e as PaymentEvents;
+                pe.Completed = true;
+                completed(sender as Payment, pe);
+            }
+            else
+            {               
+
+               completed(null, null);
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -37,11 +78,12 @@ namespace OrderAutomationSystem
                 timer2.Start();
             }
         }
+        
 
         private void timer2_Tick(object sender, EventArgs e)
         {
             credit.Left -= 10;
-            if (credit.Left <= 525)
+            if (credit.Left <= 679)
             {
                 timer1.Stop();
                 this.TopMost = false;
@@ -85,7 +127,7 @@ namespace OrderAutomationSystem
         private void timer4_Tick(object sender, EventArgs e)
         {
             check.Left -= 10;
-            if (check.Left <= 525)
+            if (check.Left <= 679)
             {
                 timer3.Stop();
                 this.TopMost = false;
@@ -114,7 +156,7 @@ namespace OrderAutomationSystem
         private void timer6_Tick(object sender, EventArgs e)
         {
             cash.Left -= 10;
-            if (cash.Left <= 525)
+            if (cash.Left <= 679)
             {
                 timer5.Stop();
                 this.TopMost = false;

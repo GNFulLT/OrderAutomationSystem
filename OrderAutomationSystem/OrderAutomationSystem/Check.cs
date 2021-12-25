@@ -11,10 +11,12 @@ namespace OrderAutomationSystem
         internal int BankID { get; private set; }
         internal string CheckName { get; private set; }
 
-       internal Check(int amount,int bankID,string name) : base(amount)
+       internal Check(int amount,int bankID,string name,string surname) : base(amount)
         {
             BankID = bankID;
             this.CheckName = name;
+            this.Name = name;
+            this.Surname = surname;
         }
 
         public bool authorized()

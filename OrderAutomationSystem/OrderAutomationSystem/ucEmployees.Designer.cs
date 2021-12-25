@@ -51,14 +51,15 @@ namespace OrderAutomationSystem
             this.txtEmployeeSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmployeeSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmployeeSearch.HoverState.Parent = this.txtEmployeeSearch;
-            this.txtEmployeeSearch.Location = new System.Drawing.Point(36, 30);
+            this.txtEmployeeSearch.Location = new System.Drawing.Point(40, 38);
+            this.txtEmployeeSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmployeeSearch.Name = "txtEmployeeSearch";
             this.txtEmployeeSearch.PasswordChar = '\0';
             this.txtEmployeeSearch.PlaceholderText = "";
             this.txtEmployeeSearch.SelectedText = "";
             this.txtEmployeeSearch.SelectionStart = 17;
             this.txtEmployeeSearch.ShadowDecoration.Parent = this.txtEmployeeSearch;
-            this.txtEmployeeSearch.Size = new System.Drawing.Size(277, 36);
+            this.txtEmployeeSearch.Size = new System.Drawing.Size(312, 45);
             this.txtEmployeeSearch.TabIndex = 8;
             this.txtEmployeeSearch.Click += new System.EventHandler(this.txtEmployeeSearch_Click);
             // 
@@ -67,7 +68,7 @@ namespace OrderAutomationSystem
             this.btnSearch.Animated = true;
             this.btnSearch.AutoRoundedCorners = true;
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.BorderRadius = 21;
+            this.btnSearch.BorderRadius = 27;
             this.btnSearch.CheckedState.Parent = this.btnSearch;
             this.btnSearch.CustomImages.Parent = this.btnSearch;
             this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -81,34 +82,39 @@ namespace OrderAutomationSystem
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnSearch.HoverState.Parent = this.btnSearch;
-            this.btnSearch.Location = new System.Drawing.Point(332, 21);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearch.Location = new System.Drawing.Point(374, 26);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
-            this.btnSearch.Size = new System.Drawing.Size(125, 45);
+            this.btnSearch.Size = new System.Drawing.Size(141, 56);
             this.btnSearch.TabIndex = 257;
             this.btnSearch.Text = "Search";
             // 
             // dgvEmployees
             // 
+            this.dgvEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmployees.Location = new System.Drawing.Point(36, 141);
+            this.dgvEmployees.Location = new System.Drawing.Point(40, 282);
+            this.dgvEmployees.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvEmployees.Name = "dgvEmployees";
             this.dgvEmployees.RowHeadersWidth = 51;
             this.dgvEmployees.RowTemplate.Height = 24;
-            this.dgvEmployees.Size = new System.Drawing.Size(895, 554);
+            this.dgvEmployees.Size = new System.Drawing.Size(1114, 635);
             this.dgvEmployees.TabIndex = 258;
+            this.dgvEmployees.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployees_CellContentClick_1);
             // 
             // ucEmployees
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(48)))));
             this.Controls.Add(this.dgvEmployees);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtEmployeeSearch);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ucEmployees";
-            this.Size = new System.Drawing.Size(1100, 820);
+            this.Size = new System.Drawing.Size(1238, 1025);
+            this.Load += new System.EventHandler(this.ucEmployees_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).EndInit();
             this.ResumeLayout(false);
 

@@ -50,9 +50,10 @@ namespace OrderAutomationSystem
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblName.Location = new System.Drawing.Point(35, 80);
+            this.lblName.Location = new System.Drawing.Point(26, 65);
+            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(70, 25);
+            this.lblName.Size = new System.Drawing.Size(55, 20);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name:";
             // 
@@ -70,22 +71,24 @@ namespace OrderAutomationSystem
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtName.HoverState.Parent = this.txtName;
-            this.txtName.Location = new System.Drawing.Point(157, 80);
+            this.txtName.Location = new System.Drawing.Point(118, 65);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
             this.txtName.PlaceholderText = "";
             this.txtName.SelectedText = "";
             this.txtName.ShadowDecoration.Parent = this.txtName;
-            this.txtName.Size = new System.Drawing.Size(207, 24);
+            this.txtName.Size = new System.Drawing.Size(155, 20);
             this.txtName.TabIndex = 1;
             // 
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
             this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSurname.Location = new System.Drawing.Point(35, 139);
+            this.lblSurname.Location = new System.Drawing.Point(26, 113);
+            this.lblSurname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(98, 25);
+            this.lblSurname.Size = new System.Drawing.Size(78, 20);
             this.lblSurname.TabIndex = 0;
             this.lblSurname.Text = "Surname:";
             // 
@@ -103,22 +106,24 @@ namespace OrderAutomationSystem
             this.txtSurname.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSurname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSurname.HoverState.Parent = this.txtSurname;
-            this.txtSurname.Location = new System.Drawing.Point(157, 140);
+            this.txtSurname.Location = new System.Drawing.Point(118, 114);
+            this.txtSurname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.PasswordChar = '\0';
             this.txtSurname.PlaceholderText = "";
             this.txtSurname.SelectedText = "";
             this.txtSurname.ShadowDecoration.Parent = this.txtSurname;
-            this.txtSurname.Size = new System.Drawing.Size(207, 24);
+            this.txtSurname.Size = new System.Drawing.Size(155, 20);
             this.txtSurname.TabIndex = 1;
             // 
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
             this.lblAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAmount.Location = new System.Drawing.Point(36, 199);
+            this.lblAmount.Location = new System.Drawing.Point(27, 162);
+            this.lblAmount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(86, 25);
+            this.lblAmount.Size = new System.Drawing.Size(69, 20);
             this.lblAmount.TabIndex = 0;
             this.lblAmount.Text = "Amount:";
             // 
@@ -136,22 +141,24 @@ namespace OrderAutomationSystem
             this.txtAmount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAmount.HoverState.Parent = this.txtAmount;
-            this.txtAmount.Location = new System.Drawing.Point(157, 200);
+            this.txtAmount.Location = new System.Drawing.Point(118, 162);
+            this.txtAmount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.PasswordChar = '\0';
             this.txtAmount.PlaceholderText = "";
             this.txtAmount.SelectedText = "";
             this.txtAmount.ShadowDecoration.Parent = this.txtAmount;
-            this.txtAmount.Size = new System.Drawing.Size(207, 24);
+            this.txtAmount.Size = new System.Drawing.Size(155, 20);
             this.txtAmount.TabIndex = 1;
             // 
             // lnlNumber
             // 
             this.lnlNumber.AutoSize = true;
             this.lnlNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lnlNumber.Location = new System.Drawing.Point(35, 259);
+            this.lnlNumber.Location = new System.Drawing.Point(26, 210);
+            this.lnlNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lnlNumber.Name = "lnlNumber";
-            this.lnlNumber.Size = new System.Drawing.Size(87, 25);
+            this.lnlNumber.Size = new System.Drawing.Size(69, 20);
             this.lnlNumber.TabIndex = 0;
             this.lnlNumber.Text = "Number:";
             // 
@@ -169,22 +176,24 @@ namespace OrderAutomationSystem
             this.txtNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNumber.HoverState.Parent = this.txtNumber;
-            this.txtNumber.Location = new System.Drawing.Point(157, 260);
+            this.txtNumber.Location = new System.Drawing.Point(118, 211);
+            this.txtNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.PasswordChar = '\0';
             this.txtNumber.PlaceholderText = "";
             this.txtNumber.SelectedText = "";
             this.txtNumber.ShadowDecoration.Parent = this.txtNumber;
-            this.txtNumber.Size = new System.Drawing.Size(207, 24);
+            this.txtNumber.Size = new System.Drawing.Size(155, 20);
             this.txtNumber.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(35, 328);
+            this.label1.Location = new System.Drawing.Point(26, 266);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 25);
+            this.label1.Size = new System.Drawing.Size(75, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "ExpDate:";
             // 
@@ -200,11 +209,26 @@ namespace OrderAutomationSystem
             this.cmbMonth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbMonth.HoverState.Parent = this.cmbMonth;
             this.cmbMonth.ItemHeight = 30;
+            this.cmbMonth.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
             this.cmbMonth.ItemsAppearance.Parent = this.cmbMonth;
-            this.cmbMonth.Location = new System.Drawing.Point(157, 317);
+            this.cmbMonth.Location = new System.Drawing.Point(118, 258);
+            this.cmbMonth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbMonth.Name = "cmbMonth";
             this.cmbMonth.ShadowDecoration.Parent = this.cmbMonth;
-            this.cmbMonth.Size = new System.Drawing.Size(75, 36);
+            this.cmbMonth.Size = new System.Drawing.Size(71, 36);
+            this.cmbMonth.StartIndex = 0;
             this.cmbMonth.TabIndex = 2;
             // 
             // cmbYear
@@ -219,20 +243,38 @@ namespace OrderAutomationSystem
             this.cmbYear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbYear.HoverState.Parent = this.cmbYear;
             this.cmbYear.ItemHeight = 30;
+            this.cmbYear.Items.AddRange(new object[] {
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35"});
             this.cmbYear.ItemsAppearance.Parent = this.cmbYear;
-            this.cmbYear.Location = new System.Drawing.Point(251, 317);
+            this.cmbYear.Location = new System.Drawing.Point(193, 258);
+            this.cmbYear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbYear.Name = "cmbYear";
             this.cmbYear.ShadowDecoration.Parent = this.cmbYear;
-            this.cmbYear.Size = new System.Drawing.Size(75, 36);
+            this.cmbYear.Size = new System.Drawing.Size(80, 36);
+            this.cmbYear.StartIndex = 0;
             this.cmbYear.TabIndex = 2;
             // 
             // lblExit
             // 
             this.lblExit.AutoSize = true;
             this.lblExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblExit.Location = new System.Drawing.Point(720, 5);
+            this.lblExit.Location = new System.Drawing.Point(540, 4);
+            this.lblExit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblExit.Name = "lblExit";
-            this.lblExit.Size = new System.Drawing.Size(26, 25);
+            this.lblExit.Size = new System.Drawing.Size(20, 20);
             this.lblExit.TabIndex = 6;
             this.lblExit.Text = "X";
             this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
@@ -251,23 +293,25 @@ namespace OrderAutomationSystem
             this.txtAdress.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAdress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAdress.HoverState.Parent = this.txtAdress;
-            this.txtAdress.Location = new System.Drawing.Point(504, 79);
+            this.txtAdress.Location = new System.Drawing.Point(378, 64);
+            this.txtAdress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAdress.Multiline = true;
             this.txtAdress.Name = "txtAdress";
             this.txtAdress.PasswordChar = '\0';
             this.txtAdress.PlaceholderText = "";
             this.txtAdress.SelectedText = "";
             this.txtAdress.ShadowDecoration.Parent = this.txtAdress;
-            this.txtAdress.Size = new System.Drawing.Size(207, 170);
+            this.txtAdress.Size = new System.Drawing.Size(155, 138);
             this.txtAdress.TabIndex = 13;
             // 
             // lblAdress
             // 
             this.lblAdress.AutoSize = true;
             this.lblAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAdress.Location = new System.Drawing.Point(382, 79);
+            this.lblAdress.Location = new System.Drawing.Point(286, 64);
+            this.lblAdress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAdress.Name = "lblAdress";
-            this.lblAdress.Size = new System.Drawing.Size(80, 25);
+            this.lblAdress.Size = new System.Drawing.Size(63, 20);
             this.lblAdress.TabIndex = 12;
             this.lblAdress.Text = "Adress:";
             // 
@@ -284,19 +328,21 @@ namespace OrderAutomationSystem
             this.btnPay.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnPay.ForeColor = System.Drawing.Color.White;
             this.btnPay.HoverState.Parent = this.btnPay;
-            this.btnPay.Location = new System.Drawing.Point(504, 273);
+            this.btnPay.Location = new System.Drawing.Point(378, 222);
+            this.btnPay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPay.Name = "btnPay";
             this.btnPay.ShadowDecoration.Parent = this.btnPay;
-            this.btnPay.Size = new System.Drawing.Size(207, 45);
+            this.btnPay.Size = new System.Drawing.Size(155, 37);
             this.btnPay.TabIndex = 29;
             this.btnPay.Text = "Pay";
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // PaymentCredit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(750, 576);
+            this.ClientSize = new System.Drawing.Size(562, 468);
             this.Controls.Add(this.btnPay);
             this.Controls.Add(this.txtAdress);
             this.Controls.Add(this.lblAdress);
@@ -313,6 +359,7 @@ namespace OrderAutomationSystem
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PaymentCredit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PaymentCredit";

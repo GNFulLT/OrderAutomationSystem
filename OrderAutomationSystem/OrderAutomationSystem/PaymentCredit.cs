@@ -12,20 +12,46 @@ namespace OrderAutomationSystem
 {
     public partial class PaymentCredit : Form
     {
+        Order order;
+        internal event callBack completed;
         public PaymentCredit()
         {
             InitializeComponent();
         }
+        internal void getOrder(Order order)
+        {
+            this.order = order;
+            txtAmount.Text = order.Details.TotalAmount.ToString();
+            txtAmount.Enabled = false;
+        }
 
         private void lblExit_Click(object sender, EventArgs e)
         {
-            Application.OpenForms["PaymentForm"].Close();
-            this.Dispose();
+            PaymentForm pf = Application.OpenForms["PaymentForm"] as PaymentForm;
+            pf.lblExit_Click(null, null);
         }
-        public static void FormClose(PaymentForm pf, PaymentCredit pc)
+
+
+        private void btnPay_Click(object sender, EventArgs e)
         {
-            pc.Dispose();
-            pf.Dispose();
+            ExpDate exp = new ExpDate();
+            exp.month = cmbMonth.SelectedItem.ToString();
+            exp.year = cmbYear.SelectedItem.ToString();
+            Credit crdt = new Credit(Convert.ToInt32(txtAmount.Text), txtNumber.Text, exp);
+            PaymentEvents pe = new PaymentEvents();
+            pe.Completed = true;
+            order.Details.Address = txtAdress.Text;
+            crdt.Name = txtName.Text;
+            crdt.Surname = txtSurname.Text;
+            pe.Order = order;
+
+            orderPayment op = new orderPayment();
+
+            op.Show();
+
+
+            this.completed(crdt, pe);
+
         }
     }
 }

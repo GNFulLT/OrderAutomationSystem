@@ -9,15 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OrderAutomationSystem
-{  
-    public partial class ucStatistics : UserControl
+{
+    public partial class orderPayment : Form
     {
-       
-        public ucStatistics()
+        public orderPayment()
         {
             InitializeComponent();
-            
         }
-       
+
+        private void lblExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
-}          
+}

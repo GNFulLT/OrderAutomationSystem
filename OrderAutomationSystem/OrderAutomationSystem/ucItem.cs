@@ -27,8 +27,16 @@ namespace OrderAutomationSystem
             
 
         }
+        public void disable()
+        {
+            if (checkedBox.Visible == true)
+            {
+                ucBasket.itemRemove(this.item);
+            }
+            this.Dispose();
+        }
 
-      
+
 
         private void mainPanel_Click(object sender, EventArgs e)
         {
@@ -40,7 +48,7 @@ namespace OrderAutomationSystem
                 customerMenu.InfoPopup(name, true);
 
                 ucBasket.itemAdd(item);
-               
+                ucProfil.items.Add(item.ItemID);
                 
             }
             else
@@ -48,6 +56,8 @@ namespace OrderAutomationSystem
                 string name = checkedBox.Parent.Controls["lblName"].Text;
                 customerMenu.InfoPopup(name, false);
                 ucBasket.itemRemove(item);
+                ucProfil.items.Remove(item.ItemID);
+
             }
         }
 
@@ -59,12 +69,16 @@ namespace OrderAutomationSystem
                 string name = checkedBox.Parent.Controls["lblName"].Text;
                 customerMenu.InfoPopup(name, true);
                 ucBasket.itemAdd(item);
+                ucProfil.items.Add(item.ItemID);
+
             }
             else
             {
                 string name = checkedBox.Parent.Controls["lblName"].Text;
                 customerMenu.InfoPopup(name, false);
                 ucBasket.itemRemove(item);
+                ucProfil.items.Remove(item.ItemID);
+
             }
 
         }
