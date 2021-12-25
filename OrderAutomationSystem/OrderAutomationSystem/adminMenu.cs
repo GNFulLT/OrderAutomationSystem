@@ -25,12 +25,32 @@ namespace OrderAutomationSystem
         int a,
         int qw
             );
-
+        ucStatistics ucStatistics1;
+        ucProducts ucProducts1;
+        ucEmployees ucEmployees1;
+        ucCustomers ucCustomers1;
+        UserControl[] menus = new UserControl[4];
         public adminMenu()
         {
             InitializeComponent();
             /*this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));*/
             loffBtn.Location = lightBtn.Location;
+            ucStatistics1 = new ucStatistics();
+            ucProducts1 = new ucProducts();
+            ucEmployees1 = new ucEmployees();
+            ucCustomers1 = new ucCustomers();
+            
+            menus[0] = ucStatistics1;
+            menus[1] = ucProducts1;
+            menus[2] = ucCustomers1;
+            menus[3] = ucEmployees1;
+            foreach(UserControl c in menus)
+            {
+                c.Location = new Point(227, 65);
+                this.Controls.Add(c);
+            }
+            
+           
 
         }
         public adminMenu(bool isLight) : this()
@@ -57,8 +77,8 @@ namespace OrderAutomationSystem
         }
         private void adminMenu_Load(object sender, EventArgs e)
         {
-            ucStatistics1.Show();
-            ucStatistics1.BringToFront();
+            ucStatistics1.Visible = true;
+            ucStatistics1.BringToFront();   
             ucProducts1.Hide();
             ucCustomers1.Hide();
             ucEmployees1.Hide();

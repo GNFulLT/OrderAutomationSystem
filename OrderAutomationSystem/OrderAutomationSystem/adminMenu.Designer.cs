@@ -30,9 +30,9 @@ namespace OrderAutomationSystem
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminMenu));
+            Guna.UI2.AnimatorNS.Animation animation4 = new Guna.UI2.AnimatorNS.Animation();
             this.sidebarWrapper = new System.Windows.Forms.Panel();
             this.gunaMenuBar = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pnlLine = new System.Windows.Forms.Panel();
@@ -54,8 +54,6 @@ namespace OrderAutomationSystem
             this.pctMaximize = new System.Windows.Forms.PictureBox();
             this.pctMenuSideBar = new System.Windows.Forms.PictureBox();
             this.AnimationSidebar = new Guna.UI2.WinForms.Guna2Transition();
-            this.ucCustomers1 = new OrderAutomationSystem.ucCustomers();
-            this.ucStatistics1 = new OrderAutomationSystem.ucStatistics();
             this.curveSidebar = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.AnimatiomSidebarBack = new Guna.UI2.WinForms.Guna2Transition();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -78,10 +76,10 @@ namespace OrderAutomationSystem
             this.AnimatiomSidebarBack.SetDecoration(this.sidebarWrapper, Guna.UI2.AnimatorNS.DecorationType.None);
             this.AnimationSidebar.SetDecoration(this.sidebarWrapper, Guna.UI2.AnimatorNS.DecorationType.None);
             this.sidebarWrapper.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidebarWrapper.Location = new System.Drawing.Point(0, 80);
-            this.sidebarWrapper.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sidebarWrapper.Location = new System.Drawing.Point(0, 65);
+            this.sidebarWrapper.Margin = new System.Windows.Forms.Padding(2);
             this.sidebarWrapper.Name = "sidebarWrapper";
-            this.sidebarWrapper.Size = new System.Drawing.Size(300, 820);
+            this.sidebarWrapper.Size = new System.Drawing.Size(225, 666);
             this.sidebarWrapper.TabIndex = 8;
             // 
             // gunaMenuBar
@@ -100,11 +98,11 @@ namespace OrderAutomationSystem
             this.AnimationSidebar.SetDecoration(this.gunaMenuBar, Guna.UI2.AnimatorNS.DecorationType.None);
             this.gunaMenuBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.gunaMenuBar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.gunaMenuBar.Location = new System.Drawing.Point(13, 18);
-            this.gunaMenuBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gunaMenuBar.Location = new System.Drawing.Point(10, 15);
+            this.gunaMenuBar.Margin = new System.Windows.Forms.Padding(2);
             this.gunaMenuBar.Name = "gunaMenuBar";
             this.gunaMenuBar.ShadowDecoration.Parent = this.gunaMenuBar;
-            this.gunaMenuBar.Size = new System.Drawing.Size(267, 780);
+            this.gunaMenuBar.Size = new System.Drawing.Size(200, 634);
             this.gunaMenuBar.TabIndex = 0;
             // 
             // pnlLine
@@ -112,10 +110,10 @@ namespace OrderAutomationSystem
             this.pnlLine.BackColor = System.Drawing.Color.White;
             this.AnimatiomSidebarBack.SetDecoration(this.pnlLine, Guna.UI2.AnimatorNS.DecorationType.None);
             this.AnimationSidebar.SetDecoration(this.pnlLine, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.pnlLine.Location = new System.Drawing.Point(13, 70);
-            this.pnlLine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlLine.Location = new System.Drawing.Point(10, 57);
+            this.pnlLine.Margin = new System.Windows.Forms.Padding(2);
             this.pnlLine.Name = "pnlLine";
-            this.pnlLine.Size = new System.Drawing.Size(240, 1);
+            this.pnlLine.Size = new System.Drawing.Size(180, 1);
             this.pnlLine.TabIndex = 5;
             // 
             // btnEmployees
@@ -140,11 +138,11 @@ namespace OrderAutomationSystem
             this.btnEmployees.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployees.Image")));
             this.btnEmployees.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnEmployees.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnEmployees.Location = new System.Drawing.Point(3, 396);
-            this.btnEmployees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEmployees.Location = new System.Drawing.Point(2, 322);
+            this.btnEmployees.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmployees.Name = "btnEmployees";
             this.btnEmployees.ShadowDecoration.Parent = this.btnEmployees;
-            this.btnEmployees.Size = new System.Drawing.Size(264, 75);
+            this.btnEmployees.Size = new System.Drawing.Size(198, 61);
             this.btnEmployees.TabIndex = 4;
             this.btnEmployees.Text = "Employees";
             this.btnEmployees.Click += new System.EventHandler(this.btnEmployees_Click);
@@ -171,11 +169,11 @@ namespace OrderAutomationSystem
             this.btnCustomers.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomers.Image")));
             this.btnCustomers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCustomers.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnCustomers.Location = new System.Drawing.Point(3, 295);
-            this.btnCustomers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCustomers.Location = new System.Drawing.Point(2, 240);
+            this.btnCustomers.Margin = new System.Windows.Forms.Padding(2);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.ShadowDecoration.Parent = this.btnCustomers;
-            this.btnCustomers.Size = new System.Drawing.Size(264, 75);
+            this.btnCustomers.Size = new System.Drawing.Size(198, 61);
             this.btnCustomers.TabIndex = 4;
             this.btnCustomers.Text = "  Customers";
             this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
@@ -202,11 +200,11 @@ namespace OrderAutomationSystem
             this.btnProducts.Image = ((System.Drawing.Image)(resources.GetObject("btnProducts.Image")));
             this.btnProducts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnProducts.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnProducts.Location = new System.Drawing.Point(3, 196);
-            this.btnProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProducts.Location = new System.Drawing.Point(2, 159);
+            this.btnProducts.Margin = new System.Windows.Forms.Padding(2);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.ShadowDecoration.Parent = this.btnProducts;
-            this.btnProducts.Size = new System.Drawing.Size(264, 75);
+            this.btnProducts.Size = new System.Drawing.Size(198, 61);
             this.btnProducts.TabIndex = 4;
             this.btnProducts.Text = "Products";
             this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
@@ -233,11 +231,11 @@ namespace OrderAutomationSystem
             this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
             this.btnDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnDashboard.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnDashboard.Location = new System.Drawing.Point(3, 96);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDashboard.Location = new System.Drawing.Point(2, 78);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.ShadowDecoration.Parent = this.btnDashboard;
-            this.btnDashboard.Size = new System.Drawing.Size(264, 75);
+            this.btnDashboard.Size = new System.Drawing.Size(198, 61);
             this.btnDashboard.TabIndex = 4;
             this.btnDashboard.Text = "Statistics";
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
@@ -250,9 +248,10 @@ namespace OrderAutomationSystem
             this.AnimatiomSidebarBack.SetDecoration(this.lblUserName, Guna.UI2.AnimatorNS.DecorationType.None);
             this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblUserName.ForeColor = System.Drawing.Color.White;
-            this.lblUserName.Location = new System.Drawing.Point(91, 34);
+            this.lblUserName.Location = new System.Drawing.Point(68, 28);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(103, 20);
+            this.lblUserName.Size = new System.Drawing.Size(88, 17);
             this.lblUserName.TabIndex = 3;
             this.lblUserName.Text = "User Name";
             // 
@@ -262,10 +261,10 @@ namespace OrderAutomationSystem
             this.AnimationSidebar.SetDecoration(this.pctUser, Guna.UI2.AnimatorNS.DecorationType.None);
             this.AnimatiomSidebarBack.SetDecoration(this.pctUser, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pctUser.Image = ((System.Drawing.Image)(resources.GetObject("pctUser.Image")));
-            this.pctUser.Location = new System.Drawing.Point(23, 25);
-            this.pctUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pctUser.Location = new System.Drawing.Point(17, 20);
+            this.pctUser.Margin = new System.Windows.Forms.Padding(2);
             this.pctUser.Name = "pctUser";
-            this.pctUser.Size = new System.Drawing.Size(40, 39);
+            this.pctUser.Size = new System.Drawing.Size(30, 32);
             this.pctUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctUser.TabIndex = 3;
             this.pctUser.TabStop = false;
@@ -274,10 +273,10 @@ namespace OrderAutomationSystem
             // 
             this.AnimatiomSidebarBack.SetDecoration(this.wrapper, Guna.UI2.AnimatorNS.DecorationType.None);
             this.AnimationSidebar.SetDecoration(this.wrapper, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.wrapper.Location = new System.Drawing.Point(300, 80);
-            this.wrapper.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.wrapper.Location = new System.Drawing.Point(225, 65);
+            this.wrapper.Margin = new System.Windows.Forms.Padding(2);
             this.wrapper.Name = "wrapper";
-            this.wrapper.Size = new System.Drawing.Size(1100, 820);
+            this.wrapper.Size = new System.Drawing.Size(825, 666);
             this.wrapper.TabIndex = 0;
             // 
             // lblMenuName
@@ -287,9 +286,10 @@ namespace OrderAutomationSystem
             this.AnimatiomSidebarBack.SetDecoration(this.lblMenuName, Guna.UI2.AnimatorNS.DecorationType.None);
             this.lblMenuName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblMenuName.ForeColor = System.Drawing.Color.White;
-            this.lblMenuName.Location = new System.Drawing.Point(73, 28);
+            this.lblMenuName.Location = new System.Drawing.Point(55, 23);
+            this.lblMenuName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMenuName.Name = "lblMenuName";
-            this.lblMenuName.Size = new System.Drawing.Size(79, 20);
+            this.lblMenuName.Size = new System.Drawing.Size(64, 17);
             this.lblMenuName.TabIndex = 1;
             this.lblMenuName.Text = "Statistics";
             // 
@@ -310,9 +310,9 @@ namespace OrderAutomationSystem
             this.AnimationSidebar.SetDecoration(this.menuTop, Guna.UI2.AnimatorNS.DecorationType.None);
             this.menuTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.menuTop.Location = new System.Drawing.Point(0, 0);
-            this.menuTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.menuTop.Margin = new System.Windows.Forms.Padding(2);
             this.menuTop.Name = "menuTop";
-            this.menuTop.Size = new System.Drawing.Size(1400, 80);
+            this.menuTop.Size = new System.Drawing.Size(1050, 65);
             this.menuTop.TabIndex = 7;
             // 
             // loffBtn
@@ -335,13 +335,12 @@ namespace OrderAutomationSystem
             this.loffBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.loffBtn.ForeColor = System.Drawing.Color.White;
             this.loffBtn.HoverState.Parent = this.loffBtn;
-            this.loffBtn.Location = new System.Drawing.Point(1207, 12);
-            this.loffBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.loffBtn.Location = new System.Drawing.Point(905, 10);
             this.loffBtn.Name = "loffBtn";
             this.loffBtn.PressedColor = System.Drawing.Color.Transparent;
             this.loffBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.loffBtn.ShadowDecoration.Parent = this.loffBtn;
-            this.loffBtn.Size = new System.Drawing.Size(44, 46);
+            this.loffBtn.Size = new System.Drawing.Size(33, 37);
             this.loffBtn.TabIndex = 6;
             this.loffBtn.Visible = false;
             this.loffBtn.Click += new System.EventHandler(this.lightBtn_Click);
@@ -366,13 +365,12 @@ namespace OrderAutomationSystem
             this.lightBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lightBtn.ForeColor = System.Drawing.Color.White;
             this.lightBtn.HoverState.Parent = this.lightBtn;
-            this.lightBtn.Location = new System.Drawing.Point(1209, 12);
-            this.lightBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.lightBtn.Location = new System.Drawing.Point(907, 10);
             this.lightBtn.Name = "lightBtn";
             this.lightBtn.PressedColor = System.Drawing.Color.Transparent;
             this.lightBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.lightBtn.ShadowDecoration.Parent = this.lightBtn;
-            this.lightBtn.Size = new System.Drawing.Size(44, 46);
+            this.lightBtn.Size = new System.Drawing.Size(33, 37);
             this.lightBtn.TabIndex = 6;
             this.lightBtn.Click += new System.EventHandler(this.lightBtn_Click);
             // 
@@ -382,10 +380,10 @@ namespace OrderAutomationSystem
             this.AnimationSidebar.SetDecoration(this.extButton2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.AnimatiomSidebarBack.SetDecoration(this.extButton2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.extButton2.Image = ((System.Drawing.Image)(resources.GetObject("extButton2.Image")));
-            this.extButton2.Location = new System.Drawing.Point(1343, 22);
-            this.extButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.extButton2.Location = new System.Drawing.Point(1007, 18);
+            this.extButton2.Margin = new System.Windows.Forms.Padding(2);
             this.extButton2.Name = "extButton2";
-            this.extButton2.Size = new System.Drawing.Size(31, 30);
+            this.extButton2.Size = new System.Drawing.Size(23, 24);
             this.extButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.extButton2.TabIndex = 2;
             this.extButton2.TabStop = false;
@@ -398,10 +396,10 @@ namespace OrderAutomationSystem
             this.AnimationSidebar.SetDecoration(this.pctExit, Guna.UI2.AnimatorNS.DecorationType.None);
             this.AnimatiomSidebarBack.SetDecoration(this.pctExit, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pctExit.Image = ((System.Drawing.Image)(resources.GetObject("pctExit.Image")));
-            this.pctExit.Location = new System.Drawing.Point(1347, 22);
-            this.pctExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pctExit.Location = new System.Drawing.Point(1010, 18);
+            this.pctExit.Margin = new System.Windows.Forms.Padding(2);
             this.pctExit.Name = "pctExit";
-            this.pctExit.Size = new System.Drawing.Size(29, 30);
+            this.pctExit.Size = new System.Drawing.Size(22, 24);
             this.pctExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctExit.TabIndex = 2;
             this.pctExit.TabStop = false;
@@ -413,10 +411,10 @@ namespace OrderAutomationSystem
             this.AnimationSidebar.SetDecoration(this.pctRestore, Guna.UI2.AnimatorNS.DecorationType.None);
             this.AnimatiomSidebarBack.SetDecoration(this.pctRestore, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pctRestore.Image = ((System.Drawing.Image)(resources.GetObject("pctRestore.Image")));
-            this.pctRestore.Location = new System.Drawing.Point(1309, 22);
-            this.pctRestore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pctRestore.Location = new System.Drawing.Point(982, 18);
+            this.pctRestore.Margin = new System.Windows.Forms.Padding(2);
             this.pctRestore.Name = "pctRestore";
-            this.pctRestore.Size = new System.Drawing.Size(29, 30);
+            this.pctRestore.Size = new System.Drawing.Size(22, 24);
             this.pctRestore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctRestore.TabIndex = 2;
             this.pctRestore.TabStop = false;
@@ -429,10 +427,10 @@ namespace OrderAutomationSystem
             this.AnimationSidebar.SetDecoration(this.pctMinimize, Guna.UI2.AnimatorNS.DecorationType.None);
             this.AnimatiomSidebarBack.SetDecoration(this.pctMinimize, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pctMinimize.Image = ((System.Drawing.Image)(resources.GetObject("pctMinimize.Image")));
-            this.pctMinimize.Location = new System.Drawing.Point(1275, 22);
-            this.pctMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pctMinimize.Location = new System.Drawing.Point(956, 18);
+            this.pctMinimize.Margin = new System.Windows.Forms.Padding(2);
             this.pctMinimize.Name = "pctMinimize";
-            this.pctMinimize.Size = new System.Drawing.Size(29, 30);
+            this.pctMinimize.Size = new System.Drawing.Size(22, 24);
             this.pctMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctMinimize.TabIndex = 2;
             this.pctMinimize.TabStop = false;
@@ -444,10 +442,10 @@ namespace OrderAutomationSystem
             this.AnimationSidebar.SetDecoration(this.pctMaximize, Guna.UI2.AnimatorNS.DecorationType.None);
             this.AnimatiomSidebarBack.SetDecoration(this.pctMaximize, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pctMaximize.Image = ((System.Drawing.Image)(resources.GetObject("pctMaximize.Image")));
-            this.pctMaximize.Location = new System.Drawing.Point(1311, 22);
-            this.pctMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pctMaximize.Location = new System.Drawing.Point(983, 18);
+            this.pctMaximize.Margin = new System.Windows.Forms.Padding(2);
             this.pctMaximize.Name = "pctMaximize";
-            this.pctMaximize.Size = new System.Drawing.Size(29, 30);
+            this.pctMaximize.Size = new System.Drawing.Size(22, 24);
             this.pctMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctMaximize.TabIndex = 2;
             this.pctMaximize.TabStop = false;
@@ -458,10 +456,10 @@ namespace OrderAutomationSystem
             this.AnimationSidebar.SetDecoration(this.pctMenuSideBar, Guna.UI2.AnimatorNS.DecorationType.None);
             this.AnimatiomSidebarBack.SetDecoration(this.pctMenuSideBar, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pctMenuSideBar.Image = ((System.Drawing.Image)(resources.GetObject("pctMenuSideBar.Image")));
-            this.pctMenuSideBar.Location = new System.Drawing.Point(24, 22);
-            this.pctMenuSideBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pctMenuSideBar.Location = new System.Drawing.Point(18, 18);
+            this.pctMenuSideBar.Margin = new System.Windows.Forms.Padding(2);
             this.pctMenuSideBar.Name = "pctMenuSideBar";
-            this.pctMenuSideBar.Size = new System.Drawing.Size(29, 30);
+            this.pctMenuSideBar.Size = new System.Drawing.Size(22, 24);
             this.pctMenuSideBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctMenuSideBar.TabIndex = 0;
             this.pctMenuSideBar.TabStop = false;
@@ -471,44 +469,22 @@ namespace OrderAutomationSystem
             // 
             this.AnimationSidebar.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Particles;
             this.AnimationSidebar.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 1;
-            animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 2F;
-            animation2.TransparencyCoeff = 0F;
-            this.AnimationSidebar.DefaultAnimation = animation2;
-            // 
-            // ucCustomers1
-            // 
-            this.ucCustomers1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(48)))));
-            this.AnimationSidebar.SetDecoration(this.ucCustomers1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.AnimatiomSidebarBack.SetDecoration(this.ucCustomers1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.ucCustomers1.Location = new System.Drawing.Point(300, 80);
-            this.ucCustomers1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucCustomers1.Name = "ucCustomers1";
-            this.ucCustomers1.Size = new System.Drawing.Size(1100, 820);
-            this.ucCustomers1.TabIndex = 11;
-            // 
-            // ucStatistics1
-            // 
-            this.ucStatistics1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(48)))));
-            this.AnimationSidebar.SetDecoration(this.ucStatistics1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.AnimatiomSidebarBack.SetDecoration(this.ucStatistics1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.ucStatistics1.Location = new System.Drawing.Point(300, 80);
-            this.ucStatistics1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucStatistics1.Name = "ucStatistics1";
-            this.ucStatistics1.Size = new System.Drawing.Size(1100, 820);
-            this.ucStatistics1.TabIndex = 9;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 1;
+            animation3.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 2F;
+            animation3.TransparencyCoeff = 0F;
+            this.AnimationSidebar.DefaultAnimation = animation3;
             // 
             // curveSidebar
             // 
@@ -519,37 +495,35 @@ namespace OrderAutomationSystem
             // 
             this.AnimatiomSidebarBack.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.AnimatiomSidebarBack.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.AnimatiomSidebarBack.DefaultAnimation = animation1;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.AnimatiomSidebarBack.DefaultAnimation = animation4;
             // 
             // adminMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(1400, 900);
-            this.Controls.Add(this.ucCustomers1);
-            this.Controls.Add(this.ucStatistics1);
+            this.ClientSize = new System.Drawing.Size(1050, 731);
             this.Controls.Add(this.sidebarWrapper);
             this.Controls.Add(this.menuTop);
             this.AnimatiomSidebarBack.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.AnimationSidebar.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "adminMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "adminMenu";
@@ -596,9 +570,6 @@ namespace OrderAutomationSystem
         private Guna.UI2.WinForms.Guna2Elipse curveSidebar;
         private Guna.UI2.WinForms.Guna2Transition AnimatiomSidebarBack;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private ucStatistics ucStatistics1;
-        private ucProducts ucProducts1;
-        private ucCustomers ucCustomers1;
-        private ucEmployees ucEmployees1;
+ 
     }
 }
