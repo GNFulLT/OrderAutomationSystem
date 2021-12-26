@@ -41,7 +41,12 @@ namespace OrderAutomationSystem
             this.closeButton = new System.Windows.Forms.Button();
             this.minimizeButton = new System.Windows.Forms.Button();
             this.bilgilendirmeLabel = new System.Windows.Forms.Label();
+            this.lightBtn = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.loffButton = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.chcRememberMe = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lightBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loffButton)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox
@@ -223,11 +228,52 @@ namespace OrderAutomationSystem
             // 
             this.bilgilendirmeLabel.AutoSize = true;
             this.bilgilendirmeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.bilgilendirmeLabel.Location = new System.Drawing.Point(254, 632);
+            this.bilgilendirmeLabel.Location = new System.Drawing.Point(258, 653);
             this.bilgilendirmeLabel.Name = "bilgilendirmeLabel";
             this.bilgilendirmeLabel.Size = new System.Drawing.Size(18, 20);
             this.bilgilendirmeLabel.TabIndex = 257;
             this.bilgilendirmeLabel.Text = "a";
+            // 
+            // lightBtn
+            // 
+            this.lightBtn.FillColor = System.Drawing.Color.Transparent;
+            this.lightBtn.Image = ((System.Drawing.Image)(resources.GetObject("lightBtn.Image")));
+            this.lightBtn.ImageRotate = 0F;
+            this.lightBtn.Location = new System.Drawing.Point(12, 653);
+            this.lightBtn.Name = "lightBtn";
+            this.lightBtn.ShadowDecoration.Parent = this.lightBtn;
+            this.lightBtn.Size = new System.Drawing.Size(45, 46);
+            this.lightBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lightBtn.TabIndex = 258;
+            this.lightBtn.TabStop = false;
+            this.lightBtn.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            // 
+            // loffButton
+            // 
+            this.loffButton.FillColor = System.Drawing.Color.Transparent;
+            this.loffButton.Image = ((System.Drawing.Image)(resources.GetObject("loffButton.Image")));
+            this.loffButton.ImageRotate = 0F;
+            this.loffButton.Location = new System.Drawing.Point(12, 652);
+            this.loffButton.Name = "loffButton";
+            this.loffButton.ShadowDecoration.Parent = this.loffButton;
+            this.loffButton.Size = new System.Drawing.Size(45, 46);
+            this.loffButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.loffButton.TabIndex = 258;
+            this.loffButton.TabStop = false;
+            this.loffButton.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            // 
+            // chcRememberMe
+            // 
+            this.chcRememberMe.AutoSize = true;
+            this.chcRememberMe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.chcRememberMe.Location = new System.Drawing.Point(262, 618);
+            this.chcRememberMe.Margin = new System.Windows.Forms.Padding(2);
+            this.chcRememberMe.Name = "chcRememberMe";
+            this.chcRememberMe.Size = new System.Drawing.Size(133, 24);
+            this.chcRememberMe.TabIndex = 259;
+            this.chcRememberMe.Text = "Remember Me";
+            this.chcRememberMe.UseVisualStyleBackColor = true;
+            this.chcRememberMe.CheckedChanged += new System.EventHandler(this.chcRememberMe_CheckedChanged);
             // 
             // loginPanel
             // 
@@ -236,6 +282,9 @@ namespace OrderAutomationSystem
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(537, 711);
+            this.Controls.Add(this.chcRememberMe);
+            this.Controls.Add(this.loffButton);
+            this.Controls.Add(this.lightBtn);
             this.Controls.Add(this.bilgilendirmeLabel);
             this.Controls.Add(this.minimizeButton);
             this.Controls.Add(this.closeButton);
@@ -255,6 +304,8 @@ namespace OrderAutomationSystem
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.loginPanel_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.loginPanel_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lightBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loffButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,6 +323,9 @@ namespace OrderAutomationSystem
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.Button minimizeButton;
         private System.Windows.Forms.Label bilgilendirmeLabel;
+        private Guna.UI2.WinForms.Guna2PictureBox lightBtn;
+        private Guna.UI2.WinForms.Guna2PictureBox loffButton;
+        private System.Windows.Forms.CheckBox chcRememberMe;
     }
 }
 

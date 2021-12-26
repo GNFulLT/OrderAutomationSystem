@@ -63,59 +63,9 @@ namespace OrderAutomationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap exitButton {
+        internal static System.Drawing.Bitmap loff {
             get {
-                object obj = ResourceManager.GetObject("exitButton", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap maximizeButton {
-            get {
-                object obj = ResourceManager.GetObject("maximizeButton", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap menuBar {
-            get {
-                object obj = ResourceManager.GetObject("menuBar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap minimizeButton {
-            get {
-                object obj = ResourceManager.GetObject("minimizeButton", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap restoreButton {
-            get {
-                object obj = ResourceManager.GetObject("restoreButton", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap userLogo {
-            get {
-                object obj = ResourceManager.GetObject("userLogo", resourceCulture);
+                object obj = ResourceManager.GetObject("loff", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -18,6 +18,10 @@ namespace OrderAutomationSystem
 
     public partial class loginPanel : Form
     {
+       bool splash = false;
+        DataSet ds;
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Shoppy));
+        SQLiteCommand cmd;
         private bool clickedX = false;
         private bool clickedY = false;
         private bool isRegister = false;
@@ -40,13 +44,18 @@ namespace OrderAutomationSystem
         public loginPanel()
         {
             InitializeComponent();
+            Init_Data();
+            ds = new DataSet();
+            cmd = new SQLiteCommand();
             Control.CheckForIllegalCrossThreadCalls = false;
             this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             bilgilendirmeLabel.Visible = false;
-            
-            
+            loffButton.Visible = false;
         }
+        ~loginPanel(){
+            GC.Collect();
 
+        }
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -111,7 +120,7 @@ namespace OrderAutomationSystem
             dragging = false;
         }
         #endregion
-        
+
 
 
         #region butonAnimasyonu
@@ -121,32 +130,34 @@ namespace OrderAutomationSystem
             clickedX = false;
             Task.Run(() =>
             {
-                
-                
-                    for (int i = 0; i < 16; i++)
-                    {
-                    if(usernameBox.Width == 289)
+
+
+                for (int i = 0; i < 16; i++)
+                {
+                    if (usernameBox.Width == 289)
                     {
                         break;
                     }
-                    
-                        usernameBox.Width = usernameBox.Width+3;
+
+                    usernameBox.Width = usernameBox.Width + 3;
                     var locX = usernameBox.Location.X;
                     locX--;
-                    usernameBox.Location = new Point(locX,usernameBox.Location.Y);
-                        Thread.Sleep(2);
+                    usernameBox.Location = new Point(locX, usernameBox.Location.Y);
+                    Thread.Sleep(2);
                     if (clickedX)
                     {
                         break;
                     }
-                    }
-                
+                }
+
             });
-            
+
         }
 
         private void usernameBox_Leave(object sender, EventArgs e)
         {
+            if (splash)
+                return;
             if (isRegister) { return; }
             clickedX = true;
             Task.Run(() =>
@@ -155,13 +166,15 @@ namespace OrderAutomationSystem
 
                 for (int i = 0; i < 16; i++)
                 {
-                    if(usernameBox.Width == 241)
+                    if (usernameBox.Width == 241)
                     {
                         break;
                     }
-                    usernameBox.Width = usernameBox.Width-3;
+                    usernameBox.Width = usernameBox.Width - 3;
                     var locX = usernameBox.Location.X;
                     locX++;
+                    if (splash)
+                        return;
                     usernameBox.Location = new Point(locX, usernameBox.Location.Y);
                     Thread.Sleep(2);
                     if (!clickedX)
@@ -169,12 +182,12 @@ namespace OrderAutomationSystem
                         break;
                     }
                 }
-                
+
 
             });
-           
 
-           
+
+
 
         }
         //Pasword butonun animasyonu
@@ -214,6 +227,8 @@ namespace OrderAutomationSystem
 
         private void passwordBox_Leave(object sender, EventArgs e)
         {
+            if (splash)
+                return;
             if (isRegister) { return; }
             clickedY = true;
             Task.Run(() =>
@@ -231,7 +246,11 @@ namespace OrderAutomationSystem
                     locX++;
                     var locX2 = passButton.Location.X;
                     locX2 = locX2 - 2;
+                    if (splash)
+                        return;
                     passwordBox.Location = new Point(locX, passwordBox.Location.Y);
+                    if (splash)
+                        return;
                     passButton.Location = new Point(locX2, passButton.Location.Y);
                     Thread.Sleep(2);
                     if (!clickedY)
@@ -248,13 +267,14 @@ namespace OrderAutomationSystem
         //Şifreyi görünür yapma
         private void passButton_Click(object sender, EventArgs e)
         {
-            if(passwordBox.PasswordChar == '*') {
+            if (passwordBox.PasswordChar == '*')
+            {
                 if (isRegister)
                 {
                     passwordBox.PasswordChar = '\0';
                     passButton.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
                     usernameBox.PasswordChar = '\0';
-                    
+
                 }
                 else
                 {
@@ -277,9 +297,7 @@ namespace OrderAutomationSystem
                     passwordBox.PasswordChar = '*';
                     passButton.IconChar = FontAwesome.Sharp.IconChar.Eye;
                 }
-                
             }
-            
         }
 
         //Timer versiyon animasyon
@@ -317,14 +335,86 @@ namespace OrderAutomationSystem
 
         private void loginButton_Click(object sender, EventArgs e)
         {
+
+            Save_Data();
+
             if (!isRegister)
             {
-               /* DatabaseDataSetTableAdapters.CustomersTableAdapter a = new DatabaseDataSetTableAdapters.CustomersTableAdapter();
-                using(var sqlCheck = new SqlCommand("SELECT COUNT(*) FROM Customers WHERE ([Email] = '"+usernameBox.Text)){
+                /* DatabaseDataSetTableAdapters.CustomersTableAdapter a = new DatabaseDataSetTableAdapters.CustomersTableAdapter();
+                 using(var sqlCheck = new SqlCommand("SELECT COUNT(*) FROM Customers WHERE ([Email] = '"+usernameBox.Text)){
 
-                }*/
-                 
+                 }*/
+                if (usernameBox.Text == string.Empty)
+                {
+                    return;
+                }
+                if (passwordBox.Text == string.Empty)
+                {
+                    return;
+                }
+                int ID;
+                string name;
+                string surname;
+                string email;
+                string address;
+                int balance;
+                string isAdmin;
+                string pass;
+                string IsVerified;
+                string VerifyCode;
+                int c;
 
+                using (SQLiteConnection sql = new SQLiteConnection("Data source=.\\dataBase.db"))
+                {
+                    ds.Clear();
+                    sql.Open();
+                    cmd = sql.CreateCommand();
+                    cmd.CommandText = @"SELECT * FROM Customers Where Email = '" + usernameBox.Text + "'";
+                    SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(cmd);
+                    dataAdapter.Fill(ds);
+                    c = ds.Tables[0].Rows.Count;
+                    if (c == 0)
+                    {
+                        sql.Close();
+                        return;
+                    }
+
+                    object[] dt = ds.Tables[0].Rows[0].ItemArray;
+                    ID = Convert.ToInt32(dt[0]);
+                    name = dt[1].ToString();
+                    surname = dt[2].ToString();
+                    email = dt[3].ToString();
+                    address = dt[4].ToString();
+                    pass = dt[5].ToString();
+                    balance = Convert.ToInt32(dt[6]);
+                    isAdmin = dt[8].ToString();
+                    IsVerified = dt[9].ToString();
+                    VerifyCode = dt[10].ToString();
+
+                    sql.Close();
+
+                }
+                if (passwordBox.Text != pass)
+                {
+                    return;
+                }
+                if (isAdmin == "FALSE")
+                {
+                    Customers customer = new Customers(ID, email, name, surname, address, balance);
+                    customer.setVerify(IsVerified, VerifyCode);
+                    SplashScreen spsh = new SplashScreen(customer, false,isLight);
+                    spsh.Show();
+                    this.Dispose();
+
+                }
+                else
+                {
+                    splash = true;
+                    Customers admin = new Customers(ID, email, name, surname, address, balance);
+                    SplashScreen spsh = new SplashScreen(admin, true, isLight);
+                    spsh.Show();
+                    this.Dispose();
+                }
 
             }
             else
@@ -337,7 +427,8 @@ namespace OrderAutomationSystem
                 Guna.UI2.WinForms.Guna2TextBox emailB = this.Controls["emailRegister"] as Guna.UI2.WinForms.Guna2TextBox;
                 Guna.UI2.WinForms.Guna2TextBox username1B = this.Controls["usernameRegister"] as Guna.UI2.WinForms.Guna2TextBox;
                 Regex rEmail = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-                if (emailB != null) {
+                if (emailB != null)
+                {
                     if (!rEmail.IsMatch(emailB.Text))
                     {
                         bilgilendirmeLabel.Visible = true;
@@ -359,7 +450,7 @@ namespace OrderAutomationSystem
                     }
                     else
                     {
-                        if(username1B.Text == string.Empty)
+                        if (username1B.Text == string.Empty)
                         {
                             bilgilendirmeLabel.Visible = true;
                             t1 = new Task(() =>
@@ -376,12 +467,13 @@ namespace OrderAutomationSystem
                             });
                             t1.Start();
                         }
-                        else { 
-                        Guna.UI2.WinForms.Guna2TextBox pass1B = this.Controls["usernameBox"] as Guna.UI2.WinForms.Guna2TextBox;
-                        Guna.UI2.WinForms.Guna2TextBox pass2B = this.Controls["passwordBox"] as Guna.UI2.WinForms.Guna2TextBox;
-                        string pass1 = pass1B.Text;
-                        string pass2 = pass2B.Text;
-                            if(pass1 == string.Empty)
+                        else
+                        {
+                            Guna.UI2.WinForms.Guna2TextBox pass1B = this.Controls["usernameBox"] as Guna.UI2.WinForms.Guna2TextBox;
+                            Guna.UI2.WinForms.Guna2TextBox pass2B = this.Controls["passwordBox"] as Guna.UI2.WinForms.Guna2TextBox;
+                            string pass1 = pass1B.Text;
+                            string pass2 = pass2B.Text;
+                            if (pass1 == string.Empty)
                             {
                                 bilgilendirmeLabel.Visible = true;
                                 t1 = new Task(() =>
@@ -398,21 +490,20 @@ namespace OrderAutomationSystem
                                 });
                                 t1.Start();
                             }
-                            else {
+                            else
+                            {
 
                                 //TÜM İŞLEMLER YERİNE DOĞRU BİR ŞEKİLDE GETİRİLDİYSE ---------------------------------------------------
-                           if (pass1 == pass2)
+                                if (pass1 == pass2)
                                 {
                                     int count = 0;
                                     using (SQLiteConnection sql = new SQLiteConnection("Data source=.\\dataBase.db"))
                                     {
                                         sql.Open();
-                                        SQLiteCommand cmd = new SQLiteCommand();
                                         cmd = sql.CreateCommand();
-                                        cmd.CommandText = @"SELECT * FROM Customers WHERE Email = '"+emailB.Text+"'";
+                                        cmd.CommandText = @"SELECT * FROM Customers WHERE Email = '" + emailB.Text + "'";
 
                                         SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(cmd);
-                                        DataSet ds = new DataSet();
                                         dataAdapter.Fill(ds);
                                         DataTable dt = ds.Tables[0];
                                         count = dt.Rows.Count;
@@ -453,12 +544,10 @@ namespace OrderAutomationSystem
                                             locX = bilgilendirmeLabel.Location.X + 110;
                                             bilgilendirmeLabel.Location = new Point(locX, bilgilendirmeLabel.Location.Y);
                                         });
-                                        t1.Start();                                 
-                                        InsertCustomer(username1B.Text,null,null,emailB.Text,pass1,-1,false);
+                                        t1.Start();
+                                        InsertCustomer(username1B.Text, null, null, emailB.Text, pass1, -1, false);
 
                                         registerButton_Click(registerButton, null);
-
-
                                     }
                                 }
                                 else
@@ -480,15 +569,50 @@ namespace OrderAutomationSystem
                                          bilgilendirmeLabel.Location = new Point(locX, bilgilendirmeLabel.Location.Y);
                                      });
                                     t1.Start();
-
                                 }
                             }
                         }
                     }
-            }
+                }
             }
 
         }
+
+        private void Init_Data()
+        {
+            if (Properties.Settings.Default.Username != string.Empty)
+            {
+                if (Properties.Settings.Default.Remember == true)
+                {
+                    usernameBox.Text = Properties.Settings.Default.Username;
+                    passwordBox.Text = Properties.Settings.Default.Password;
+                    chcRememberMe.Checked = true;
+                }
+                else
+                {
+                    usernameBox.Text = Properties.Settings.Default.Username;
+
+                }
+            }
+        }
+        private void Save_Data()
+        {
+            if (chcRememberMe.Checked)
+            {
+                Properties.Settings.Default.Username = usernameBox.Text;
+                Properties.Settings.Default.Password = passwordBox.Text;
+                Properties.Settings.Default.Remember = true;
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                Properties.Settings.Default.Username = "";
+                Properties.Settings.Default.Password = "";
+                Properties.Settings.Default.Remember = false;
+                Properties.Settings.Default.Save();
+            }
+        }
+
         //----------------------------------------------------------------------------------------------------
 
         //Register ekranına giriş ve çıkış isRegister bool değişkeni ile algılanıyor
@@ -510,7 +634,7 @@ namespace OrderAutomationSystem
                     while (!(pictureBox.Location.Y >= 63))
                     {
 
-                        
+
                         var locX = pictureBox.Location.X;
                         var locY = pictureBox.Location.Y + i;
                         i = i + 0.5;
@@ -521,7 +645,7 @@ namespace OrderAutomationSystem
                 });
                 isRegister = false;
                 usernameBox.PasswordChar = '\0';
-                char[] Register = { 'R', 'e', 'g', 'i','s','t','e','r' };
+                char[] Register = { 'R', 'e', 'g', 'i', 's', 't', 'e', 'r' };
                 char[] Login = { 'L', 'o', 'g', 'i', 'n' };
                 Task.Run(() =>
                 {
@@ -539,8 +663,6 @@ namespace OrderAutomationSystem
                         loginButton.Text = sbB.ToString();
                         Thread.Sleep(100);
                     }
-
-                    
                 });
 
             }
@@ -575,8 +697,6 @@ namespace OrderAutomationSystem
                         }
                         usernameBox.PlaceholderText = "Password";
 
-
-
                     }));
                     stopped = true;
                 });
@@ -597,19 +717,13 @@ namespace OrderAutomationSystem
                         loginButton.Text = sbC.ToString();
                         Thread.Sleep(100);
                     }
-
-
                 });
-
-
             }
         }
-
-
         //Register Ekranındaki butonları oluşturur.
         #region ButonOluştur
         private List<Guna.UI2.WinForms.Guna2TextBox> UsernameRegister()
-        {   
+        {
             Guna.UI2.WinForms.Guna2TextBox usernameRegister = new Guna.UI2.WinForms.Guna2TextBox();
             usernameRegister.BorderRadius = 23;
             usernameRegister.BorderThickness = 0;
@@ -620,7 +734,15 @@ namespace OrderAutomationSystem
             usernameRegister.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             usernameRegister.DisabledState.Parent = usernameRegister;
             usernameRegister.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            usernameRegister.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(207)))), ((int)(((byte)(240)))));
+            if (isLight)
+            {
+                usernameRegister.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(207)))), ((int)(((byte)(240)))));
+
+            }
+            else
+            {
+                usernameRegister.FillColor = Color.FromArgb(105, 105, 105);
+            }
             usernameRegister.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             usernameRegister.FocusedState.Parent = usernameRegister;
             usernameRegister.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
@@ -647,7 +769,14 @@ namespace OrderAutomationSystem
             usernameRegister2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             usernameRegister2.DisabledState.Parent = usernameRegister2;
             usernameRegister2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            usernameRegister2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(207)))), ((int)(((byte)(240)))));
+            if (isLight)
+            {
+                usernameRegister2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(207)))), ((int)(((byte)(240)))));
+            }
+            else
+            {
+                usernameRegister2.FillColor = Color.FromArgb(105, 105, 105);
+            }
             usernameRegister2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             usernameRegister2.FocusedState.Parent = usernameRegister2;
             usernameRegister2.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
@@ -668,7 +797,7 @@ namespace OrderAutomationSystem
             texts.Add(usernameRegister2);
             return texts;
 
-    }
+        }
 
 
         #endregion
@@ -676,15 +805,13 @@ namespace OrderAutomationSystem
         //Formu kapatma butonu
         private void closeButton_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
         }
 
         private void minimizeButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-
         private void Titret()
         {
             int titrett = 0;
@@ -699,13 +826,9 @@ namespace OrderAutomationSystem
                 this.Location = new Point(p.X + x, p.Y + y);
                 Thread.Sleep(20);
                 titrett++;
-
             }
-
         }
 
-
-             
         private async void InsertCustomer(string Name, string Surname, string Address, string Email, string password, int OrderID, bool IsAdmin)
         {
             await Task.Run(() =>
@@ -713,22 +836,74 @@ namespace OrderAutomationSystem
                 using (SQLiteConnection sql = new SQLiteConnection("Data source=.\\dataBase.db"))
                 {
                     sql.Open();
-                    SQLiteCommand cmd = new SQLiteCommand();
                     cmd = sql.CreateCommand();
                     cmd.CommandText = @"INSERT INTO Customers (Name, Email, Password) VALUES ('" + Name + "','" + Email + "','" + password + "')";
                     cmd.ExecuteNonQuery();
                     sql.Close();
 
-
-
                 }
             });
 
+        }
 
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+            if (isLight)
+            {
+                isLight = false;
+                this.BackColor = Color.FromArgb(42, 42, 42);
+                usernameBox.FillColor = Color.FromArgb(105, 105, 105);
+                passwordBox.FillColor = Color.FromArgb(105, 105, 105);
+                registerButton.FillColor = Color.DarkGray;
+                registerButton.FillColor2 = Color.Black;
+                loginButton.FillColor = Color.DarkGray;
+                loginButton.FillColor2 = Color.Black;
+                passButton.BackColor = Color.FromArgb(105, 105, 105);
+                lightBtn.Visible = false;
+                loffButton.Visible = true;
+                if (!(this.Controls["usernameRegister"] is null))
+                {
+                    Guna.UI2.WinForms.Guna2TextBox tb = this.Controls["usernameRegister"] as Guna.UI2.WinForms.Guna2TextBox;
+                    tb.FillColor = Color.FromArgb(105, 105, 105);
+                }
+                if (!(this.Controls["emailRegister"] is null))
+                {
+                    Guna.UI2.WinForms.Guna2TextBox tb = this.Controls["emailRegister"] as Guna.UI2.WinForms.Guna2TextBox;
+                    tb.FillColor = Color.FromArgb(105, 105, 105);
 
+                }
 
+            }
+            else
+            {
+                isLight = true;
+                this.BackColor = Color.WhiteSmoke;
+                registerButton.FillColor = Color.FromArgb(94, 148, 255);
+                registerButton.FillColor2 = Color.FromArgb(255, 77, 165);
+                loginButton.FillColor = Color.FromArgb(94, 148, 255);
+                loginButton.FillColor2 = Color.FromArgb(255, 77, 165);
+                usernameBox.FillColor = Color.FromArgb(137, 207, 240);
+                passwordBox.FillColor = Color.FromArgb(137, 207, 240);
+                passButton.BackColor = Color.FromArgb(137, 207, 240);
+                lightBtn.Visible = true;
+                loffButton.Visible = false;
+                if (!(this.Controls["usernameRegister"] is null))
+                {
+                    Guna.UI2.WinForms.Guna2TextBox tb = this.Controls["usernameRegister"] as Guna.UI2.WinForms.Guna2TextBox;
+                    tb.FillColor = Color.FromArgb(137, 207, 240);
+                }
+                if (!(this.Controls["emailRegister"] is null))
+                {
+                    Guna.UI2.WinForms.Guna2TextBox tb = this.Controls["emailRegister"] as Guna.UI2.WinForms.Guna2TextBox;
+                    tb.FillColor = Color.FromArgb(137, 207, 240);
+
+                }
+            }
+        }
+
+        private void chcRememberMe_CheckedChanged(object sender, EventArgs e)
+        {
 
         }
-        
     }
 }
